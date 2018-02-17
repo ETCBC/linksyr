@@ -4,6 +4,9 @@
 # General New Testament constants
 #====================================================================
 
+
+tosyr = str.maketrans('ABGDHOZKY;CLMNSEI/XRWT','ܐܒܓܕܗܘܙܚܛܝܟܠܡܢܣܥܦܨܩܪܫܬ', ',')
+
 NT_BOOKS = (
     ('Matt',   (25, 23, 17, 25, 48, 34, 29, 34, 38, 42, 30, 50, 58, 36,
                 39, 28, 27, 35, 30, 34, 46, 46, 39, 51, 46, 75, 66, 20)),
@@ -40,6 +43,35 @@ NT_BOOKS = (
     ('Jude',   (25,)),
     ('Rev',    (20, 29, 22, 11, 14, 17, 17, 13, 21, 11, 19, 17, 18, 20,
                 8, 21, 18, 24, 21, 15, 27, 20)))
+BOOK_EN = tuple('''
+    Matthew
+    Mark
+    Luke
+    John
+    Acts
+    Romans
+    1_Corinthians
+    2_Corinthians
+    Galatians
+    Ephesians
+    Philippians
+    Colossians
+    1_Thessalonians
+    2_Thessalonians
+    1_Timothy
+    2_Timothy
+    Titus
+    Philemon
+    Hebrews
+    James
+    1_Peter
+    2_Peter
+    1_John
+    2_John
+    3_John
+    Jude
+    Revelation
+'''.strip().split())
 
 #====================================================================
 # SyrNT constants
@@ -64,7 +96,7 @@ class SyrNT:
         ('root', None),         #  2 root
         ('prefix', None),       #  3 prefix
         ('suffix', None),       #  4 suffix
-        ('seyame', None),       #  5 seyame
+        ('seyame', (0, 1)),       #  5 seyame
         ('verbal_conjugation',  #  6 verb conjugation
             ('n/a',                 #  0 n/a
              'peal',                #  1 peal
@@ -112,20 +144,20 @@ class SyrNT:
         ),
         ('number',              #  9 number
             ('n/a',                 # 0 n/a
-             'singular',            # 1 singular
-             'plural')              # 2 plural
+             's',            # 1 singular
+             'p')              # 2 plural
         ),
         ('person',              # 10 person
             ('n/a',                 # 0 n/a
-             'first',               # 1 first
-             'second',              # 2 second
-             'third')               # 3 third
+             '1',               # 1 first
+             '2',              # 2 second
+             '3')               # 3 third
         ),
         ('gender',              # 11 gender
             ('n/a',                 # 0 n/a
-             'common',              # 1 common
-             'masculine',           # 2 masculine
-             'feminine')            # 3 feminine
+             'c',              # 1 common
+             'm',           # 2 masculine
+             'f')            # 3 feminine
         ),
         ('pronoun_type',        # 12 pronoun type
             ('n/a',                 # 0 n/a
@@ -141,7 +173,7 @@ class SyrNT:
         ),
         ('noun_type',           # 14 noun type
             ('n/a',                 # 0 n/a
-             'propper',             # 1 propper
+             'proper',             # 1 propper
              'common')              # 2 common
         ),
         ('numeral_type',        # 15 numeral type
@@ -172,21 +204,21 @@ class SyrNT:
              'contraction')         # 2 contraction
         ),
         ('suffix_gender',       # 19 suffix gender
-            ('common OR n/a',       # 0 common OR n/a
-             'masculine',           # 1 masculine
-             'feminine')            # 2 feminine
+            ('c/n/a',       # 0 common OR n/a
+             'm',           # 1 masculine
+             'f')            # 2 feminine
         ),
         ('suffix_person',       # 20 suffix person
             ('n/a',                 # 0 n/a
-             'first',               # 1 first
-             'second',              # 2 second
-             'third')               # 3 third
+             '1',               # 1 first
+             '2',              # 2 second
+             '3')               # 3 third
         ),
         ('suffix_number',       # 21 suffix number
-            ('singular OR n/a',     # 0 singular OR n/a
-             'plural')              # 1 plural
+            ('s/n/a',     # 0 singular OR n/a
+             'p')              # 1 plural
         ),
-        ('feminine_he_dot', None),  # 22 feminine he dot
+        ('feminine_he_dot', (0, 1)),  # 22 feminine he dot
                                     # 0 does not have the feminine he dot
                                     # 1 has the feminine he dot
     )

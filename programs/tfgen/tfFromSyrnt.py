@@ -6,7 +6,7 @@ from glob import glob
 from functools import reduce
 from tf.fabric import Fabric
 
-from constants import NT_BOOKS, SyrNT
+from constants import NT_BOOKS, BOOK_EN, SyrNT, tosyr
 
 BASE_DIR = os.path.expanduser(f'~/github/etcbc')
 REPO = 'linksyr'
@@ -27,7 +27,7 @@ SHOW = True
 for cdir in (TEMP_DIR, TF_DIR):
     os.makedirs(cdir, exist_ok=True)
 
-commonMetaData = dict(
+commonMetaData = collections.OrderedDict(
     dataset=ORIGIN,
     datasetName='Syriac New Testament',
     source='SEDRA',
@@ -38,11 +38,19 @@ commonMetaData = dict(
     email1=('?'),
     email2='dirk.roorda@dans.knaw.nl',
 )
-specificMetaData = dict(
+specificMetaData = collections.OrderedDict(
     book='book name',
     chapter='chapter number',
     verse='verse number',
-    form='full form of the word',
+    word='full form of the word in syriac script',
+    word_ascii='full form of the word in sedra transcription',
+)
+langMetaData = dict(
+    en=dict(
+        language='English',
+        languageCode='en',
+        languageEnglish='English',
+    ),
 )
 numFeatures = set(
     '''
@@ -55,7 +63,10 @@ numFeatures = set(
 oText = {
     'sectionFeatures': 'book,chapter,verse',
     'sectionTypes': 'book,chapter,verse',
-    'fmt:text-orig-full': '{form} ',
+    'fmt:text-orig-full': '{word} ',
+    'fmt:text-trans-full': '{word_ascii} ',
+    'fmt:lex-orig-full': '{lexeme} ',
+    'fmt:lex-trans-full': '{lexeme_ascii} ',
 }
 
 
@@ -84,7 +95,8 @@ def getVerseLabels():
         for (chapter, verseCount) in enumerate(chapters):
             for v in range(1, verseCount + 1):
                 verseLabels.append((book, chapter + 1, v))
-    return verseLabels
+    bookEn = {NT_BOOKS[i][0]: book for (i, book) in enumerate(BOOK_EN)}
+    return (bookEn, verseLabels)
 
 
 def parseCorpus():
@@ -97,13 +109,13 @@ def parseCorpus():
         lambda: collections.defaultdict(set)
     )
     oSlots = collections.defaultdict(set)
-    verseLabels = getVerseLabels()
+    (bookEn, verseLabels) = getVerseLabels()
     (prevBook, prevChapter) = (None, None)
     for p in readCorpus():
         (book, chapter, verse) = verseLabels[cur['verse']]
         if book != prevBook:
             print(
-                f'\t{book:<12} current:'
+                f'\t{bookEn[book]:<15} current:'
                 f' b={cur["book"]:>2}'
                 f' c={cur["chapter"]:>3}'
                 f' v={cur["verse"]:>4}'
@@ -116,7 +128,9 @@ def parseCorpus():
                 context.pop()
             cur['book'] += 1
             prevBook = book
-            nodeFeatures['book'][('book', cur['book'])] = book
+            bookNode = ('book', cur['book'])
+            nodeFeatures['book'][bookNode] = book
+            nodeFeatures['book@en'][bookNode] = bookEn[book]
             context.append(('book', cur['book']))
         if chapter != prevChapter:
             if prevChapter is not None:
@@ -133,12 +147,17 @@ def parseCorpus():
         context.append(('verse', cur['verse']))
         for word in words:
             curSlot += 1
-            (form, annotationStr) = word.split('|', 1)
+            (wordTrans, annotationStr) = word.split('|', 1)
             annotations = annotationStr.split('#')
-            nodeFeatures['form'][('word', curSlot)] = form
+            wordNode = ('word', curSlot)
+            nodeFeatures['word_ascii'][wordNode] = wordTrans
+            nodeFeatures['word'][wordNode] = wordTrans.translate(tosyr)
             for ((feature, values), data) in zip(annotSpecs, annotations):
                 value = data if values is None else values[int(data)]
-                nodeFeatures[feature][('word', curSlot)] = value
+                featureName = f'{feature}_ascii' if values is None else feature
+                nodeFeatures[featureName][wordNode] = value
+                if values is None:
+                    nodeFeatures[feature][wordNode] = value.translate(tosyr)
             for (nt, curNode) in context:
                 oSlots[(nt, curNode)].add(curSlot)
         context.pop()
@@ -209,13 +228,15 @@ def parseCorpus():
         '': commonMetaData,
         'otext': oText,
         'oslots': dict(valueType='str'),
+        'book@en': langMetaData['en'],
     }
     for ft in set(nodeFeatures) | set(edgeFeatures):
         metaData.setdefault(
             ft, {}
         )['valueType'] = 'int' if ft in numFeatures else 'str'
-        if ft in specificMetaData:
-            metaData[ft]['description'] = specificMetaData[ft]
+        metaData[ft]['description'] = (
+            specificMetaData[ft] if ft in specificMetaData else '?'
+        )
 
     print(f'Remove existing TF directory')
     rmtree(TF_DIR)
@@ -240,7 +261,7 @@ def loadTf():
 
 
 def main():
-    # parseCorpus()
+    parseCorpus()
     loadTf()
 
 

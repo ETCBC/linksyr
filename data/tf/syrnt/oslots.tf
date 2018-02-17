@@ -1,6 +1,7 @@
 @edge
 @dataset=syrnt
 @datasetName=Syriac New Testament
+@description=?
 @email1=?
 @email2=dirk.roorda@dans.knaw.nl
 @encoders=? (transcription),? (annotation)and Dirk Roorda (TF)
@@ -8,7 +9,7 @@
 @sourceUrl=?
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2018-02-16T15:30:14Z
+@dateWritten=2018-02-17T09:23:12Z
 
 109641	1-13979
 13980-22772

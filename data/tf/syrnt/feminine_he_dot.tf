@@ -1,6 +1,7 @@
 @node
 @dataset=syrnt
 @datasetName=Syriac New Testament
+@description=?
 @email1=?
 @email2=dirk.roorda@dans.knaw.nl
 @encoders=? (transcription),? (annotation)and Dirk Roorda (TF)
@@ -8,7 +9,7 @@
 @sourceUrl=?
 @valueType=int
 @writtenBy=Text-Fabric
-@dateWritten=2018-02-16T15:30:09Z
+@dateWritten=2018-02-17T09:23:07Z
 
 0
 0
