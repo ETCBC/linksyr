@@ -2,7 +2,7 @@
 # preparser
 
 from collections import namedtuple
-import alphabet, lexicon
+# import alphabet, lexicon
 
 class word_grammar:
     '''Word grammar thingy
@@ -12,8 +12,8 @@ class word_grammar:
     apply the word grammar tables to
     '''
     # class variables
-    alphabet = alphabet.letters
-    lexicon = lexicon.lexicon
+    # alphabet = alphabet.letters
+    # lexicon = lexicon.lexicon
     _morpheme_type = namedtuple('MORPHEME_TYPE',
         ['ident', 'mclass', 'pos', 'markers'])
     _meta_keys = namedtuple('META_KEYS',

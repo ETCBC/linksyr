@@ -6,7 +6,7 @@ import yapps_runtime as runtime
 # preparser
 
 from collections import namedtuple
-import alphabet, lexicon
+# import alphabet, lexicon
 
 # TODO:
 # all kinds of consistency checks
@@ -20,8 +20,8 @@ class word_grammar:
     to create word grammar tables, and methods to
     apply the word grammar tables to
     '''
-    alphabet = alphabet.letters
-    lexicon = lexicon.lexicon
+    # alphabet = alphabet.letters
+    # lexicon = lexicon.lexicon
     _morpheme_type = namedtuple('MORPHEME_TYPE',
         ['ident', 'mclass', 'pos', 'markers'])
     _meta_keys = namedtuple('META_KEYS',

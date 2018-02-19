@@ -1,0 +1,60 @@
+########################################################################
+#                                                                      #
+#  Transliteration Alphabet for Syriac                                 #
+#                                                                      #
+########################################################################
+
+#ident "@(#)syriac/alphabet	1.2 01/03/01"
+
+letters:
+alaf	">"
+beth	"B"
+gamal	"G"
+dalath	"D"
+he	"H"
+waw	"W"
+zain	"Z"
+heth	"X"
+thet	"V"
+yod	"J"
+kaf	"K"
+lamad	"L"
+mim	"M"
+nun	"N"
+semkath	"S"
+e	"<"
+pe	"P"
+tsade	"Y"
+qof	"Q"
+resh	"R"
+shin	"C"
+taw	"T"
+
+
+diacritics:
+seyame			"\""
+diacritical_dot_above	"^"
+diacritical_dot_below	"#"
+petaha			"a"	# petoho
+zeqapa			"A"	# zeqofo
+revasa_arrika		"e"	# revoso
+revasa_karya		"E"
+hevoso			"i"
+esoso			"u"
+
+
+punctuation marks:
+menachta		"#."	# meshalyana, metdamrana, samka
+metkashpana		"#:"
+rosette			"*"
+common_dot_in_caesuras	"."
+tahtaya			"=#"	# metkashpana, meshalyana
+pasuqa			"=."
+shewaya			"=:"	# zauga
+elaya			"=^"
+vignette		"@"
+rahta			"^\""
+meshalana		"^."	# metkashpana, meshalyana, paquda, etsyana
+taksa			"^:"	# zauga_elaya
+dash_in_caesuras	"_"
+large_dot_in_caesuras	"o"

@@ -2,7 +2,7 @@ import os, re
 
 def get_lexicon(filename):
     l = {}
-    with open(os.path.join(script_dir, filename), 'r') as f:
+    with open(filename, 'r') as f:
         for line in f.readlines():
             if line.strip() and line.strip()[0] != '#':
                 entry = re.findall('^([^\t ]+)\s+([0-9]+):([^#]*)', line)
@@ -12,8 +12,14 @@ def get_lexicon(filename):
                     l[lexeme] = (l_id, ann_list)
     return l
 
+class Lexicon:
+
+    def __init__(self, filename):
+        self.lexicon = get_lexicon(filename)
+
+
 #TODO filename as argument, make class
 # /projects/lib/syriac/alphabet
-script_dir = os.path.dirname(__file__) #<-- absolute dir the script is in
-filename = '../data/syrlex'
-lexicon = get_lexicon(filename)
+# script_dir = os.path.dirname(__file__) #<-- absolute dir the script is in
+# filename = '../data/syrlex'
+# lexicon = get_lexicon(filename)

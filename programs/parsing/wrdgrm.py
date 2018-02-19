@@ -14,10 +14,20 @@ class wrdgrm:
 
     def __init__(self, word_grammar_file, lexicon_file, alphabet_file):
         """Init"""
+        # self.alphabet = alphabet.get_alphabet(alphabet_file)['letters']
+        # self.lexicon = lexicon.get_lexicon(lexicon_file)
+        self.alphabet = alphabet.Alphabet(alphabet_file).letters
+        self.lexicon = lexicon.Lexicon(lexicon_file).lexicon
+        # wgr also needs attribute lexicon, esp on line 337
+        # (in the method implicit_enum()):
+        # ``` W.addmvenum(mtid, getattr(W, T_IDENTIFIER)) ```
+        # where T_IDENTIFIER can only have the value 'lexicon'.
+        # TODO: find better way to pass the lexicon to wgr
+        wgr.W.lexicon = self.lexicon
+        
         with open(word_grammar_file, 'r') as f:
             self.wgr = wgr.parse('grammar', f.read())
-        self.alphabet = alphabet.get_alphabet(alphabet_file)['letters']
-        self.lexicon = lexicon.get_lexicon(lexicon_file)
+
 
         self._jump = None
         # replace m and f by word object:
@@ -52,7 +62,8 @@ class wrdgrm:
 
         if self._f is not None:     # TODO dirty hack
             w['functions'] = self._f
-            w['lex'] = self.wgr.lexicon[w['morphemes']['lex'][0]]
+            # w['lex'] = self.wgr.lexicon[w['morphemes']['lex'][0]]
+            w['lex'] = self.lexicon[w['morphemes']['lex'][0]]
             return w
         else:
             raise Exception('No paradigmatic form found.')
