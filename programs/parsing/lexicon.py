@@ -4,12 +4,12 @@ def get_lexicon(filename):
     l = {}
     with open(filename, 'r') as f:
         for line in f.readlines():
-            if line.strip() and line.strip()[0] != '#':
-                entry = re.findall('^([^\t ]+)\s+([0-9]+):([^#]*)', line)
-                if entry:
-                    lexeme, l_id, ann = entry[0]
-                    ann_list = [tuple(a.split('=')) for a in ann.strip().split(':')]
-                    l[lexeme] = (l_id, ann_list)
+            entry = re.findall('^([^#\t ]+)\s+([0-9]+)([^#]*)', line)
+            if entry:
+                lexeme, l_id, ann = entry[0]
+                ann_list = tuple(tuple(a.split('='))
+                                 for a in ann.strip().split(':') if a)
+                l[lexeme] = (l_id, ann_list)
     return l
 
 class Lexicon:
