@@ -7,7 +7,7 @@ def get_lexicon(filename):
             entry = re.findall('^([^#\t ]+)\s+([0-9]+)([^#]*)', line)
             if entry:
                 lexeme, l_id, ann = entry[0]
-                ann_list = tuple(tuple(a.split('='))
+                ann_list = tuple(tuple(a.split('=', 1))
                                  for a in ann.strip().split(':') if a)
                 l[lexeme] = (l_id, ann_list)
     return l
