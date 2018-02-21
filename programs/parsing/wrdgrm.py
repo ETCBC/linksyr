@@ -24,7 +24,7 @@ class wrdgrm:
         # where T_IDENTIFIER can only have the value 'lexicon'.
         # TODO: find better way to pass the lexicon to wgr
         wgr.W.lexicon = self.lexicon
-        
+
         with open(word_grammar_file, 'r') as f:
             self.wgr = wgr.parse('grammar', f.read())
 
@@ -45,13 +45,13 @@ class wrdgrm:
         # self.word = word(string)
         self._m = {}
         self._f = {}
-        w = {'morphemes': {}, 'functions': {}}
+        morphemes = []
         # a=analyzed form, p=paradigmatic form, s=surface form
         for mt, a in self.split_morphemes(string):
             if a is not None:
                 p, s = self.analyze_morpheme(a)
                 self._m[mt] = p # store paradigmatic forms
-                w['morphemes'][mt] = (p,s,a)
+                morphemes.append((mt, (p,s,a)))
             else:
                 self._m[mt] = None
         # apply rules one by one, which will set functions in self._f
@@ -61,10 +61,20 @@ class wrdgrm:
                 break
 
         if self._f is not None:     # TODO dirty hack
-            w['functions'] = self._f
-            # w['lex'] = self.wgr.lexicon[w['morphemes']['lex'][0]]
-            w['lex'] = self.lexicon[w['morphemes']['lex'][0]]
-            return w
+            lexeme = dict(morphemes)['lex'][0]
+            lex = self.lexicon[lexeme]
+
+            # update functions with values from lexicon
+            for f, v in lex[1]: # loop through descriptions in lexicon
+                if f in self.wgr._fvalues: # check if function name is valid
+                    # Values from lexicon always take precedence,
+                    # also if the value was already set, even to False.
+                    self._f[f] = v
+
+            functions = tuple(self._f.items())
+
+            return (tuple(morphemes), functions, lex)
+
         else:
             raise Exception('No paradigmatic form found.')
 
