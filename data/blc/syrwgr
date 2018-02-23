@@ -6,7 +6,7 @@
 #								       #
 ########################################################################
 
-#ident "@(#)syrwgr	1.2 09/01/08"
+#ident "@(#)syrwgr	1.4 17/09/18"
 
 # Word skeleton in terms of morpheme types
 word
@@ -60,7 +60,9 @@ functions
       f: "feminine", m: "masculine"
    ls: "lexical set" =
       card: "cardinalia",
+      cjad: "conjunctive adverb",
       demo: "demonstrativa",
+      focp: "focus particle",
       gntl: "gentilicia",
       nmex: "noun of existence",
       ordn: "ordinalia",
@@ -149,7 +151,7 @@ inflection
 
    emf == ">"   :: st=emph
 
-   vpm == p || pfx == ">T" :: vo=pas
+   vpm == {dp, p} || pfx == ">T" :: vo=pas
 
    shared { not exist(pfm) && exist(vbe) && not exist(nme) :: vt=pf }
       vbe == "" :: ps=third, nu=sg, gn=m
