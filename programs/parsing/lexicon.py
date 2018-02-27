@@ -8,7 +8,13 @@ def get_lexicon(filename):
             if entry:
                 lexeme, l_id, ann = entry[0]
                 ann_list = tuple(tuple(a.split('=', 1))
-                                 for a in ann.strip().split(':') if a)
+                                #  for a in ann.strip().split(':') if a)
+                                # since apparently some dictionaries contain
+                                # vc-fields with vocalization, containing
+                                # the sequence '\:' (and hopefully only that)
+                                # we need to split on non-escaped colons only.
+                                #  https://stackoverflow.com/a/21107911
+                                for a in re.split(r'(?<!\\):', ann.strip()) if a)
                 l[lexeme] = (l_id, ann_list)
     return l
 
