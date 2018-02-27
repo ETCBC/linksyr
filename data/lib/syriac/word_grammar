@@ -1,0 +1,217 @@
+########################################################################
+#                                                                      #
+#      Grammar at Word Level in Peshitta Syriac                        #
+#                                                                      #
+########################################################################
+
+#ident @(#)syriac/word_grammar	1.9 04/07/22
+
+# Word skeleton in terms of morpheme types
+word
+
+   # Word skeleton
+   inflection
+      prefix =
+	 pfm: {"!","!"} "preformative"
+	 pfx: {"@","@"} "passive stem formation prefix"
+	 vbs: {"]","]"} "verbal stem"
+      core =
+	 lex: {} "lexeme"
+      infix =
+         vix: {"^","^"} "verbal infix"
+      suffix =
+	 frv: {"|"} "final (reduplicated) verbal stem element"
+	 vbe: {"["} "verbal ending"
+	 nme: {"/"} "nominal ending"
+	 emf: {"~"} "emphatic marker"
+	 prs: {"+"} "pronominal suffix"
+      pattern =
+	 vpm: {":"} "vowel pattern"
+
+   # Lexeme skeleton
+   derivation
+      core =
+	 rt: {} "root"
+
+forms
+   meta "(" "&" "_" "="
+
+   pfm = "", ">", "M", "N", "N=", "T", "T="
+   pfx = ">T"
+   vbs = ">", "S", "C", "T", "M"
+   lex < lexicon
+   vix = "W", "J", "M", "R", "WR", "G"
+   vbe = "", "W", "WN", "J", "J=", "JN", "JN=", "N", "N=", "T", "T=",
+	 "T==", "TWN", "TJ", "TJN"
+   nme = "", ">", "W", "WT", "J", "J=", "JN", "N", "T", "T=", "TJN"
+   emf = ">"
+   prs = "H", "H=", "HWN", "HJ", "HJN", "J", "K", "KWN", "KJ", "KJN",
+	 "N", "NJ"
+   vpm = p
+
+   rt < lexicon
+   frv = "", "B", "BS", "J", "K", "L", "M", "MR", "Y", "Q", "QL", "R",
+	 "RG", "RM"
+
+
+# Definition of grammatical functions: mnemonic and function name
+
+functions
+   ps: "person" =
+      first: "first", second: "second", third: "third"
+   nu: "number" =
+      sg: "singular", du: "dual", pl: "plural"
+   gn: "gender" =
+      f: "feminine", m: "masculine"
+   ls: "lexical set" =
+      card: "cardinalia",
+      demo: "demonstrativa",
+      gntl: "gentilicia",
+      nmex: "noun of existence",
+      ordn: "ordinalia",
+      padj: "possible adjective",
+      padv: "possible adverb",
+      pcon: "possible conjunction",
+      pers: "personalia",
+      pinr: "possible interrogative",
+      pint: "possible interjection",
+      ppre: "possible preposition",
+      prin: "interrogativa",
+      prop: "proper noun",
+      quot: "verb of direct speech",
+      vbex: "verb of existence"
+   sp: "part of speech" =
+      adjv: "adjective",
+      advb: "adverb",
+      conj: "conjunction",
+      inrg: "interrogative",
+      intj: "interjection",
+      nega: "negative",
+      prep: "preposition",
+      pron: "pronoun",
+      subs: "substantive",
+      verb: "verb"
+   st: "state" =
+      cst: "construct", abs: "absolute", emph: "emphatic"
+   vo: "voice" =
+      act: "active", pas: "passive"
+   vs: "verbal stem" =
+      pe: "peal", pa: "pael", af: "afel"
+   vt: "verbal tense" =
+      pf: "perfect", ipf: "imperfect", imp: "imperative",
+      inf: "infinitive", ptc: "participle"
+
+
+# The rules are applied on a fall-through basis, so their order is
+# important. The two sections for inflection and derivation are
+# independent, however.
+
+rules
+
+inflection
+
+   not exist(nme) :: -nu, -gn, -st
+   not exist(vbe) :: -vt, -vs, -ps
+
+   exist(emf) && not exist(nme) :: reject
+   exist(frv) && not exist(vbe) :: reject
+   exist(vix) && not exist(vbe) :: reject
+   exist(pfm) && not exist(vbe) :: reject
+   exist(pfx) && not exist(vbe) :: reject
+   exist(vbs) && not exist(vbe) :: reject
+
+   exist(nme) :: sp=subs, +nu, +gn, +st
+   nme == ">"  :: nu=sg, gn=f, st=abs
+   nme == "J=" :: nu=sg, gn=f, st=abs	# /aJ
+   nme == "T"  :: nu=sg, gn=f, st=cst	# /aT
+   nme == "JN" :: nu=pl, gn=m, st=abs
+   nme == "TJN":: nu=du, gn=m, st=abs   # 1Kings 18,32 S>(>/TJN
+   nme == "J"  :: nu=pl, gn=m, st=cst
+   nme == "N"  :: nu=pl, gn=f, st=abs
+   nme == "T=" :: nu=pl, gn=f, st=cst	# /AT
+   nme == "W" :: st=abs
+   nme == "WT" :: st=cst
+   nme == {"W", "WT"} && not exist(vbe) :: reject
+
+   exist(vbe) :: sp=verb, vo=act, vs=pe
+   vbe == "J"   :: gn=f
+   vbe == "JN"  :: gn=f, nu=sg	# [iJN
+   vbe == "JN=" :: gn=f, nu=pl	# [eJ"N
+   vbe == "N"   :: nu=pl	# [N  [NaN
+   vbe == "N="  :: gn=f, nu=pl	# [AN
+   vbe == "T"   :: nu=sg	# [eT
+   vbe == "T="  :: gn=m, nu=sg	# [T:
+   vbe == "T==" :: gn=f, nu=sg	# [aT
+   vbe == "TJ"  :: gn=f, nu=sg	# [T:J:
+   vbe == "TJN" :: gn=f, nu=pl	# [TeJN
+   vbe == "TWN" :: gn=m, nu=pl	# [TW^N
+   vbe == "W"   :: gn=m, nu=pl	# [W quiescent
+   vbe == "WN"  :: gn=m, nu=pl	# [uWN
+
+   exist(vbs) :: vs=af
+   exist(frv) :: vs=pa
+
+   emf == ">"   :: st=emph
+
+   vpm == p || pfx == ">T" || vix == "J" :: vo=pas
+
+   shared { not exist(pfm) && exist(vbe) && not exist(nme) :: vt=pf }
+      vbe == "" :: ps=third, nu=sg, gn=m
+      vbe == "T==" :: ps=third
+      vbe == "T=" :: ps=second
+      vbe == "TJ" :: ps=second
+      vbe == "T" :: ps=first
+      vbe == {"W", "WN"} :: ps=third
+      vbe == {"J", "JN="} :: ps=third, nu=pl
+      vbe == "TWN" :: ps=second
+      vbe == "TJN" :: ps=second
+      vbe == "N" :: ps=first		# [N  [N&N
+      vbe == {"JN", "N="} :: reject
+   end
+
+   shared { exist(pfm) && exist(vbe) && not exist(nme) :: vt=ipf }
+      shared { pfm == "N" :: ps=third }
+	 vbe == "" :: gn=m, nu=sg
+	 vbe != {"", "WN", "N="} :: reject
+      end
+      shared { pfm == "T=" :: ps=third }
+	 vbe == {""} :: gn=f, nu=sg
+	 vbe != "" :: reject
+      end
+      shared { pfm == "T" :: ps=second }
+	 vbe == "" :: gn=m, nu=sg
+	 vbe != {"", "JN", "WN", "N="} :: reject
+      end
+      pfm == ">" :: ps=first, nu=sg
+      pfm == "N=" :: ps=first, nu=pl
+      pfm == {">", "N="} && vbe != "" :: reject
+      pfm == "M" :: reject
+   end
+
+   # Imperative f,pl always derived from [JN=
+   shared {
+      pfm == "" && exist(vbe) && not exist(nme) :: vt=imp, ps=second
+   }
+      vbe == "" :: gn=m, nu=sg
+      vbe == "J" :: nu=sg
+      vbe != {"", "J", "WN", "W", "JN="} :: reject
+   end
+
+   shared { exist(vbe) && exist(nme) :: -ps }
+      # Pe`al infinitive and participle are distinguished from one
+      # another by the pfm "M" on the infinitive which is lacking in
+      # the participle.
+      shared { not exist(pfx) && not exist(vbs) && not exist(frv) }
+	 not exist(pfm) :: vt=ptc
+	 pfm == "M" :: vt=inf, -nu, -gn
+      end
+      # Non-pe`al infinitives are distinguished from non-pe`al
+      # participles by a "W" ending
+      shared { (exist(pfx) || exist(vbs) || exist(frv)) && pfm == "M" ::
+	 vt=ptc
+      }
+	 nme == {"W", "WT"} :: vt=inf, -nu, -gn
+      end
+      exist(pfm) && pfm != "M" :: reject
+      vbe != "" :: reject
+   end

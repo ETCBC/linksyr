@@ -1,0 +1,2391 @@
+####################################################################
+#                                                                  #
+#       Lexicon for Peshitta Syriac                                #
+#                                                                  #
+####################################################################
+
+#ident "@(#)syriac/lexicon	2.56 09/10/29"
+
+>B	17707:sp=subs:gn=m:gl=father
+>B=	10193:sp=subs:de=>B>:gl=produce of the earth
+>BD	13147:sp=verb:gl=perish, come to naught. APH destroy
+>BDN	15131:sp=subs:gn=m:gl=loss, perdition, destruction, ruin
+>BWB	20939:sp=subs:gn=m:gl=reed, flute, pipe, channel, canal
+>BJ>	17597:sp=subs:ls=prop:st=abs:gn=m:gl=Abijah
+>BJNDB	13567:sp=subs:ls=prop:st=abs:gn=m:gl=Abinadab
+>BJNCR	17041:sp=subs:ls=prop:st=abs:gn=m:gl=Abinashar
+>BJRM	1109:sp=subs:ls=prop:st=abs:gn=m:gl=Abiram
+>BJCG	3371:sp=subs:ls=prop:st=abs:gn=f:gl=Abishag
+>BJTR	12149:sp=subs:ls=prop:st=abs:gn=m:gl=Abiathar
+>BL	11867:sp=subs:ls=prop:st=abs:gl=Abel
+>BL=	12641:sp=verb:gl=PE ptc.pss. mourning, lamenting, ETHPE mourn
+>BL==	5441:sp=subs:gn=m:gl=mouring, lamentation, sorrow, calamity
+>BNJR	18839:sp=subs:ls=prop:st=abs:gn=m:gl=Abner
+>BR	6991:sp=subs:de=>BR>:gn=m:gl=lead
+>BRHM	2273:sp=subs:ls=prop:st=abs:gn=m:gl=Abraham
+>BCLWM	4493:sp=subs:ls=prop:st=abs:gn=m:gl=Absalom
+>GN	14653:sp=subs:gn=f:de=>GN>:gl=large bowl, crater, base of vessel
+>GR	1277:sp=subs:gn=m:gl=wage, fee, fare, reward
+>GR=	8387:sp=verb:gl=hire
+>GR==	10459:sp=subs:de=>GR>:gl=roof, housetop, top of altar
+>GRT	1249:sp=subs:gn=f:de=>GRT>:gl=letter, epistle
+>DWM	21031:sp=subs:ls=prop:st=abs:gl=Edom
+>DWMJ	6397:sp=adjv:ls=gntl:gl=Edomite
+>DWNJ>	1949:sp=subs:ls=prop:st=abs:gn=m:gl=Adonijah
+>DWNJRM	14387:sp=subs:ls=prop:st=abs:gn=m:gl=Adoniram
+>DM	6299:sp=subs:ls=prop:st=abs:gn=m:gl=Adam
+>DMT	1823:sp=subs:gn=f:de=>DMT>:gl=earth, soil
+>DN	19477:sp=subs:gn=f:de=>DN>:gl=ear, gills, handle, promontory, bay
+>DR	15173:sp=subs:gn=m:gl=threshing floor
+>DRMLK	7433:sp=subs:ls=prop:st=abs:gn=m:gl=Adrammelek
+>DC	21569:sp=subs:gn=m:gl=sort, species, pl. various, of many kinds
+>HRWN	8849:sp=subs:ls=prop:st=abs:gn=m:gl=Aaron
+>W	20219:sp=conj:gl=or, either
+>WH	21893:sp=intj:gl=Ah!, Oh!, Alas!
+>WXDT	20071:sp=subs:gn=f:de=>WXDT>:gl=enigma, riddle
+>WL	13309:sp=subs:ls=prop:st=abs:gn=m:gl=Evil(-Merodach)
+>WLJT	9967:sp=subs:de=>WLJT>:gn=f:gl=lament, wailing, mourning
+>WLYN	10799:sp=subs:gn=m:gl=distress, calamity, siege
+>WMN	19051:sp=subs:gn=m:gl=workman, craftsman
+>WMNW	10883:sp=subs:gn=f:gl=art, craft, workmanship, skill
+>WMT	16553:sp=subs:de=>WMT>:gl=race, nation, people, class, genus
+>WN	2371:sp=intj:gl=interj of calling, imploring, sorrow
+>WPJR	4523:sp=subs:ls=prop:st=abs:gl=Ophir
+>WYR	7561:sp=subs:gn=m:gl=storehouse
+>WRX	173:sp=subs:gn=f:gl=way, road, custom
+>WRJ	11279:sp=subs:gn=m:de=>WRJ>:gl=stall, crib, manger
+>WRJ=	11280:sp=subs:ls=prop:st=abs:gn=m:gl=Uri
+>WRJ>	227:sp=subs:ls=prop:st=abs:gn=m:gl=Uriah, Urijah
+>WRJT	18211:sp=subs:de=>WRJT>:gl=the law, Pentateuch
+>WRK	12451:sp=subs:gn=m:de=>WRK>:gl=length
+>WR<	14869:sp=subs:gn=m:gl=meeting, encounter
+>WRCLM	16987:sp=subs:ls=prop:st=abs:gn=f:gl=Jerusalem
+>ZL	18913:sp=verb:gl=go, walk
+>X	4973:sp=subs:de=>X>:gl=brother
+>XB	16451:sp=subs:ls=prop:st=abs:gn=m:gl=Ahab
+>XD	3323:sp=verb:gl=take, seize on, lay hold of, ETHPE (>TTXD) be seized, PA put in possession, shut closely, APH make lay hold, kindle, set fire
+>XW	15259:sp=subs:de=>XWT>:gn=f:gl=brotherhood, fellowship
+>XZ	5527:sp=subs:ls=prop:st=abs:gn=m:gl=Ahaz
+>XZJ>	1049:sp=subs:ls=prop:st=abs:gn=m:gl=Ahaziah
+>XJ>	79:sp=subs:ls=prop:st=abs:gn=m:gl=Ahijah
+>XJLWD	613:sp=subs:ls=prop:st=abs:gn=m:gl=Ahilud
+>XJM<Y	13591:sp=subs:ls=prop:st=abs:gn=m:gl=Ahimaaz
+>XJNDB	9013:sp=subs:ls=prop:st=abs:gn=m:gl=Ahinadab
+>XJQM	8231:sp=subs:ls=prop:st=abs:gn=m:gl=Ahikam
+>XR	1697:sp=verb:gl=APH tarry, delay, SH be slack, ESHTA delay, remain
+>XRJ	8563:sp=adjv:gl=latter, last
+>XRJN	18059:sp=adjv:gl=other, next
+>VM	16829:sp=verb:gl=close, make compact
+>JD>	4567:sp=inrg:gn=f:gl=who, which, what
+>JWB	6133:sp=subs:ls=prop:st=abs:gn=m:gl=Job
+>JZBL	13759:sp=subs:ls=prop:st=abs:gn=f:gl=Jezebel
+>JZGD	1259:sp=subs:gn=m:de=>JZGD>:gl=ambassador, envoy
+>JZR<JL	1123:sp=subs:ls=prop:st=abs:gl=Jezreel
+>JZR<LJ	16349:sp=adjv:ls=gntl:gl=Jezreelite
+>JK	7583:sp=prep:ls=pcon:gl=as, almost, about
+>JK>	6673:sp=inrg:gl=where, whither
+>JKW	18049:sp=advb:gl=where is he, why is it (contr. of >JK> + HW)
+>JKN	1877:sp=advb:ls=pint:gl=how, as, so that
+>JL	4001:sp=subs:gl=god
+>JL=	2609:sp=subs:de=>JL>:gl=stag, hart
+>JL==	4002:sp=subs:ls=prop:st=abs:gl=El (divine name)
+>JLWN	2333:sp=subs:ls=prop:st=abs:gl=Elon(-beth-hanan)
+>JLJN	8053:sp=inrg:nu=pl:gl=who, which, what
+>JLN	11317:sp=subs:gl=tree, tree trunk
+>JLT	7219:sp=subs:ls=prop:st=abs:gl=Elath
+>JMK>	7121:sp=advb:ls=pinr:gl=whence? where?
+>JMM	6367:sp=subs:gn=m:gl=the day, the daytime
+>JN	17239:sp=conj:gl=yes, if, whether, but
+>JN>	4231:sp=inrg:gn=m:gl=who, which, what
+>JSXQ	101:sp=subs:ls=prop:st=abs:gn=m:gl=Isaac
+>JSKR	16943:sp=subs:ls=prop:st=abs:gn=m:gl=Issachar
+>JSRJL	587:sp=subs:ls=prop:st=abs:gl=Israel
+>JQR	19961:sp=subs:gl=honour, glory
+>JR	14891:sp=subs:ls=prop:st=abs:gl=Iyor
+>JR=	20921:sp=subs:de=>JR>:gl=pot, cauldron
+>JRJXW	3163:sp=subs:ls=prop:st=abs:gl=Jericho
+>JCJ	12973:sp=subs:ls=prop:st=abs:gn=m:gl=Jesse
+>JCM<JL	9343:sp=subs:ls=prop:st=abs:gn=m:gl=Ishmael
+>JT	653:sp=subs:ls=nmex:gl=there is
+>JTB<L	9787:sp=subs:ls=prop:st=abs:gn=m:gl=Ethbaal
+>KWL	9439:sp=subs:de=>KWL>:gn=m:gl=eater, glutton
+>KWT	4243:sp=prep:gl=as, such as, like
+>KXD>	20149:sp=advb:gl=at the same time, likewise, unanimously
+>KJ	6733:sp=subs:ls=prop:st=abs:gn=f:gl=Aki #Abi-Hebrew
+>KJC	19433:sp=subs:ls=prop:st=abs:gl=Achish
+>KL	2999:sp=verb:gl=eat, consume
+>KSDR>	14051:sp=subs:gn=f:gl=gallery, corridor, balcony, cell
+>KSNJ	20353:sp=adjv:gl=foreign, strange, unusual
+>KSNJW	12853:sp=subs:de=>KSNJWT>:gn=f:gl=condition of stranger or traveller
+>KP	17231:sp=verb:gl=have regard to, be careful, urge, PA urge, incite
+>L>	5099:sp=conj:gl=if not, unless
+>L>=	16993:sp=subs:ls=prop:st=abs:gn=m:gl=Elah
+>LH	1187:sp=subs:gn=m:gl=god
+>LHT	6689:sp=subs:f=gn:de=>LHT>:gl=a goddess
+>LW	2381:sp=conj:gl=if, Oh that!
+>LWY	7867:sp=subs:de=>LWY>:gn=m:gl=oppressor, besieger, torturer
+>LWT	18661:sp=subs:ls=prop:st=abs:gl=Eloth
+>LJ>	19751:sp=subs:ls=prop:st=abs:gn=m:gl=Elijah
+>LJD<	19531:sp=subs:ls=prop:st=abs:gn=m:gl=Eliada
+>LJXRP	20023:sp=subs:ls=prop:st=abs:gn=m:gl=Elihoreph
+>LJ<ZR	2591:sp=subs:ls=prop:st=abs:gn=m:gl=Eliazar
+>LJQJM	19387:sp=subs:ls=prop:st=abs:gn=m:gl=Eliakim
+>LJC<	523:sp=subs:ls=prop:st=abs:gn=m:gl=Elisha
+>LJT	20129:sp=subs:de=>LJT>:gn=f:gl=demon in form of wailing woman, fat tail of sheep
+>LJTN	8623:sp=subs:ls=prop:st=abs:gn=m:gl=Elnathan #Hebrew
+>LP	4201:sp=subs:ls=card:gl=thousand
+>LP=	9203:sp=subs:gn=f:gl=ship, galley
+>LY	9257:sp=verb:gl=be pressing, straiten, hem in
+>LYJ>	3511:sp=subs:ls=prop:st=abs:gn=m:gl=Azaliah #Hebrew
+>M	13829:sp=subs:gn=f:gl=mother
+>M>	1279:sp=subs:gn=f:gl=forearm, cubit
+>MWN	12329:sp=subs:ls=prop:st=abs:gn=m:gl=Amon
+>MWY	12473:sp=subs:ls=prop:st=abs:gn=m:gl=Amoz
+>MWYJ>	20789:sp=subs:ls=prop:st=abs:gn=m:gl=Amaziah
+>MWRJ	8179:sp=adjv:ls=gntl:gl=Amorite
+>MJN	16787:sp=advb:ls=pint:gl=amen, verily
+>MJN>JT	16481:sp=advb:gl=continually, unceasingly
+>MLK	1553:sp=subs:ls=prop:st=abs:gl=Amalek
+>MN	8761:sp=verb:gl=make firm, PAI believe
+>MNN	3821:sp=subs:ls=prop:st=abs:gl=Amnan #Abana Hebrew
+>MR	3593:sp=verb:ls=quot:gl=say
+>MR=	6229:sp=subs:gn=m:gl=lamb
+>MT	59:sp=subs:gn=f:gl=handmaid
+>MTJ	4691:sp=advb:gl=when, at that time
+>N	18379:sp=conj:ls=pint:gl=if, O!
+>N>	18583:sp=pron:ls=pers:ps=first:nu=sg:gl=I
+>NWN	12263:sp=pron:ls=pers:ps=third:gn=m:nu=pl:gl=they, them
+>NWC	6659:sp=subs:ls=prop:st=abs:gn=m:gl=Enosh
+>NX	8893:sp=verb:gl=ETHPA groan, ETTAPH groan, sign, lament
+>NJ	229:sp=subs:ls=prop:st=abs:gn=m:gl=Ani
+>NJN	5413:sp=pron:ls=pers:ps=third:gn=f:nu=pl:gl=they, them
+>NP	1483:sp=subs:gn=f:gl=nostril, countenance
+>NQT	9973:sp=subs:de=>NQT>:gn=f:gl=groan, sorrowful sighing
+>NC	7411:sp=subs:gn=m:gl=man, human, mortal
+>NT	1601:sp=pron:ls=pers:ps=second:gn=m:nu=sg:gl=you
+>NTWN	10627:sp=pron:ls=pers:ps=second:gn=m:nu=pl:gl=you
+>NTJ	11941:sp=pron:ls=pers:ps=second:gn=f:nu=sg:gl=you
+>NTT	10987:sp=subs:gn=f:gl=woman, wife
+>S	10133:sp=subs:gn=m:gl=myrtle
+>S>	11177:sp=subs:ls=prop:st=abs:gn=m:gl=Asa
+>S>=	7817:sp=subs:gn=f:gl=wall, partition, inner wall
+>S>==	7253:sp=verb:gl=PA heal, restore, ETHPE be healed
+>SD	3547:sp=subs:gn=m:de=>SD>:gl=pillows
+>SWR	3467:sp=subs:gn=m:de=>SWR>:gl=band, chain, handcuffs, imprisonment
+>SVW	2749:sp=subs:de=>SVW>:gn=m:gl=porch, portico
+>SVWN	9719:sp=subs:gn=m:gl=column, pillar, support, prop
+>SJW	5003:sp=subs:gn=f:gl=art of healing, remedy, cure
+>SKWPT	9817:sp=subs:gn=f:de=>SKWPT>:gl=threshold, doorpost, vestibule, guard room
+>SKJMTN	10631:sp=adjv:de=>SKJMTN>:gl=dissembling, hypocritical, honest, honourable
+>SP	18493:sp=subs:ls=prop:st=abs:gn=m:gl=Asaph
+>SR	3851:sp=verb:gl=bind
+><P>	21817:sp=advb:gl=double
+>P	18869:sp=conj:gl=also, and, truly, even
+>PDN	10847:sp=subs:de=>PDN>:gn=m:gl=palace, citadel
+>PWDJ	12983:sp=subs:gl=flute #PS Thesaurus
+>PL>	11393:sp=conj:gl=not even, nor
+>P<	14153:sp=subs:gn=f:de=>P<>:gl=hyena
+>PQ	4133:sp=subs:ls=prop:st=abs:gl=Aphek
+>PRJM	7309:sp=subs:ls=prop:st=abs:gl=Ephraim
+>PRTJ	20959:sp=adjv:ls=gntl:gl=Ephraimite
+>RB<	4789:sp=subs:ls=card:gl=four
+>RB<JN	769:sp=subs:ls=card:gl=forty
+>RB<M>>	12511:sp=subs:ls=card:de=>RB<:gl=four hundred
+>RB<SR	257:sp=subs:ls=card:de=>RB<:gl=fourteen
+>RGWB	7537:sp=subs:ls=prop:st=abs:gl=Argob
+>RGWBL	11261:sp=subs:de=>RGWBL>:gl=stonemason
+>RDV	15373:sp=subs:ls=prop:st=abs:gl=Ardat #Ararat
+>RDJKL	571:sp=subs:gn=m:de=>RDJKL>:gl=stonemason
+>RDMLK	18443:sp=subs:ls=prop:st=abs:gl=Adrammelech
+>RWD	11681:sp=subs:ls=prop:st=abs:gl=Arwad #Edom
+>RWN	10243:sp=subs:gl=ark, chest, strong box
+>RZ	3061:sp=subs:de=>RZ>:gn=m:gl=cedar
+>RZ=	14303:sp=subs:gn=m:gl=secret, council, mystery, magic rites
+>RZPT	19697:sp=subs:de=>RZPT>:gl=hammer, mallet
+>RX	2089:sp=subs:de=>RX>:gn=m:gl=wayfarer, traveller
+>RJ	5821:sp=subs:de=>RJ>:gl=lion, lioness, Leo
+>RJW	7741:sp=subs:gn=f:de=>RJ>:gl=lioness
+>RK	4597:sp=verb:gl=be long, be prolonged, lengthen
+>RM	20897:sp=subs:ls=prop:st=abs:gl=Aram
+>RM>JT	7759:sp=advb:gl=in Aramaic
+>RMJ	21613:sp=adjv:ls=gntl:gl=Aramean
+>RMJ>	9041:sp=subs:ls=prop:st=abs:gn=m:gl=Jeremiah
+>RMLT	19141:sp=subs:gn=f:de=>RML:gl=widow
+>RNWN	3067:sp=subs:ls=prop:st=abs:gl=Arnon
+>R<	4861:sp=subs:gn=f:gl=earth, land
+>R<=	10979:sp=verb:gl=meet, encounter
+>CD	13513:sp=verb:gl=shed, pour out
+>CWP	5431:sp=subs:gl=user of charms and incantations, snake charmer
+>CJM>	16633:sp=subs:ls=prop:st=abs:gl=Ashima
+>CJR	5639:sp=subs:ls=prop:st=abs:gn=m:gl=Asher
+>C<J>	10651:sp=subs:ls=prop:st=abs:gn=m:gl=Isaiah
+>CT	14557:sp=subs:gn=f:gl=fever
+>CTWP	14009:sp=intj:gl=O that! would that!
+>T	13099:sp=subs:gn=f:gl=sign, token
+>T>	13093:sp=verb:gl=come
+>TWN	15329:sp=subs:de=>TWN>:gn=m:gl=oven, furnace
+>TWR	4327:sp=subs:ls=prop:st=abs:gl=Assyria
+>TWRJ	5119:sp=adjv:ls=gntl:gl=Assyrian
+>TML	20183:sp=advb:gl=yesterday
+>TN	991:sp=subs:gn=f:de=>TN>:gl=an ass
+>TN=	5531:sp=subs:ls=prop:st=abs:gn=m:gl=Ethan
+>TR	17789:sp=subs:gn=m:gl=place, region
+B	10289:sp=prep:gl=in
+B>C	3083:sp=verb:gl=be evil, APH do evil, hurt
+BB>	1193:sp=subs:gn=f:gl=pupil of the eye
+BBL	10513:sp=subs:ls=prop:st=abs:gl=Babel
+BGBWG	15319:sp=subs:gn=m:de=BGBWG>:gl=narrow necked jug
+BGN	8747:sp=verb:gl=cry, complain, appeal, PA cry, call for help
+BD	8748:sp=verb:gl=mix, PALPAL confuse, toss about, trouble, ETHPALPAL be confused, be tossed about, be troubled
+BD>	13681:sp=verb:gl=feign, devise
+BDL	13581:sp=verb:de=BDL,BJDL:gl=PAIEL speak foolishly, invent folly, tell senseless tales, ETHPAIAL play the fool, totter, stagger
+BDQ	17729:sp=verb:gl=search out, repair, show
+BDQ=	12979:sp=subs:gn=m:de=BDQ>:gl=searching out, repairing, showing forth
+BDR	6971:sp=verb:gl=scatter, PA scatter abroad, disperse, ETHPA be scattered abroad, dispersed
+BH	7071:sp=verb:de=BHBH:gl=scatter, ETHPALPAL be confused, perlexed
+BHWTTN	21319:sp=adjv:de=BHWTTN>:gl=shamefaced, modest
+BHT	20011:sp=verb:gl=be ashamed, stand in awe
+BHTT	10891:sp=subs:gn=f:gl=shame, disgrace
+BW>	14737:sp=verb:de=BJ>:gl=PA console, comfort, ETHPA be comforted
+BWXCJN	8599:sp=subs:de=BWXCJN>:gl=tender grass, young blades of corn, first growth of crops
+BWJN	8297:sp=subs:gn=m:gl=understanding, discernment
+BWKR	773:sp=subs:gn=m:de=BWKR>:gl=firstborn
+BWN	19793:sp=verb:gl=PA show, point out, give instruction, discern, ETHPA notice, consider, have discretion
+BWRKT	8867:sp=subs:gn=f:de=BWRKT>:gl=blessing, gift, present
+BWCL	17483:sp=subs:gn=m:de=BWCL>:gl=pottage, boiled or cooked food
+BWT	9679:sp=verb:gl=pass the night
+BZWZ	19501:sp=subs:gl=spoiler, destroyer
+BZZ	18311:sp=verb:de=BZ:gl=spoil, plunder, ETHPEEL be despoiled, pillaged, PAEL plunder with violence, APHEL spoil, despise, PALPEL waste, seize again and again, ETHPALPEL be wasted, be seized again and again
+BZX	6781:sp=verb:gl=PA mock, scoff at, insult
+BZ<	16411:sp=verb:gl=cleave, break, pierce, ETHPE be pierced through, PA cut or scratch deeply, burst through, ETHPA burst open, be driven asunder
+BZQT	673:sp=subs:ls=prop:st=abs:gl=Bozkath
+BZT	7687:sp=subs:gn=f:gl=spoil,robbery
+BXR	6551:sp=verb:gl=try, prove, examine, ETHPE be tried, prove oneself
+BVL	593:sp=verb:gl=cease work, come to an end, PA cause to cease, bring to an end
+BVL=	8737:sp=subs:gn=m:de=BVL>:gl=carved ornament
+BVL==	2719:sp=adjv:gl=idle, vain, empty
+BVL>JT	21059:sp=advb:gl=without any object, needlessly
+BVLN	17921:sp=subs:gn=m:gl=suspension of labour, leisure, idleness
+BVM>	4591:sp=subs:gn=f:gl=oak, terebinth
+BVN	5801:sp=verb:gl=conceive, bear
+BVN=	6067:sp=adjv:de=BVN>:gl=pregnant
+BJNJ	12671:sp=prep:gl=between, among, within
+BJC	1847:sp=adjv:gl=evil
+BJCW	21661:sp=subs:de=BJCWT>:gn=f:gl=evil, harm, wickedness, envy
+BJCN	18191:sp=subs:ls=prop:st=abs:gl=Bashan
+BJT	15467:sp=subs:gn=m:de=BJT>:gl=house
+BJT=	15468:sp=verb:de=BJTJ:gl=(PALI) bring home, admit into a family, ETHPALI make a friend of, become intimate with, be related
+BJT>JL	14369:sp=subs:ls=prop:st=abs:gl=Bethel
+BJTGN	9221:sp=subs:ls=prop:st=abs:gl=Bethgan
+BK>	3361:sp=verb:gl=weep
+BKR	11093:sp=subs:gl=early, first-ripe
+BKT	7507:sp=subs:gn=f:de=BKT>:gl=weeping, mourning, lamentation
+BL	179:sp=subs:de=BL>:gn=m:gl=heart
+BL>	11621:sp=verb:gl=grow old, waste away, ETHPE be consumed, PA fail with age, ETHPA fail, APH cause to waste away
+BLDN	19381:sp=subs:ls=prop:st=abs:gn=m:gl=Baladan
+BLJ	12157:sp=conj:gl=without, for want of (used with MN)
+BLL	11521:sp=verb:de=BL:gl=confuse, confound, PALPEL confound, confuse, mar, spoil, ETHPALPAL be confused, be disordered, be disturbed, be troubled
+BLM	8009:sp=subs:gn=m:de=BLM>:gl=halter, headstall, bridle
+BL<D	18911:sp=prep:gl=without
+BN>	11003:sp=verb:gl=build, PA restore, edify
+BNWT	16931:sp=subs:ls=prop:st=abs:gl=Benoth
+BNJ	14423:sp=subs:de=BNJ>:gl=builder, founder
+BNJ>	149:sp=subs:ls=prop:st=abs:gn=m:gl=Benaiah
+BNJMJN	16703:sp=subs:ls=prop:st=abs:gn=m:gl=Benjamin
+BNJN	10321:sp=subs:gn=m:gl=building
+BS	7873:sp=verb:de=BSBS:gl=PALPEL tear in pieces, outrage, ETHPALPAL be torn in pieces
+BS>	2111:sp=verb:gl=disdain, despise, ETHPE be despised, neglected, PA despise, neglect, ETHPA be despised, APH despise
+BSJM>JT	1657:sp=advb:gl=pleasantly, kindly, moderately
+BSM	19309:sp=subs:gn=m:gl=sweet spices, ointment, incence
+BSM=	10607:sp=verb:gl=be sweet, fragrant, PA make cheerful, sweeten, perfume, ETHPA refresh oneself, APH yield fragrance
+BSMT	14489:sp=subs:ls=prop:st=abs:gn=f:gl=Basemath
+BSR	6983:sp=subs:gn=m:gl=flesh, body
+BSR=	1907:sp=verb:gl=despise, scorn, ETHPE ETHPA be despised, PA despise
+BSTR	15791:sp=subs:ls=ppre:gn=m:gl=the back
+B<>	20693:sp=verb:gl=seek
+B<W	8537:sp=subs:gn=f:gl=request, petition, intercession
+B<Z	761:sp=subs:ls=prop:st=abs:gn=m:gl=Boaz
+B<JR	14561:sp=subs:de=B<JR>:gl=sheep, cattle, beasts
+B<L	5443:sp=subs:gl=lord, owner, head
+B<LDBB	20201:sp=subs:de=B<L:gl=adversary
+B<LDBBW	9479:sp=subs:de=B<L:gn=f:gl=enmity
+B<LWT	15809:sp=subs:ls=prop:st=abs:gl=Baloth
+B<LZBWB	43:sp=subs:ls=prop:st=abs:gl=Baalzeboth
+B<N>	2753:sp=subs:ls=prop:st=abs:gn=m:gl=Baana
+B<R	683:sp=verb:gl=pluck, graze, be cruel, PA pluck, root up, search diligently, PAL make fierce
+B<C>	7459:sp=subs:ls=prop:st=abs:gn=m:gl=Baasha
+BY>	12541:sp=verb:gl=PE & PA search into, inquire into, APH inquire, desire, demand
+BYJRW	3797:sp=subs:de=BYJRWT>:gn=f:gl=fewness, meanness, paucity, deficiency
+BYR	1307:sp=verb:gl=take away, subtract, lessen
+BQ>	16979:sp=verb:gl=try, ETHPE be tried, PA prove, EHTPA prove, consider
+BR	8101:sp=subs:gn=m:gl=male offspring
+BR=	14723:sp=subs:gn=m:gl=open country
+BR==	7238:sp=verb:de=BWR:gl=lie uncultivated, lie niglected, APH leave uncultivated, lay waste, ETHPAUEL be amazed, be confused
+BR>	7237:sp=verb:gl=create, ETHPE be created
+BR>=	6841:sp=verb:gl=PA leave out, omit, remove
+BR>SJR>	2003:sp=subs:ls=prop:st=abs:gn=m:gl=Ben Sira
+BRD	20107:sp=adjv:gl=speckled, spotted
+BRDQR	3889:sp=subs:ls=prop:st=abs:gn=m:gl=Bardakar #Bendeker
+BRHDD	5717:sp=subs:ls=prop:st=abs:gn=m:gl=Barhadad #Benhadad
+BRHNWM	5791:sp=subs:ls=prop:st=abs:gl=Barhinom
+BRWK	7043:sp=subs:gn=f:gl=knee, kneeling, genuflexion
+BRZLJ	9767:sp=subs:ls=prop:st=abs:gn=m:gl=Barzillai
+BRXWR	1583:sp=subs:ls=prop:st=abs:gn=m:gl=Barhur #Benhur
+BRXSD	15671:sp=subs:ls=prop:st=abs:gn=m:gl=Barhesed #Benhesed
+BRJ	8069:sp=adjv:de=BRJ>:gl=outer, distant, extraneous
+BRK	1471:sp=verb:gl=kneel, bow down, PA bless
+BRM	2953:sp=conj:gl=but, but yet, however, nevertheless
+BRCB<	877:sp=subs:ls=prop:st=abs:gl=Beersheba
+BRT	15451:sp=subs:gn=f:de=BR:gl=female offspring
+BCL	8377:sp=verb:gl=ripen, grow, boil
+BTWL	14071:sp=adjv:de=BTWL,BTWL>:gl=virgin, celibate, chaste, maiden 
+BTWLW	17669:sp=subs:de=BTWLWT>:gn=f:gl=chastity, virginity, celibacy
+BTR	19207:sp=prep:gl=after, following
+BTCB<	21493:sp=subs:ls=prop:st=abs:gn=f
+G>>	727:sp=adjv:gl=delightful, pleasant, gay, glorious, stately
+G>>=	5171:sp=verb:gl=PA rejoice, take pleasure, ETHPA bear oneself grandly, APH treat luxuriously
+G>WTN	20551:sp=adjv:de=G>WTN>:gl=proud
+G>JW	12007:sp=subs:de=G>JW>:gn=f:gl=state, stateliness, magnificence
+G>R	16487:sp=subs:gn=m:de=G>R>:gl=arrow, dart, thunderbolt
+G>R>	16061:sp=subs:ls=prop:st=abs:gn=m:gl=Gera
+GB	17837:sp=subs:gn=m:gl=side, see GNB #Noel par.99
+GB>	14479:sp=verb:gl=choose
+GBWT	21487:sp=subs:ls=prop:st=abs:gn=m:gl=Genubath
+GBJN	4733:sp=subs:de=GBJN>:gn=m:gl=eyebrow
+GBJT	7477:sp=subs:de=GBJT>:gn=f:gl=choice, election, tribute
+GBL	21323:sp=verb:gl=form, fashion, mould, mix
+GBL=	14741:sp=subs:ls=prop:st=abs:gl=Gebal
+GB<	9613:sp=subs:ls=prop:st=abs:gl=Geba
+GB<WN	18401:sp=subs:ls=prop:st=abs:gl=Gibeon
+GBR	4273:sp=subs:gn=m:gl=man
+GBR=	421:sp=verb:gl=PA come man's estate, strengthen, embolden, ETHPA be grown up, be valiant
+GBR==	4274:sp=subs:ls=prop:st=abs:gn=m:gl=Geber #Hebrew
+GBRW	11251:sp=subs:de=GBRWT>:gn=f:gl=vigour, force, manhood, virility
+GGRN	2017:sp=adjv:gl=gluttonous
+GGRT	18353:sp=subs:de=GGRT>:gn=f:gl=throat
+GD	18287:sp=subs:ls=prop:st=abs:gl=Gad
+GD=	21149:sp=verb:gl=weave, cut off, put an end to
+GDW	3413:sp=subs:ls=prop:st=abs:gn=m:gl=Iddo #Hebrew
+GDWD	12919:sp=subs:gn=m:gl=an unmarried boy
+GDXPR	19181:sp=subs:ls=prop:st=abs:gl=Gathhepher #Hebrew
+GDJ	6277:sp=subs:ls=prop:st=abs:gn=m:gl=Gadi
+GDL	10091:sp=verb:gl=twist, plait, interweave
+GDLJ>	5897:sp=subs:ls=prop:st=abs:gn=m:gl=Gedaliah
+GDNP	21997:sp=subs:gn=m:de=GDNP>:gl=rebatement, ledge, crag, jutting out part of building
+GDP	1759:sp=verb:gl=PA revile, blaspheme
+GDC	2389:sp=verb:gl=heap up, chance, happen
+GHN	17681:sp=verb:gl=bend, bow, stoop
+GHR	3457:sp=adjv:gl=dim-sighted, lacking sight, wanting insight
+GW	10271:sp=subs:ls=ppre:gn=m:gl=the inside, inward parts
+GW>	13333:sp=verb:de=GWJ:gl=PA take in, bring in, admit, pass.ptc. admitted to counsel, instructed, beyond, remote, innermost, secret, esoteric, ETHPAEL go far in, enter, penetrate
+GWB	8863:sp=subs:gn=m:gl=well, cistern, pit, den
+GWB>	14947:sp=subs:gn=f:de=GWB:gl=beam, joist, plank
+GWD	9791:sp=subs:ls=prop:st=abs:gl=Gur #Hebrew
+GWDP	10861:sp=subs:gn=m:gl=blasphemy, reviling
+GWZLT	12841:sp=subs:de=GWZLT>:gn=f:gl=flame, fiery coal, heat
+GWZN	7681:sp=subs:ls=prop:st=abs:gl=Gozan
+GWXK	16067:sp=subs:de=GWXK>:gn=m:gl=laughter, sport, ridicule
+GWJ	18679:sp=adjv:gl=inner, internal, further, remote
+GWLJD	11987:sp=subs:ls=prop:st=abs:gn=m:gl=Goliath
+GWMY	12269:sp=subs:de=GWMY>:gn=m:gl=pit, pitfall, trench
+GWMR	6079:sp=subs:de=GWMR>:gn=m:gl=perishing, slaughter
+GWN	19777:sp=subs:gn=m:gl=colour, appearance
+GWS	13159:sp=subs:de=GWS>:gl=a place of refuge, asylum
+GW<	18803:sp=intj:gl=pooh! (contempt)
+GW<LN	15107:sp=subs:gn=m:gl=deposit, trust, charge
+GWPN	19457:sp=subs:gn=f:de=GWPN>:gl=vine
+GWR	6101:sp=subs:gn=m:de=GWR>:gl=adultery
+GWR=	6553:sp=verb:gl=commit adultery, PA, APH commit adulter, ETHPA go a whoring
+GZ	5659:sp=subs:gn=m:de=GZ>:gl=treasure, treasury
+GZ>	13331:sp=verb:gl=PA bereave, deprive
+GZ>=	20479:sp=subs:ls=prop:st=abs:gn=m:gl=Uzza #Hebrew
+GZBR	857:sp=subs:gn=m:de=GZBR>:gl=treasurer, steward
+GZJRT	13337:sp=subs:de=GZJRT>:gn=f:gl=decree, sentence, ordinance,partition, split wood
+GZR	1549:sp=subs:ls=prop:st=abs:gl=Gezer
+GZR=	5407:sp=verb:gl=determine, decree, circumcise
+GZR==	19333:sp=subs:gn=m:de=GZR>:gl=surgery, judgment, flock, sheepfold
+GZRT	17099:sp=subs:de=GZRT>:gn=f:gl=island
+GXZJ	14083:sp=subs:ls=prop:st=abs:gn=m:gl=Gehazi
+GXK	21019:sp=verb:gl=laugh, be merry, dance
+GJGL	2689:sp=subs:gn=f:gl=wheel, round stone, circle, ring
+GJXWN	11437:sp=subs:ls=prop:st=abs:gl=Gihon
+GJS	18329:sp=subs:gn=m:de=GJS>:gl=band of robbers, a foray
+GJR	5689:sp=conj:gl=for, but, indeed, however
+GL>	19927:sp=verb:de=GL>,GLWJ:gl=uncover, ETHPE be uncovered, uncover oneself, PA reveal, lead or go into captivity, ETHPA be led into captivity, PAUEL carry away, lead into captivity, go into exile, ETHPAUEL be carried into captivity, be exiled, remove from one place to another, APH uncover, bring forth
+GLGL> 	367:sp=subs:ls=prop:st=abs:gl=Gilgal
+GLW	2789:sp=subs:de=GLWT>:gl=captivity, exiles
+GLWZ	4649:sp=adjv:de=GLWZ>:gl=unjust, spoiler
+GLZ	2801:sp=verb:gl=cheat, purloin, seize, ETHPE be deprived
+GLJD	17431:sp=subs:de=GLJD>:gn=m:gl=ice, crystal
+GLJL>	5503:sp=subs:ls=prop:st=abs:gl=Galilee
+GLJN	12497:sp=subs:de=GLJN>:gn=m:gl=revelation, appearance, manifestation
+GLL	13469:sp=verb:de=GL,GWL:gl=be in a state of motion, be put in motion, stir, ptc.pss. round, PA surge, swell, ETHPAEL be moved, be tossed, be rolled about, ETHPALPAL be made round, be wreathed, be twirled about, APH roll, unfold, cast out, ejct, reject, ETHTAPH be rejected
+GLL=	7079:sp=subs:gn=f:de=GLL>:gl=wady, ground liable to be flooded
+GL<D	11789:sp=subs:ls=prop:st=abs:gl=Gilead
+GL<DJ	601:sp=adjv:ls=gntl:gl=Gileadite
+GLP	2099:sp=verb:gl=carve, engrave, adorn, fashion
+GLP=	1979:sp=subs:gn=m:de=GLP>:gl=engraving,embossing
+GMWRJ	1217:sp=subs:de=GMWRJ>:gn=m:gl=end, destruction
+GMWRT	419:sp=subs:de=GMWRT>:gn=f:gl=coal, live coal, lava, ulcers, carbuncles
+GML	271:sp=subs:gl=camel, dromedary
+GMLX	10691:sp=subs:ls=prop:st=abs:gl=Gamlah #Hebrew valley of salt
+GMR	5939:sp=verb:gl=finish, accomplish, PA make perfect, bring to an end
+GN>	7297:sp=verb:gl=lie down, withdraw, PA blame, find fault, rebuke, APH make recline, conceal oneself, withdraw
+GNB	9397:sp=subs:gl=bank, shore
+GNB=	7589:sp=verb:gl=steal, do secretly, conceal, deceive
+GNBR	7393:sp=adjv:gl=mighty, strong
+GNBRW	12917:sp=subs:gn=f:de=GNBRWT>:gl=manliness, fortitude, heroism
+GNJ	13163:sp=subs:gn=m:de=GNJ>:gl=hiding, concealing, secret place
+GNJT	5011:sp=subs:ls=prop:st=abs:gn=m:gl=Ginath #Hebrew
+GNN	15607:sp=verb:de=GN:gl=APH make descend, rest upon, cover with hand, protect
+GNS	18301:sp=subs:gn=m:gl=family, race, nation, order, sort, kind
+GNSN	5281:sp=subs:de=GNS>:gn=m:gl=family, nation, sort
+GNT	10499:sp=subs:gn=f:de=GNT>:gl=garden
+G<T	4603:sp=subs:de=G<T>:gn=f:gl=bellow, shout, call
+GP	15649:sp=subs:gn=m:gl=wing
+GPT	21523:sp=subs:gn=f:de=GPT>:gl=vine
+GR>	11969:sp=verb:gl=trickle down, be dragged away, PA provoke, incite
+GRB	2417:sp=subs:gn=m:de=GRB>:gl=leprosy
+GRB=	157:sp=subs:gn=m:gl=leper
+GRB==	15619:sp=verb:gl=become leprous
+GRBJ	11971:sp=subs:gn=f:gl=the north wind, the north
+GRG	20161:sp=verb:gl=PA provoke, entice
+GRD	6263:sp=verb:gl=scrape, PALI be wanting, be deprived of
+GRM	20639:sp=subs:gn=m:gl=bone, stone of fruit, tusks
+GRP	14759:sp=verb:gl=rush, overflow, seize, ETHPE be seized, APH overflow, overwhelm
+GCWM	13877:sp=subs:gn=m:gl=body
+GCC	13878:sp=verb:de=GC:gl=touch, feel, handle, embrace, spy, explore, try, ETHPE be touched, be sounded, be tangible, be palpable, be apprehended, APH touch, handle, PALPEL grope
+GT	15391:sp=subs:ls=prop:st=abs:gl=Gath
+D	7789:sp=prep:ls=pcon:gl=(relative)
+D>B	16417:sp=subs:de=D>B>:gn=m:gl=he wolf
+D>BT	16693:sp=subs:de=D>B>:gn=f:gl=she wolf
+DB	13177:sp=subs:de=DB:gl=bear
+DBWRJT	9833:sp=subs:de=DBWRJT>:gn=f:gl=bee, hornet
+DBX	19891:sp=verb:gl=slay, slaughter, offer sacrifice, PA sacrifice
+DBX=	5903:sp=subs:gn=m:de=DBX>:gl=sacrifice, victim
+DBXT	10937:sp=subs:gn=f:de=DBXT>:gl=sacrifice, offering
+DBLT	17807:sp=subs:de=DBLT>:gl=cake or mass of dried figs
+DBLT=	17808:sp=subs:ls=prop:st=abs:gl=Diblat (Hebr Riblah)
+DBQ	12583:sp=verb:gl=cleave, adhere, touch, ETHPE cleave unto, adhere, PA put, join together, stick
+DBQ=	16319:sp=subs:gn=m:de=DBQ>:gl=edge, seam, joint
+DBR	16607:sp=verb:gl=lead, guide, PA lead, guide, drive
+DBR=	13633:sp=subs:gn=m:de=DBR>:gl=field, land, country
+DBR==	20533:sp=subs:gn=m:de=DBR>:gl=management, ploughing, driving
+DBRJMJN	2557:sp=subs:ls=prop:st=abs:gl=Book of Chronicles
+DBC	8669:sp=subs:gn=m:gl=honey
+DGL	2441:sp=verb:gl=PA lie, deceive
+DGL=	7001:sp=adjv:gl=false, vain, deceitful
+DGLW	16477:sp=subs:de=DGLWT>:gn=f:gl=falsehood, treacher, unfaithfulness
+DD	21277:sp=subs:gn=m:gl=a friend, an uncle on the father's side
+DHB	20707:sp=subs:gn=m:gl=gold
+DWB	11909:sp=verb:gl=flow out, melt, PA melt, waste away, dissolve, ETHPA be broken up, grow thin, APH waste away
+DWWN	2879:sp=subs:gn=m:gl=wretchedness, misery
+DWJD	12479:sp=subs:ls=prop:st=abs:gn=m:gl=David
+DWK	11273:sp=subs:ls=ppre:gl=place
+DWKRN	2113:sp=subs:gn=m:gl=remembrance
+DWLB	7717:sp=subs:de=DWLB>:gn=m:gl=oriental plane-tree
+DWN	20773:sp=verb:gl=judge, rule, bring a suit
+DWQ	15161:sp=verb:gl=gaze from afar, APH look out, forth
+DWQ=	12277:sp=subs:gn=m:de=DWQ>:gl=the sense of sight, one who observes, a watchman
+DWC	433:sp=verb:gl=tread, trample
+DWTN	18223:sp=subs:ls=prop:st=abs:gl=Dothan
+DX>	1103:sp=verb:gl=PE & PA push, cast out, ETHPE & ETHTAPH be hurled, be impelled
+DXL	6047:sp=verb:gl=fear
+DXL=	223:sp=subs:gn=m:gl=worshipper
+DXL>	599:sp=subs:gn=f:gl=fear, dread, awe, worship, idol
+DXLWL	3739:sp=subs:de=DXLWL>:gn=m:gl=fear, terror, scarecrow
+DXQ	9733:sp=verb:gl=thrust out, take away, reject
+DXC	11113:sp=subs:gn=m:de=DXC>:gl=guard, attendant (only plural)
+DJWN	9734:sp=verb:gl=ETHPAIEL be vexed with a devil, suffer from demonizcal possession
+DJL	3823:sp=prep:gl=[possessive]
+DJN	409:sp=subs:gn=m:gl=judgement, law, custom
+DJN=	11527:sp=conj:gl=but, however, for, then
+DJN==	1811:sp=subs:gn=m:gl=judge
+DJY	14081:sp=subs:de=DJY>:gn=m:gl=exultation, leaping for joy
+DJY=	17029:sp=subs:de=DJY>:gn=m:gl=he rock-goat, ibex
+DJYT	16657:sp=subs:de=DJY>:gn=f:gl=she rock-goat, ibex
+DJC	1873:sp=subs:gn=m:gl=a treading down, trampling under foot
+DK>	3319:sp=verb:gl=be clean, PA cleanse, purify, ETHPA be cleansed, purified
+DKJW	16883:sp=subs:gn=f:gl=purification, purity, clearness
+DKR	12781:sp=verb:gl=remember, call to mind, be mindful of
+DKR=	13217:sp=adjv:gl=male, masculine, a ram, chem. arsenic
+DLWX	2729:sp=adjv:gl=that which troubles, disturbs, incites to evil
+DLX	3121:sp=verb:gl=trouble, disturb, ETHPE & ETHPA be shaken, disturbed, PA ruffle, disquiet
+DLM>	19403:sp=conj:gl=lest, that not, why, is it not?
+DLSR	14431:sp=subs:ls=prop:st=abs:gl=Telassar #Hebrew
+DM	14347:sp=subs:gn=m:gl=blood, bloodshed
+DM>	15473:sp=verb:gl=be like, ETHPE be or become like, imitate, PA liken, compare, imitate, ETHPA be or become like, be compared
+DMW	6869:sp=subs:gn=f:gl=form, shape, pattern
+DMJN	8233:sp=subs:gn=m:nu=pl:gl=price
+DMK	13999:sp=verb:gl=sleep
+DM<	17293:sp=verb:gl=weep, shed tears, PA weep vehemently
+DM<>	6091:sp=subs:gn=f:gl=tear
+DMR	8219:sp=verb:gl=ptc.pass wonderful, marvellous, PA make marvellous, ETHPA wonder, marvel be amazed, APH, astonish, cause wonder
+DN	8581:sp=subs:ls=prop:st=abs:gl=Dan
+DNX	1433:sp=verb:gl=rise, set, dawn, shine forth
+D<J	2377:sp=subs:ls=prop:st=abs:gn=m:gl=Rei #Hebrew
+D<K	881:sp=verb:gl=PE & ETHPE & ETHPA be put out, quenched, ETHPE same, PA & APH extinguish
+DQDQ	2239:sp=adjv:gl=small, minute, light
+DQL	2357:sp=subs:gn=m:de=DQL>:gl=palm tree
+DQLT	241:sp=subs:ls=prop:st=abs:gl=Tigris
+DQQ	17881:sp=verb:de=DQ:gl=beat, break in pieces, pulverize, PA grind to powder, APH beat very small, PAL pound, hammer, ETHPALPAL be broken in pieces
+DQR	5231:sp=subs:ls=prop:st=abs:gn=m:gl=Dakar
+DQR=	1889:sp=verb:gl=dig, break, stab, PA wound, butt
+DR	16363:sp=subs:gn=m:gl=generation
+DR>	7949:sp=subs:gn=f:gl=enclosure, court, chamber
+DR>=	14407:sp=verb:gl=scatter, winnow
+DRG	20261:sp=subs:gn=m:gl=step, stair
+DRD<	15907:sp=subs:ls=prop:st=abs:gn=m:gl=Darda
+DRWK>	13693:sp=subs:gn=f:gl=concubine, sucker
+DRK	12161:sp=verb:gl=tread, APH come up, follow closely, overtake
+DRMSWQ	1087:sp=subs:ls=prop:st=abs:gl=Damascus
+DR<	6563:sp=subs:gn=m:de=DR<>:gl=arm, shoulder, sleeve
+DRC	16141:sp=verb:gl=tread, find out, PA practise, train, ETHPA be open, tread upon, be disputed, debated to be trained
+DTN	19157:sp=subs:ls=prop:st=abs:gn=m:gl=Dathan
+H>	15601:sp=intj:gl=behold
+HG>	811:sp=verb:gl=meditate, ETHPA meditate, plan, scheme
+HD>	2521:sp=pron:ls=demo:nu=sg:gn=f:de=HD:gl=this
+HDD	1153:sp=subs:ls=prop:st=abs:gn=m:gl=Hadad
+HDM	19249:sp=subs:gn=m:gl=limb, member
+HDR	19301:sp=subs:de=HDR>:gn=m:gl=glory, honour
+HDR=	21499:sp=verb:gl=ptc.pss adorned, comely, acceptable, PA adorn, glorify, ETHPA be glorified, honoured
+HDRWN	21589:sp=subs:ls=prop:st=abs:gn=m:gl=Rezon #Hebrew
+HDR<ZR	3733:sp=subs:ls=prop:st=abs:gn=m:gl=Hadadezer #Hebrew
+HW	9949:sp=pron:ls=pers:ps=third:gn=m:nu=sg:gl=he
+HW=	17107:sp=pron:ls=demo:nu=sg:gn=m:gl=that
+HW>	1523:sp=verb:ls=vbex:gl=be
+HWN	4153:sp=verb:gl=PA ptc.pss endowed with reason, ETHPA come to one's senses, PAL mind, act wisely, ETHPALAL understand
+HWC<	17383:sp=subs:ls=prop:st=abs:gn=m:gl=Hoshea
+HVV	4337:sp=subs:de=HVV>:gn=m:gl=thorn, bramble
+HJ	3217:sp=pron:ls=pers:ps=third:gn=f:nu=sg:gl=she
+HJ=	10723:sp=pron:ls=demo:nu=sg:gn=f:gl=that
+HJDJN	21341:sp=advb:gl=then
+HJKL	13183:sp=subs:gn=m:gl=palace, temple
+HJMNW	21121:sp=subs:gn=f:de=HJMNWT>:gl=firmness, truth, faithfulness
+HKN>	8167:sp=advb:de=HKN:gl=thus, so, such
+HLJN	2243:sp=pron:ls=demo:nu=pl:gl=these
+HLK	5867:sp=verb:gl=PA go, walk
+HLKT	15551:sp=subs:de=HLKT>:gn=f:gl=going, walking, treading
+HLQ	83:sp=subs:gn=m:de=HLQ>:gl=carved ornaments, lattice work
+HM>	7283:sp=verb:gl=APH turn away, avert, disregard, neglect, allow, delay, ETTAPH neglect, be neglected
+HMN	20407:sp=subs:ls=prop:st=abs:gn=m:gl=Heman
+HN>	15797:sp=pron:ls=demo:nu=sg:gn=m:de=HN:gl=this
+HN>=	12391:sp=verb:gl=be agreeable, grateful, ETHPE, ETHPA gain profit or enjoyment, APH profit
+HNWN	9661:sp=pron:ls=pers:ps=third:gn=m:nu=pl:gl=they
+HNWN=	607:sp=pron:ls=demo:nu=pl:gn=m:gl=those
+HNJN	6197:sp=subs:gn=m:gl=use, profit, advantage
+HNJN=	7517:sp=pron:ls=pers:ps=third:gn=f:nu=pl:gl=they
+HNJN==	8293:sp=pron:ls=demo:ps=third:gn=f:nu=pl:gl=those
+HPK	16651:sp=verb:gl=turn, change, move
+HPK=	3011:sp=subs:gn=m:gl=inversion, overthrow, ruin
+HPK>JT	15641:sp=advb:gl=topsy-turvy, inside out, in reverse
+HPKT	10501:sp=subs:gn=f:de=HPKT>:gl=a return, coming again
+HR	1999:sp=verb:gl=bark, quarrel, fight, APH do harm, molest, irritate
+HRK>	21839:sp=advb:gl=here, hitherto, henceforward
+HRT	15073:sp=subs:de=HRT>:gn=f:gl=squabble, brawl, dispute
+HC	1129:sp=subs:gl=this hour
+W	15227:sp=conj:gl=and
+WJ	11731:sp=intj:gl=ah, oh, woe, alas
+WL>	7547:sp=verb:gl=(defective verb used impersonally with L or personal suffixes) it is meet, fit, right, proper
+W<D	5101:sp=verb:gl=PA appoint a time or place for meeting, ETHPA meet at a fixed time or place, assemble
+WRD	2663:sp=subs:gn=m:de=WRD>:gl=rose
+ZBWN	13229:sp=subs:gn=m:de=ZBWN>:gl=buyer, purchaser
+ZBWR	16747:sp=subs:ls=prop:st=abs:gn=m:gl=Zabur #Hebrew Zabud
+ZBJD>	9067:sp=subs:ls=prop:st=abs:gn=f:gl=Zebidah
+ZBL	1039:sp=subs:gn=m:gl=dung, excrement
+ZBN	11923:sp=subs:gn=m:gl=time, age, era
+ZBN=	7127:sp=verb:gl=buy, PA sell, ETHPA be sold (>ZDBN)
+ZBN==	6997:sp=subs:gl=selling
+ZBN>	3301:sp=subs:gn=f:de=ZBN:gl=time (express repetition)
+ZBT 	15733:sp=subs:gn=f:de=ZBT>:gl=pitch #PS: oftener ZPT>
+ZGR	20641:sp=verb:gl=shut up, hold in, keep from, restrain, ETHPE keep oneself from, be kept from, PA & APH keep back
+ZDJQ	19427:sp=adjv:gl=upright, righteous
+ZDJQW	11939:sp=subs:gn=f:gl=righteousness, alms
+ZDQ	12967:sp=subs:gn=m:de=ZDQ>:gl=righteous act, due, allowance
+ZDQ=	7451:sp=verb:gl=usually impers. only act. ptc. it is right
+ZDQT	2053:sp=subs:gn=f:de=ZDQT>:gl=alms
+ZHR	20393:sp=verb:gl=be clear, transparent, careful of, PA warn, admonish, ETHPA (>ZDHR) take care, watch over
+ZWG	5039:sp=subs:gn=m:de=ZWG>:gl=yoke, pair, couple
+ZWJT	11467:sp=subs:gn=f:de=ZWJT>:gl=corner, angle
+ZW<	3209:sp=verb:gl=be in motion, be agitated, APH set in motion, disturb, excite, PAL shake, ETHPAL be greatly moved
+ZW<=	751:sp=subs:gn=m:gl=shaking, quaking
+ZW<T	16339:sp=subs:gn=f:de=ZW<T>:gl=quaking, trembling, terror
+ZWRBBL	17863:sp=subs:ls=prop:st=abs:gn=m:gl=Zerubabel
+ZXL	5021:sp=subs:gn=m:de=ZXL>:gl=crawling locust
+ZJW	20101:sp=subs:gn=f:gl=shining, brightness
+ZJN	4339:sp=subs:gn=m:de=ZJN>:gl=arms, armour
+ZJT	15887:sp=subs:gn=m:de=ZJT>:gl=olive tree and fruit, olive oil, olive garden
+ZK>	7057:sp=verb:gl=conquer, be free from guilt, PA grant victory, pronouce innocent
+ZKW	17909:sp=subs:gn=f:gl=victory, justification, innocence
+ZKWR	15077:sp=subs:gn=m:de=ZKWR>:gl=diviner, necromancer, pl. demons, spirits of the dead
+ZKJ	5557:sp=adjv:gl=victorious, justified, innocent
+ZKRJ>	21991:sp=subs:ls=prop:st=abs:gn=m:gl=Zechariah
+ZL	12829:sp=verb:gl=weigh light, PA lessen, make light, ETHPA think little of, be or be considered of little value, APH despise
+ZLJQ	18713:sp=subs:gn=m:de=ZLJQ>:gl=ray or flash of light
+ZMN	8837:sp=verb:gl=PA summon, invite
+ZMR	15137:sp=subs:de=ZMR>:gn=m:gl=music
+ZMR=	14437:sp=subs:de=ZMR>:gn=m:gl=singer
+ZMR>	12239:sp=subs:de=ZMR>:gn=f:gl=singer
+ZMRGD	1951:sp=subs:de=ZMRGD>:gn=m:gl=emerald
+ZMRJ	14447:sp=subs:ls=prop:st=abs:gn=m:gl=Zimri
+ZN	9281:sp=subs:gn=m:gl=sort, kind, way, method, manner
+ZNJ	17977:sp=subs:gn=m:gl=fornicator, whoremonger
+ZNJ>	12197:sp=subs:de=ZNJ:gn=f:gl=fornicatress, whoremongeress
+ZNJW	10457:sp=subs:de=ZNJWT>:gl=fornication, whoremongering
+Z<WR	21859:sp=adjv:gl=little, feeble, younger, inferior
+Z<WRW	12697:sp=subs:de=Z<WRWT>:gn=f:gl=fewness (of years), feebleness
+Z<P	3533:sp=verb:gl=PE pass ptc rageing, ETHP be wroth, indignant
+Z<Q	6311:sp=verb:gl=call, shout, APH call, shout
+Z<R	11981:sp=verb:gl=lessen, diminish, APH bring to nothing, make or do less
+ZQP	2131:sp=verb:gl=lift up, rise up, ETHPE stand erect, be erected, PA make hair stand on end
+ZQR	3041:sp=verb:gl=weave, compose
+ZQT	1409:sp=subs:de=ZQT>:gn=m:gl=rod, goad, bow of musical instrument
+ZRW<	12401:sp=subs:de=ZRW<>:gn=m:gl=sower
+ZR<	9241:sp=subs:gn=m:gl=seed, offspring
+ZR<=	2267:sp=verb:gl=spread abroad, scatter, sow, beget, ETHPE be schattered abroad, dispered, be sown, APH form seed, sow
+X>RW	17551:sp=subs:de=X>RWT>:gn=f:gl=freedom, of noble extraction
+X>RJ	13421:sp=adjv:gl=free, well-born, noble
+X>RJT	10853:sp=subs:gn=f:de=X>RJT>:gl=ditch, trench, fosse
+XBB	11059:sp=verb:de=XB:gl=be kindled, PA love vehemently, ETHPA be beloved, APH kindle, love, ETHTAPH be loved, be beloved
+XBV	2087:sp=verb:gl=beat down, cudgel, ETHPE be beaten out, PA dash to the ground, ETHPA be thrown down
+XBL	10771:sp=verb:gl=twist, writhe, travail, PA travail, falsify, become corrupt, destroy
+XBL=	1579:sp=subs:gn=m:gl=cord, line, portion, allotment
+XBL==	6521:sp=subs:gn=m:de=XBL>:gl=pangs of travail
+XBLBL	4517:sp=subs:gl=reed #not in PS
+XBN	3251:sp=verb:gl=ETHPA be slothful, lazy, hesitate
+XBY	199:sp=verb:gl=crowd together, push
+XBYJBH	14629:sp=subs:ls=prop:st=abs:gn=f:gl=Hephzibah
+XBR	15313:sp=subs:gl=companion, comrade
+XBR=	9697:sp=subs:ls=prop:st=abs:gl=Habor
+XBRWN	17989:sp=subs:ls=prop:st=abs:gl=Hebron
+XBC	6473:sp=verb:gl=shut in, besiege, ETHPE shut oneself up, be besieged
+XG	12899:sp=subs:gn=m:de=XG>:gl=feast, festal day, festal assembly
+XGJR>	3299:sp=subs:ls=prop:st=abs:gn=m:gl=Pharaoh-neco #Hebrew
+XGJT	4651:sp=subs:ls=prop:st=abs:gn=f:gl=Haggith
+XGL	15277:sp=subs:gl=partridge
+XD	1297:sp=subs:ls=card:gl=one
+XD>	12097:sp=verb:gl=rejoice, PA gladden, congradulate
+XDD>	7699:sp=pron:ls=demo:gl=each other
+XDW>	3023:sp=subs:gl=gladness, joy
+XDWY	1303:sp=subs:ls=prop:st=abs:gn=f:gl=Haruz #Hebrew
+XDXS	3863:sp=subs:ls=prop:st=abs:gn=m:gl=Harhas #Hebrew
+XD<SR	11743:sp=subs:ls=card:gl=eleven
+XDR	359:sp=subs:gn=m:ls=ppre:gl=circle, surroundings
+XDR=	8389:sp=verb:gl=go round, encompass, APH enclose, make go round
+XDRT	2887:sp=subs:gn=f:de=XDRT>:gl=circuit, corridor, surrounding outer wall, out building
+XDT	8011:sp=adjv:gl=new, recent, fresh
+XDT=	15101:sp=verb:gl=PA make new, dedicate, restore
+XW>	15269:sp=verb:gl=PA show, manifest, declare, ETHPA be dhown, be related, show oneself, appear, be made manifest
+XWB	2699:sp=subs:gn=m:gl=debt
+XWB=	10529:sp=subs:gn=m:gl=love, charity, affection
+XWB==	12763:sp=verb:gl=be unequal, be powerless, owe, be guilty, PA prevail, cause to take an oath, ETHPA be worsted, be convinced, be confuted, be convicted, be condemned
+XWBL	17891:sp=subs:gn=m:de=XWBL>:gl=recompense, reward
+XWBL=	10453:sp=subs:gn=m:de=XWBL>:gl=corruption, destruction
+XWBT	3491:sp=subs:gn=f:de=XWBT>:gl=debt
+XWGB	21481:sp=subs:gn=m:de=XWGB>:gl=idol temple, shrine
+XWX	4663:sp=subs:gn=m:de=XWX>:gl=thorn, thornbush
+XWV	16183:sp=subs:gn=m:de=XWV>:gl=thread,string,measuring line
+XWVR	18787:sp=subs:gn=m:gl=staff,rod,sceptre
+XWJ	13873:sp=subs:gn=m:de=XWJ>:gl=snake, serpent
+XWJ=	4007:sp=adjv:ls=gntl:gl=Hivite
+XWLDJ	3803:sp=subs:ls=prop:st=abs:gn=f:gl=Huldah
+XWLMN	16963:sp=subs:gn=m:de=XWLMN>:gl=recovery, healing
+XWM	4871:sp=subs:gn=m:de=XWM>:gl=heat
+XWMR>	8081:sp=subs:gn=f:de=XWMR>:gl=bead, necklace stone, socket
+XWS	3607:sp=verb:gl=have pity, refrain from
+XWSJ	3253:sp=subs:gn=m:gl=atonement, mercy seat, absolution
+XWSRN	17209:sp=subs:gn=m:de=XWSRN>:gl=loss, harm, expense
+XWR	13463:sp=verb:gl=look, gaze, behold
+XWR=	19423:sp=adjv:de=XWR:gl=white, clear, bright
+XWRB	2459:sp=subs:gn=m:de=XWRB>:gl=desert, plain, emptiness, desolation
+XWRJB	337:sp=subs:ls=prop:st=abs:gl=Horeb
+XWRJM	1607:sp=subs:ls=prop:st=abs:gl=(Beyt-) Hurim #Hebrew Bahurim
+XWRN	5273:sp=subs:ls=prop:st=abs:gl=(Beyt-) Horon
+XWCBN	5851:sp=subs:gn=m:gl=reckoning, thinking, thought, idea
+XWCJ	14879:sp=subs:ls=prop:st=abs:gn=m:gl=Hushai
+XZ>	12503:sp=verb:gl=see, perceive, consider, ETHPE be seen, ETHPEAU obtain honour, distinguish oneself
+XZ>JL	11171:sp=subs:ls=prop:st=abs:gn=m:gl=Hazael
+XZW	17189:sp=subs:gn=m:de=XZW>:gl=appearance, likeness, vision
+XZJ	2287:sp=subs:gl=one who sees, spectator, seer
+XZJWN	16073:sp=subs:ls=prop:st=abs:gn=m:gl=Hezion
+XZJR	9859:sp=subs:gn=m:gl=hog, sow, sores on the neck
+XZQJ>	863:sp=subs:ls=prop:st=abs:gn=m:gl=Hezekiah
+XZQJ>JL	6121:sp=subs:ls=prop:st=abs:gn=m:gl=Ezekiel
+XXWRT	21157:sp=subs:gn=f:de=XXWRT>:gl=round loaf or cake
+XV	1669:sp=subs:de=XV>:gn=m:gl=sin
+XV>	14221:sp=verb:gl=miss, sin, PA be arrogant, APH cause to sin
+XV>=	18313:sp=subs:de=XVT>:gn=f:gl=grain of wheat
+XVH	6053:sp=subs:gn=m:gl=sin, fault
+XVWP	5927:sp=adjv:gl=ravenous, rapacious
+XVWPJ	10429:sp=subs:de=XVWPJ>:gn=m:gl=seizing by force, rapine, rape
+XVJ	18253:sp=adjv:gl=sinful
+XVJT	15559:sp=subs:de=XVJT>:gn=f:gl=sin
+XVP	4999:sp=verb:gl=take by fore, violate, ETHPE be seized, pillaged, PA take by fore, ETHPA be dragged away by force
+XVR	5000:sp=verb:gl=beat with rods, card, ETHPAEL be beaten with rods, be carded, ETHPAUEL lean upon a staff (Noldeke >TXWVR)
+XJ	3847:sp=subs:de=XJ>:gl=life (only plural m.)
+XJ=	1667:sp=adjv:gl=alive
+XJ>	5419:sp=verb:gl=live, be alive, APH keep alive
+XJB	3167:sp=adjv:gl=guilty, condemned, conquered
+XJW>	19087:sp=subs:gn=f:gl=life, vitality, living creature
+XJL	20747:sp=subs:gn=m:gl=might, strength, force
+XJL=	15629:sp=verb:gl=PA strengthen, comfort, confirm, ETHPA be strong, take courage
+XJLW	2939:sp=subs:gn=f:de=XJLWT>:gl=strength, power, force
+XJLTN	11083:sp=adjv:gl=strong, mighty, powerful
+XJRM	1291:sp=subs:ls=prop:st=abs:gn=m:gl=Hiram
+XKJM	10169:sp=adjv:gl=wise, sensible
+XKJMW	11447:sp=subs:gn=f:de=XKJMWT>:gl=wisdom
+XKM	17093:sp=verb:gl=know, discern, ETHPE be known carnally, PA make wise, instruct, ETHPA prove oneself wise
+XKM>	10433:sp=subs:gn=f:gl=wisdom
+XL	12703:sp=subs:gn=m:gl=sand, gravel
+XL>	11593:sp=verb:de=XLJ:gl=be sweet, speak fair, PA sweeten, ETHPA become sweet, APH same as PA
+XLB	6661:sp=subs:de=XLB>:gn=m:gl=milk
+XLBNJT	13291:sp=subs:de=XLBNJT>:gn=f:gl=galbanum, fragrant resin
+XLX	17443:sp=subs:ls=prop:st=abs:gl=Halah
+XLV	6829:sp=verb:gl=mix, mingle, ETHPE join, take part with, PA mix thoroughly, ETHPA be admitted, have part with, make alliance
+XLJMW	2903:sp=subs:de=XLJMWT>:gn=f:gl=health, firmness
+XLL	919:sp=subs:de=XLL>:gn=m:gl=a hole, cave, tunnel
+XLM	11701:sp=subs:gn=m:gl=dream
+XLM=	9547:sp=verb:gl=dream, ETHPE recover health, PA heal
+XLP	2129:sp=prep:ls=pcon:gl=for, instead, because
+XLP=	19717:sp=verb:gl=exchange, pierce, PA exchange, ETHPA be exchanged, SHAPHEL change, alter
+XLP==	20879:sp=subs:gn=m:de=XLP>:gl=exchange, barter
+XLPT	12907:sp=subs:de=XLPT>:gn=f:gl=something given in exchange, substitute
+XLQJ>	15661:sp=subs:ls=prop:st=abs:gn=m:gl=Hilkiah
+XM	17137:sp=verb:gl=be hot, grow warm
+XMVWL	281:sp=subs:ls=prop:st=abs:gn=f:gl=Hamutal
+XMJLT	11149:sp=subs:gn=f:de=XMJLT>:gl=rough outer garment, rug
+XMJCJ	3701:sp=adjv:ls=ordn:gl=fifth
+XML	21221:sp=verb:gl=tongather, lay up, withold, ETHPE be gathered, be withheld, PA wrap up, withhold, ETHPA be gathered
+XMY	4253:sp=verb:gl=turn sour, PA make ashamed, ETHPA blush, be ashamed
+XMR	19163:sp=subs:gn=m:gl=he-ass
+XMC	17783:sp=subs:ls=card:gl=five
+XMCJN	14713:sp=subs:ls=card:de=XMC:gl=fifty
+XMCM>>	17929:sp=subs:ls=card:de=XMC:gl=five hundred
+XMC<SR	16661:sp=subs:ls=card:gl=fifteen
+XMT	3923:sp=subs:ls=prop:st=abs:gl=Hamath
+XMT=	18959:sp=subs:gn=f:de=XMT>:gl=rage, fury
+XMT==	11821:sp=verb:gl=burn with anger, PA enrage, ETHPA rage, be furious, provoke, APH provoke, anger, vex
+XN	21347:sp=subs:gn=m:de=XN>:gl=a bending, the hollow of a chariot, privy parts
+XN=	18413:sp=verb:gl=pity, spare, be gracious, ETHPE find mercy, ETHPA seek favour, make supplication
+XNWJ	21937:sp=subs:de=XNWJ>:gn=m:gl=tavern keeper, green grocer
+XNWK	13063:sp=subs:ls=prop:st=abs:gn=m:gl=Enoch
+XNK	21269:sp=subs:de=XNK>:gn=f:gl=palate
+XNN	21713:sp=pron:ls=pers:ps=first:nu=pl:gl=we
+XNN=	5479:sp=subs:gn=m:gl=pity, mercy, compassion
+XNN==	16069:sp=subs:ls=prop:st=abs:gn=m:gl=Hanani #Hebrew
+XNPJ	3331:sp=adjv:de=XNPJ>:gl=heathen, Gentile, ethnic
+XNQ	21521:sp=subs:de=>NQ>:gl=band, bond, collar, neck of vessel
+XS>	3517:sp=verb:de=XSJ:gl=PA make atonement, ETHPA be declared free from guilt
+XSD	11717:sp=subs:de=XSD>:gl=shameful thing, shame, reproach
+XSD=	18169:sp=verb:gl=PE & PA revile, scorn
+XSJRW	8243:sp=subs:gn=f:gl=want, need, deficiency, poverty
+XSK	1439:sp=verb:gl=withhold, restrain, spare
+XSL	3449:sp=verb:gl=refrain, accustom to abstinence
+XSN	9631:sp=verb:gl=wax strong, be difficult, ETHPE be subdued, PA strengthen, ETHPA show oneself strong, PAM grasp firmly, be very strong
+XSR	1171:sp=verb:gl=be in want, lack
+XP>	22003:sp=verb:gl=cover, hide, PA veil, cover, hide from view
+XPJJ	19183:sp=advb:gl=barefoot
+XPR	5573:sp=verb:gl=dig, drive a mine, burrow
+XPR=	8839:sp=subs:ls=prop:st=abs:gn=m:gl=<son of Gilead>
+XY	7213:sp=subs:gn=m:gl=loin, back
+XYD	15193:sp=verb:gl=reap, mow down
+XYWD	53:sp=subs:gn=m:de=XYWD>:gl=reaper, sickle
+XYWR	13187:sp=subs:ls=prop:st=abs:gl=Hazor
+XYP	9623:sp=verb:gl=be impudent, PA act impudent, ETHPA bear oneself impudently, APH be bold, persistent
+XYP=	19013:sp=subs:de=XYP>:gn=m:gl=earthen vessel
+XYR	8707:sp=subs:gn=f:de=XYR>:gl=little finger, little toe
+XQL	13313:sp=subs:gn=f:gl=field, open country
+XR>	21611:sp=verb:gl=ETHPE gainsay, resist, APH make ready to fight
+XRB	5351:sp=verb:gl=lay waste, destroy
+XRB=	5807:sp=subs:de=XRB>:gl=sword, blade, dagger
+XRB==	13171:sp=subs:gl=desolate, uninhabited, arid
+XRW	4079:sp=subs:de=XRWT>:gn=f:gl=upper part of thigh, hip joint
+XRWR	13339:sp=subs:de=XRWR>:gn=m:gl=freedom, deliverance
+XRJ	17159:sp=subs:gn=m:de=XRJ>:gl=dung, droppings
+XRJN	18133:sp=subs:gl=controvery, dispute, strife
+XRM	313:sp=adjv:gl=under a ban, accursed, savage
+XRN	1487:sp=subs:ls=prop:st=abs:gl=Haran
+XRC	317:sp=subs:gn=m:de=XRC>:gl=enchantment, witchcraft
+XRT	12281:sp=subs:gn=f:de=XRT>:gl=latter end, extremity
+XC	20563:sp=verb:gl=suffer, repent, APH pain, sadden, cause suffering
+XCB	2917:sp=verb:gl=count, regard, blame, ETHPA plan, devise, have in mind
+XCWK	17477:sp=adjv:gl=dark, dim, shady
+XCX	8221:sp=verb:gl=be fit, suitable, ETHPA be used to, familiar with
+XCK	4621:sp=subs:de=XCK>:gn=m:gl=darkness
+XCK=	10781:sp=verb:gl=grow dark, PA darken, ETHPA be obscured, APH turn to night, darken
+XCL	16223:sp=verb:gl=found, cast, forge, ETHPE be founded, cast, PA frame, make of metal
+XT	7603:sp=subs:gn=f:de=XT>:gl=sister, also possible as derv >X
+XT=	11827:sp=subs:gn=f:de=XT>:gl=sack, plank, wooden bridge
+XTJ	21377:sp=adjv:ls=gntl:gl=Hittite
+XTM	19913:sp=subs:de=XTM>:gn=m:gl=seal, signet right
+XTM=	947:sp=verb:gl=seal, sign, ratify
+XTN	21143:sp=subs:gn=m:de=XTN>:gl=one connected by marriage
+V>B	1609:sp=verb:gl=be good, APH do good
+VB	809:sp=adjv:gl=good, exceedingly, very
+VB=	13397:sp=subs:gn=m:de=VB>:gl=news, tidings, fame, report
+VBW	9421:sp=subs:gn=f:gl=goodness
+VBJ	17627:sp=subs:de=VBJ>:gl=roe, deer
+VBLR	11831:sp=subs:gn=m:de=VBLR>:gl=tabellarius, runner, latter carrier
+VB<	10909:sp=subs:de=VB<>:gn=m:gl=seal, signet, gem, stamp
+VB<=	18217:sp=verb:gl=sink, be immersed, imprint, be sunk in sleep
+VBR	18593:sp=subs:ls=prop:st=abs:gn=m:gl=Tabri(-Ammon)
+VHR	8273:sp=subs:gn=m:de=VHR>:gl=noon, midday
+VWB	19763:sp=subs:gn=m:gl=good, good things
+VWB=	17519:sp=verb:gl=PA get ready, make preparations, ETHPA be prepared, ready oneself
+VWBJ>	20173:sp=subs:ls=prop:st=abs:gn=m:gl=Netophathite #Hebrew
+VWL	21881:sp=verb:gl=PA walk to and fro, pace up and down
+VWS	16193:sp=subs:gn=m:de=VWS>:gl=peacock
+VW<J	6379:sp=subs:de=VW<JJ:gn=f:gl=error, mistake, false worship
+VWP	21599:sp=verb:gl=float, swim, sail upon
+VWP>	20117:sp=subs:gn=f:gl=voyage, raft
+VWPN	12743:sp=subs:de=VWPN>:gn=m:gl=flood, deluge
+VWR	16741:sp=subs:gn=m:gl=mountain
+VWRNWS	8527:sp=subs:gn=m:gl=turner's chisel, lathe chisel
+VWRP	8269:sp=subs:de=VWRP>:gn=m:gl=tossing to and fro, weariness, vexation
+VJBW	10837:sp=subs:gn=f:gl=goodness, favour, kindness
+VJN	9059:sp=subs:gn=m:gl=mud, mire, clay, dirt
+VK	15877:sp=advb:gl=perhaps, now, soon
+VL	4091:sp=subs:gn=m:gl=dew
+VL>	67:sp=adjv:gl=young, childish
+VLWMJ	6449:sp=subs:de=VLWMJ>:gn=m:gl=injustice, oppression, cruelty
+VLJ	1489:sp=subs:gn=m:de=VLJ>:gl=unmarried youth, freeborn youth
+VLJW	617:sp=subs:gn=f:gl=childhood, youth
+VLJT	4987:sp=subs:gn=f:de=VLJ>:gl=unmarried maiden, freeborn maiden
+VLL	14057:sp=subs:gn=m:gl=shade, shadow
+VLL=	18773:de=VL:sp=verb:gl=PA cover, shade, lay rafters, ETHPA be covered, shaded, APH cover over, give shade
+VLM	10093:sp=verb:gl=oppress, deal falsely, ETHPE be defrauded, be rejected
+VM>	10859:sp=verb:gl=be unclean, be defiled, PA pollute, defile, pronounce unclean
+VM>=	19553:sp=adjv:gl=unclean, impure
+VMM	12647:de=VM:sp=verb:gl=stop up, PA stop up, block, ETHPA be stopped, closed
+VMR	191:sp=verb:gl=hide, bury under the earth
+VMR=	547:sp=subs:de=VMR>:gn=m:gl=accumulation of earth, being buried alive, hidden thing, mystery
+VN	12323:sp=verb:gl=envy, be jealous, APH provoke to jealousy
+VNN	7933:sp=adjv:de=VNN>:gl=jealous, zealous
+VNP	9133:sp=verb:gl=PA profane, pollute, defile, ETHPA be defiled, polluted
+VNPW	4813:sp=subs:gn=f:de=VNPWT>:gl=defilement, abomination
+V<>	1597:sp=verb:gl=wander, err, go astray, be missing
+V<JW	4013:sp=subs:de=V<JWT>:gn=f:gl=erring, straying, misleading
+V<M	4549:sp=subs:gn=m:gl=taste, taking a taste of
+V<M=	2957:sp=verb:gl=taste, ETHPE be tasted, ETHPA be budded, grafted, APH make to taste
+V<N	4259:sp=subs:gn=m:gl=load, burden, cargo
+V<N=	18757:sp=verb:gl=carry
+VPR	7499:sp=subs:gn=f:de=VPR>:gl=fingernail, toenail, hoof, claw, talon
+VPT	13879:sp=subs:ls=prop:st=abs:gn=f:gl=Taphath
+VRD	21247:sp=verb:gl=drive away, ETHPE be driven away
+VRWN	19583:sp=subs:de=VRWN>:gn=m:gl=tyrant, lord, ruler, rebel
+VRP	8807:sp=verb:gl=smite, dash against, PA buffet, smite repeatedly, ETHPA be shaken to and fro, be exhausted, APH smite, shake violently
+VRP=	17401:sp=subs:de=VRP>:gn=m:gl=leaf
+VC>	827:sp=verb:gl=hide, hide oneself, PA hide, ETHPA hide oneself, APH hide, secrete
+J>	8753:sp=intj:gl=O! Oh!
+J>>	17959:sp=adjv:gl=fair, comely, suitable
+J>JW	7793:sp=subs:de=J>JWT>:gn=f:gl=beauty, grace, seemliness
+J>JR	4673:sp=subs:ls=prop:st=abs:gn=m:gl=Jair
+JB	18553:sp=verb:gl=PA make joyful noise, sound a trumpet, shout
+JBWSJ	7039:sp=adjv:ls=gntl:gl=Jebusite
+JBZX	4397:sp=subs:ls=prop:st=abs:gn=m:gl=Nibhaz #Hebrew
+JBJC	9371:sp=subs:ls=prop:st=abs:gn=m:gl=Jabesh
+JBL	5347:sp=verb:gl=PA hand down, transmit, APH bring, lead
+JBC	9473:sp=verb:gl=be dried up, dry up
+JBC=	5981:sp=subs:gn=m:de=JBC>:gl=dry land, earth
+JGR	14783:sp=subs:gn=m:gl=heap of stones
+JD	1637:sp=subs:gn=f:gl=hand, side
+JD>	12809:sp=verb:gl=ETHPA be strengthened, prophesy, Af confess, acknowledge
+JDW<	20143:sp=subs:gn=m:de=JDW<>:gl=wizard, soothsayer
+JDJD>	17971:sp=subs:ls=prop:st=abs:gn=f:gl=Jedidah
+JD<	6569:sp=verb:gl=know, ESHTAPH know, recognize, PA inform, indicate, APH make known, ETTAPH be made known, announced
+JD<T	4357:sp=subs:gn=f:de=JD<T>:gl=information, knowledge, doctrine
+JHB	21107:sp=verb:gl=give
+JHW	3907:sp=subs:ls=prop:st=abs:gn=m:gl=Jehu
+JHW>XZ	21317:sp=subs:ls=prop:st=abs:gn=m:gl=Jehoahaz
+JHW>C	21139:sp=subs:ls=prop:st=abs:gn=m:gl=Jehoash
+JHWD>	12613:sp=subs:ls=prop:st=abs:gl=Judah
+JHWD>JT	21017:sp=advb:gl=Judaically, after the manner of the Jews
+JHWDJ	20887:sp=subs:gn=m:de=JHWDJ>:gl=a Jew
+JHW<DN	5051:sp=subs:ls=prop:st=abs:gn=f:gl=Jehoadin
+JW>B	15679:sp=subs:ls=prop:st=abs:gn=m:gl=Joab
+JW>X	3727:sp=subs:ls=prop:st=abs:gn=m:gl=Joah
+JW>C	6217:sp=subs:ls=prop:st=abs:gn=m:gl=Joash
+JWZBR	19699:sp=subs:ls=prop:st=abs:gn=m:gl=Jehozabad #Hebrew
+JWZDQ	6803:sp=subs:ls=prop:st=abs:gn=m:gl=Jozedek
+JWZKR	1723:sp=subs:ls=prop:st=abs:gn=m:gl=Jozacar
+JWXNN	181:sp=subs:ls=prop:st=abs:gn=m:gl=Johanan
+JWJD<	8609:sp=subs:ls=prop:st=abs:gn=m:gl=Jehoiada
+JWJKJN	379:sp=subs:ls=prop:st=abs:gn=m:gl=Jehoiachin
+JWJQJM	16447:sp=subs:ls=prop:st=abs:gn=m:gl=Jehoiakim
+JWLPN	10399:sp=subs:gn=m:de=JWLPN>:gl=learning, instruction
+JWM	1033:sp=subs:gn=m:gl=day
+JWMN	12101:sp=subs:gl=today
+JWN	21739:sp=subs:de=JWN>:gl=dove
+JWNDB	11329:sp=subs:ls=prop:st=abs:gn=m:gl=Jonadab
+JWNN	15263:sp=subs:ls=prop:st=abs:gn=m:gl=Jonah
+JWSP	19687:sp=subs:ls=prop:st=abs:gl=Joseph
+JWPN>	1741:sp=subs:ls=prop:st=abs:gl=Jephunneh
+JWRB<M	5849:sp=subs:ls=prop:st=abs:gn=m:gl=Jeroboam
+JWRDNN	5417:sp=subs:ls=prop:st=abs:gl=Jordan
+JWRM	10739:sp=subs:ls=prop:st=abs:gn=m:gl=Joram
+JWRQ	11813:sp=adjv:gl=tender green, greenish, yellowish, pale
+JWRTN	18587:sp=subs:gn=m:de=JWRTN>:gl=heritage, possession, property
+JWCB<	14411:sp=subs:ls=prop:st=abs:gn=f:gl=Jehosheba
+JWCJ>	8831:sp=subs:ls=prop:st=abs:gn=m:gl=Josiah
+JWCPV	4423:sp=subs:ls=prop:st=abs:gn=m:gl=Jehoshaphat
+JWTM	18143:sp=subs:ls=prop:st=abs:gn=m:gl=Jotham
+JWTRN	20857:sp=subs:gn=m:gl=possession, property, use, profit
+JZB	10477:sp=verb:de=CWZB:gl=SHAPH deliver, redeem, ESHTAPH be delivered, escape
+JZWP	1283:sp=subs:de=JZWP>:gn=m:gl=borrower
+JZNJ>	7727:sp=subs:ls=prop:st=abs:gn=m:gl=Jaazaniah
+JZP	4441:sp=verb:gl=borrow, ETHPE be borrowed, APH lend
+JZP>	17761:sp=subs:gn=f:gl=loan
+JXD	9419:sp=verb:gl=ETHPA be united, SHAPH leave lonely, separate, ESHTAPH be left alone
+JXL	2909:sp=verb:gl=APH enfeeble, render weak, become enfeebled, exhausted
+JXMWR	13669:sp=subs:gn=m:de=JXMWR>:gl=bubale, antelope
+JVBT	3169:sp=subs:ls=prop:st=abs:gl=Jotbah
+JKJN	9769:sp=subs:ls=prop:st=abs:gn=m:gl=Jachin
+JKM	2971:sp=verb:gl=be black, APH make black (same as >KM)
+JKNJ>	15271:sp=subs:ls=prop:st=abs:gn=f:gl=Jecoliah #Hebrew
+JLD	5297:sp=verb:gl=beget, generate, ptc.f.emph de=JLDT>
+JLD=	197:sp=subs:gn=m:gl=birth, bringing forth, offspring
+JLWD	8209:sp=subs:de=JLWD>:gl=infant, babe, suckling
+JLL	13913:sp=verb:gl=PA howl at, APH wail, lament
+JLLT	16091:sp=subs:de=JLLT>:gn=f:gl=wailing, shouting, cry
+JLP	21379:sp=verb:gl=learn, PA teach, train
+JM	11027:sp=subs:gn=m:de=JM>:gl=sea, lake
+JM>	14327:sp=verb:gl=swear
+JMJN	373:sp=subs:gn=f:gl=right-hand side
+JML>	18451:sp=subs:ls=prop:st=abs:gn=m:gl=Imlah #Hebrew
+JMCJ	1429:sp=subs:ls=prop:st=abs:gn=m:gl=Imshi (Hebrew Nimshi)
+JMT	6203:sp=subs:gn=f:de=JMT>:gl=lake, pool, swamp
+JNQ	1733:sp=verb:gl=suck, PA give suck, APH suckle
+JSP	16229:sp=verb:gl=APH add, increase, be greater
+J<>	18617:sp=verb:gl=shoot, sprout, grow, APH make grow, bring forth
+J<N	16927:sp=adjv:gl=greedy, avaricious, grasping
+J<QWB	5779:sp=subs:ls=prop:st=abs:gn=m:gl=Jacob
+JP>	251:sp=verb:gl=APH be able, enough, bring to an end, come to an end
+JYJL	15913:sp=subs:de=JYJL>:gn=m:gl=joint, elbow
+JYP	13807:sp=verb:gl=be careful, take care, mind, be diligent, ETHPE be sought for, PA take pains, attend to, ETHPA take pains, do carefully
+JYR	11863:sp=subs:de=JYR>:gn=m:gl=natural disposition, inclination
+JQD	5309:sp=verb:gl=be burnt up, set on fire, catch fire, APH set on fire
+JQD=	677:sp=subs:gn=m:de=JQD>:gl=burnt offering
+JQR	21503:sp=verb:gl=be heavy, ETHPE be burdened, PA honour, treat with reverence, worship, ETHPA be honoured, be accounted precious, APH make heavy or dull, give honour, make valuable, appraise, ETTAPH be burdened
+JRB	14563:sp=verb:gl=be great, become great
+JRWC>	3659:sp=subs:ls=prop:st=abs:gn=f:gl=Jerusha
+JRX	8329:sp=subs:gn=m:gl=month
+JRQ	2579:sp=subs:gn=m:gl=herb, garden or pot herb, vegetable
+JRQ=	21961:sp=verb:gl=be pale, PA make pale, ETHPA, become pale, APH make pale, become pale
+JRQN	5393:sp=subs:gn=m:de=JRQN>:gl=pallor, blight, jaundice, withering wind
+JRT	14173:sp=verb:gl=be heir, inherit
+JRT=	21517:sp=subs:gn=m:de=JRT>:gl=heir, inheritor, possessor
+JRTW	9677:sp=subs:gn=f:de=JRTWT>:gl=inheritance, portion, lot
+JCW<	15241:sp=subs:ls=prop:st=abs:gn=m:gl=Joshua
+JCV	15511:sp=verb:gl=APH hold out, stretch out
+JCN	9187:sp=subs:ls=prop:st=abs:gl=(Beyt-)Shean #Hebrew
+JTB	18307:sp=verb:gl=sit, APH make dwell, set, place
+JTB=	11587:sp=subs:gn=m:de=JTB>:gl=inhabited place, site
+JTJR	8887:sp=adjv:gl=greater, overmuch, superfluous
+JTM	11597:sp=adjv:gl=bereaved, desolate, fatherless, orphan
+JTR	1381:sp=verb:gl=be left over, gain, APH have over
+JTR=	17047:sp=subs:ls=prop:st=abs:gn=m:gl=Jether
+K>	10597:sp=advb:gl=here
+K>>	16981:sp=verb:gl=rebuke
+K>B	2633:sp=subs:gn=m:gl=pain, grieve, sickness
+K>B=	467:sp=verb:gl=pain, feel pain, grieve, ETHPE grow thin, ETHPA be hurt, APH hurt, inflict grief
+K>N	14627:sp=adjv:gl=upright, just
+K>N>JT	15233:sp=advb:gl=rightly, justly, deservedly
+K>P	10061:sp=subs:gn=f:gl=stone
+K>T	7649:sp=subs:gn=f:de=K>T>:gl=reproof, censure, blame, uncultivated crop, that which grows of itself
+KBWLJ	20521:sp=adjv:ls=gntl:gl=Cabulite
+KBN	11069:sp=verb:gl=gird on, ETHPE put on
+KBRJT	2143:sp=subs:de=KBRJT>:gn=f:gl=sulphur, brimstone
+KBC	16273:sp=verb:gl=break up, subjugate, subdue
+KD	13537:sp=conj:gl=when, although, because, while
+KDB	20593:sp=verb:gl=be false, PA lie
+KDB=	11161:sp=adjv:gl=lying, flase
+KDBW	12659:sp=subs:de=KDBWT>:gn=f:gl=falsehood, lie, breach of faith
+KHN	1213:sp=subs:gn=m:gl=priest
+KHNW	14551:sp=subs:de=KHNWT>:gn=f:gl=priesthood, office of priest
+KW>	13411:sp=subs:gn=f:gl=opening, window, recess
+KWDNJ	3359:sp=subs:gn=m:de=KWDNJ>:gl=mule
+KWDNT	9437:sp=subs:gn=f:de=KWDNJ>:gl=she-ass
+KWKB	5261:sp=subs:gl=star, planet
+KWLJ>	5262:sp=subs:gn=f:gl=kidneys, reins
+KWMR	10139:sp=subs:gn=m:de=KWMR>:gl=priest
+KWSJ	16427:sp=subs:de=KWSJ>:gn=m:gl=covering, concealing of the body
+KWR	11633:sp=subs:gl=cor [measure]
+KWR=	4373:sp=subs:gn=m:gl=furnace, crucible, fire
+KWR==	2027:sp=subs:gn=f:gl=country, land, district
+KWRHN	853:sp=subs:gn=m:gl=sickness, illness, malady
+KWRSJ	4049:sp=subs:gn=m:gl=chair, throne
+KWC	14293:sp=subs:ls=prop:st=abs:gl=Cush (Ethiopia)
+KWCR	3229:sp=subs:de=KWCR>:gn=m:gl=prosperity, success, diligence
+KWT	11423:sp=subs:gn=f:de=KWT>:gl=window
+KWT=	13613:sp=subs:ls=prop:st=abs:gl=Cuthah
+KXD	2803:sp=verb:gl=revere, be modest, PA put to shame, ETHPA stand in awe, with MN be ashamed
+KXL	911:sp=verb:gl=paint the eyelid
+KJ	9157:sp=advb:gl=now, indeed, verily
+KJL	6827:sp=subs:gn=m:de=KJL>:gl=measure, amount, quality
+KJS	16519:sp=subs:gn=m:gl=small bag, pouch, purse
+KKWLT	12073:sp=subs:gn=f:de=KKWLT>:gl=cake of bread
+KKR	12301:sp=subs:gn=f:de=KKR>:gl=talent
+KKR=	16127:sp=subs:ls=prop:st=abs:gl=Kikar (Hebrew plain)
+KKRJT	17203:sp=subs:de=KKRJT>:gn=f:gl=honeycomb
+KL	7907:sp=subs:gl=whole
+KL>	1621:sp=verb:gl=withhold, forbid, hinder
+KLB	19073:sp=subs:gl=dog
+KLDJ	12911:sp=adjv:ls=gntl:gl=Chaldean
+KLJL	14177:sp=subs:gn=m:gl=crown, garland, mitre, turban
+KLKL	20731:sp=subs:ls=prop:st=abs:gl=Calcol
+KLL 	8819:sp=verb:gl=complete, PA adorn, APH imagine, SHA complete
+KM>	15527:sp=advb:gl=how much, how many
+KM>N	7369:sp=subs:gn=m:de=KM>N>:gl=lying in wait, lair, ambush
+KMWC	17509:sp=subs:ls=prop:st=abs:gn=m:gl=Chemosh
+KMN	9743:sp=verb:gl=lay wait, lie in ambush
+KN	9521:sp=advb:gl=and so, and then, then, afterward
+KNWCT	4679:sp=subs:gn=f:de=KNWCT>:gl=meeting, congregation, synagogue
+KN<NJ	6619:sp=adjv:ls=gntl:gl=Canaanite
+KNP	2647:sp=subs:gn=f:gl=side or edge of wing, border of skirt, arms, lap, bosom
+KNR	12721:sp=subs:gn=m:gl=harp, cithern
+KNC	16111:sp=verb:gl=gather together, collect, PA assemble, call together
+KNC=	10867:sp=subs:gn=m:gl=a gathering together, congregation
+KS	21559:sp=verb:gl=break in pieces, crunch, PA blame, reprove, APH show to be wrong, refute
+KS=	18229:sp=subs:gn=m:gl=cup, beaker
+KS>	18671:sp=verb:gl=cover, PA cover, hide, conceal, ETHPA be covered, clothed
+KS>=	2207:sp=subs:gn=m:de=KS>>:gl=time of full moon, the fifteenth day of the month
+KSWSVRWN	631:sp=subs:gn=m:gl=porch supported on pillars, balcony
+KSJ	6899:sp=subs:gn=m:de=KSJ>:gl=outer covering
+KSN	8513:sp=subs:gn=m:de=KSN>:gl=dried or preserved fruits
+KSP	1777:sp=subs:gn=m:gl=silver, money
+KST	15971:sp=subs:de=KST>:gn=f:gl=provender, fodder
+KP=	6701:sp=verb:gl=bend, curve, ETHPE be bent, PA bend over, ETHPA bow
+KP==	9739:sp=subs:gn=f:gl=palm, hollow of hand, handful, sheaf, buncle
+KP>	11933:sp=subs:gn=f:gl=anything hollow or curved, pan, bowl, spoon, vault
+KPN	9403:sp=subs:gn=m:gl=hunger, scarcity, famine
+KPN=	4451:sp=verb:gl=hunger
+KR	8629:sp=advb:gl=where
+KR>	2711:sp=verb:gl=be short, be sad
+KRB	1091:sp=subs:de=KRB>:gn=m:gl=ploughing, tilling, furrow, fallow ground
+KRB=	3853:sp=subs:de=KRB>:gn=m:gl=cabbage, cauliflower
+KRH	16007:sp=verb:gl=PE ptc pss sick, ill weak, ETHPE fall sick, be weak, be tender, PA make ill, ETHPA become very ill
+KRWB	10331:sp=subs:gn=m:de=KRWB>:gl=cherub
+KRWZ	19319:sp=subs:gn=m:gl=a herald, public crier
+KRZ	19843:sp=verb:gl=ETHPE be proclaimed, be announced, APH proclaim by a herald or messenger
+KRJW	20717:sp=subs:gn=f:gl=shortness, brevity
+KRJT	6451:sp=subs:ls=prop:st=abs:gl=Cherith
+KRK	7229:sp=verb:gl=go round, encompass, roll up, wrap round, APH make to turn round
+KRK=	13297:sp=subs:gn=m:de=KRK>:gl=walled city, fortified place
+KRM	6143:sp=subs:gn=m:gl=vineyard, vine
+KRM=	2693:sp=subs:gn=m:de=KRM>:gl=vine dresser
+KRML>	4937:sp=subs:ls=prop:st=abs:gl=Carmel
+KRMT	9829:sp=subs:gn=f:de=KRMT>:gl=beam, coping
+KRS	21433:sp=subs:gn=f:gl=belly, womb, cavity
+KRT	8443:sp=subs:gn=f:de=KRT>:gl=thumb, great toe
+KC>	19463:sp=verb:gl=pile up, heap
+KCJ	12347:sp=subs:gn=f:de=KCJT>:gl=pile, heap
+KCP	4229:sp=verb:gl=ETHPA pray in a low voice, make supplication
+KCR	12241:sp=verb:gl=prosper, succeed, serve well
+KT	21067:sp=subs:gn=f:gl=that which grows of itself, crop growing from a former harvest, reproof, censure
+KTB	11071:sp=verb:gl=write, ETHPE be written, APH write
+KTB=	8929:sp=subs:gn=m:gl=writing, book
+KTN	4951:sp=subs:de=KTN>:gn=m:gl=flax, linen
+KTP	6703:sp=subs:gn=f:gl=shoulder, shoulder blade, upper side
+KTR	2141:sp=verb:gl=PA wait for, stay, remain
+KTC	10253:sp=verb:gl=beat, strive, contend, ETHPE be in an uproar, make great effort, ETHPA strive, fight against
+L	5881:sp=prep:gl=to
+L>	3989:sp=nega:gl=not
+L>>	5519:sp=verb:gl=be weary, ETHPE be wearied by labour, APH weary, fatigue, trouble
+L>W	293:sp=subs:de=L>WT>:gn=f:gl=labour, trouble
+LB	14897:sp=subs:gn=m:gl=heart
+LBWNT	13003:sp=subs:de=LBWNT>:gn=f:gl=incense, frankincense
+LBWC	17923:sp=subs:gn=m:gl=garment
+LBN>	2857:sp=subs:ls=prop:st=abs:gl=Libnah
+LBNN	3079:sp=subs:ls=prop:st=abs:gl=Mount Lebanon
+LBC	3527:sp=verb:gl=clothe oneself, put on (armour)
+LBC=	7757:sp=subs:gn=m:gl=garment, clothing
+LG>	4217:sp=subs:gn=f:gl=dish, basin, vessel
+LGT	14449:sp=subs:de=LGT>:gn=f:gl=seed bed, flower bed, ride, furrow
+LHG	19571:sp=subs:de=LHG>:gn=m:gl=vapour, steam, exhalation
+LW>	18461:sp=verb:gl=accompany, follow, ETHPE accompany, PA accompany, dconduct, ETHPA be accompoanied, APH accompany
+LWX	4933:sp=subs:gn=f:gl=tablet, writing, title
+LWV	13687:sp=verb:gl=curse
+LWV=	10303:sp=subs:ls=prop:st=abs:gl=Lot
+LWVT	9491:sp=subs:gn=f:de=LWVT>:gl=curse, malediction, imprecation
+LWJ	21193:sp=subs:ls=prop:st=abs:gn=m:gl=Levi
+LWJ=	4363:sp=adjv:ls=gntl:gl=Levites
+LW<	12517:sp=verb:gl=lick up, lap
+LWP	18503:sp=subs:gn=m:de=LWP>:gl=sempervivum, pearl barley, arum
+LWQBL	9377:sp=prep:gl=opposite, against, before, towards
+LWQDM	14887:sp=advb:gl=first of all
+LWT	20509:sp=prep:gl=at, with, towards, for
+LXWD	10427:sp=advb:gl=only, alone, sole
+LXK	1861:sp=verb:gl=lick
+LXM	17191:sp=subs:gn=m:gl=food, bread
+LXC	1879:sp=verb:gl=mutter incantations, speak low, ETHPE be told secretly, PA murmur softly, ETHPA whisper
+LKJC	17123:sp=subs:ls=prop:st=abs:gl=Lachish
+LLJ	11897:sp=subs:gn=m:gl=night
+LMD	9630:sp=verb:gl=put together, compile, accord with, PAEL bring together, connect, compile, TAPHEL make a disciple, teach the Christian faith, convert, ETTAPHel be cinstructed, be taught, become a follower
+L<L	4219:sp=advb:gl=upwards,above
+L<S	9629:sp=verb:gl=chew, take food
+LQWBL	21163:sp=prep:gl=opposite, against, before, towards
+LQV	20903:sp=verb:gl=gather, pick up, collect
+LQN>	16811:sp=subs:gn=f:gl=basin, bowl, laver, vessel
+LCN	19379:sp=subs:gn=m:gl=tongue, speech, language
+M>	3191:sp=pron:ls=prin:gl=what
+M>>	5023:sp=subs:ls=card:gl=hundred
+M>KWLT	10993:sp=subs:gn=f:de=M>KWLT>:gl=food, pl suburbs
+M>KL	12107:sp=subs:gn=m:de=M>KL>:gl=food, victuals, provisions
+M>MR	11807:sp=subs:gn=m:gl=speech, diction, discourse
+M>N	12043:sp=subs:gn=m:gl=vessel, utensil, instrument, garment
+M>N=	8647:sp=verb:gl=irk, bore, APH be careless, negligent
+M>TJN	11719:sp=subs:ls=card:de=M>>:gl=two hundred
+MBWG	17657:sp=subs:ls=prop:st=abs:gl=Mabbug
+MBW<	14519:sp=subs:gn=m:gl=spring, source
+MB<RN	8941:sp=subs:de=MB<RN>:gn=m:gl=gleaner, gatherer
+MGDW	1693:sp=subs:ls=prop:st=abs:gl=Megiddo
+MGDL	12953:sp=subs:gn=m:gl=tower, bulwark
+MGZR	3583:sp=subs:gn=m:de=MGZR>:gl=axe, hatchet, saw, dagger
+MGN	15541:sp=advb:gl=gratis, freely, empty, in vain
+MGN=	3187:sp=subs:gn=f:gl=short buckler, shield
+MGRJN	2731:sp=adjv:gl=stimulating, inciting
+MGRJNW	20177:sp=subs:gn=f:de=MGRJNWT>:gl=stirring up strife, instigation, assault
+MD>T	9091:sp=subs:gn=f:de=MD>T>:gl=tribute, fine, penalty
+MDBX	10007:sp=subs:gn=m:gl=altar
+MDBR	3307:sp=subs:gn=m:gl=desert, wilderness
+MDBRN	12289:sp=subs:gn=m:de=MDBRN>:gl=leader, ruler, judge
+MDJ	9311:sp=adjv:ls=gntl:de=MDJ>:gl=Medes
+MDJ=	8467:sp=subs:ls=prop:st=abs:gl=Media
+MDJN	8971:sp=subs:ls=prop:st=abs:gl=Midian
+MDJN>	18917:sp=subs:gn=f:gl=city, town, province
+MDJNJ	7937:sp=adjv:ls=gntl:gl=Midianite
+MDJR	20113:sp=subs:de=MDJR>:gn=m:gl=story of a building, habitation
+MDM	12409:sp=subs:gl=something, aught
+MDNX	7883:sp=subs:gl=sunrise, east, Persian empire, Syria
+MDNXJ	757:sp=adjv:de=MDNXJ>:gl=east, eastern, Orientals
+MD<	4271:sp=subs:gn=m:gl=mind, intellect, understanding
+MW>B	12163:sp=subs:ls=prop:st=abs:gl=Moab
+MW>BJ	17581:sp=adjv:ls=gntl:gl=Moabite
+MWHBT	15493:sp=subs:gn=f:de=MWHBT>:gl=gift, present, favour
+MWZPN	7541:sp=subs:de=MWZPN>:gn=m:gl=lender, creditor
+MWLKN	11777:sp=subs:de=MWLKN>:gn=m:gl=promise, declaration, counsel, property
+MWM	5591:sp=subs:gn=m:gl=spot, mark, blemish
+MWMT	7019:sp=subs:gn=f:de=MWMT>:gl=oath, curse
+MWQ	10889:sp=verb:gl=deride
+MWR	2969:sp=subs:de=MWR>:gn=m:gl=myrrh
+MWR=	1427:sp=subs:de=MWR>:gn=f:gl=degree of a circle, Fate, mulberry tree
+MWRNJT	17011:sp=subs:gn=f:de=MWRNJT>:gl=spear, staff
+MWC>	21727:sp=subs:ls=prop:st=abs:gn=m:gl=Moses
+MWT	2293:sp=verb:gl=die, APH put to death
+MWT=	12569:sp=subs:gn=m:gl=death
+MWTB	18517:sp=subs:gn=m:de=MWTB>:gl=site, settlement, sitting
+MWTN	17377:sp=subs:gn=m:de=MWTN>:gl=plague, pestilence, mortality, slaughter
+MZBNN	9901:sp=subs:de=MZBNN>:gn=m:gl=seller, vender
+MZG	19471:sp=verb:gl=mix, mingle, ETHPE be mixed, PA mingle, ETHPA be mingled
+MZWN	17341:sp=subs:gn=m:gl=food, victuals, sustenance
+MZMK	13921:sp=subs:gn=m:de=MZMK>:gl=lower saucer or base of lamp, snuffers, surgical instrument
+MX>	61:sp=verb:gl=strike, beat, wound
+MXBLN	15727:sp=adjv:gl=destroying, corrupting, rapacious
+MXD>	7103:sp=advb:gl=immediately, at once
+MXW>	10709:sp=subs:gn=f:gl=blow, wound, sore, sickness, plague
+MXWL	17299:sp=subs:ls=prop:st=abs:gn=m:gl=Mahol
+MXWL>	6011:sp=subs:ls=prop:st=abs:gl=(Abel-)Mecholah
+MXNJM	9851:sp=subs:ls=prop:st=abs:gn=m:gl=Menahem
+MXNJM=	4463:sp=subs:ls=prop:st=abs:gl=Manahaim
+MXR	5471:sp=advb:gl=the after time, future, tomorrow
+MXRJ	11087:sp=subs:gn=m:de=MXRJ>:gl=dung-heap, privy
+MXCBT	10111:sp=subs:de=MXCBT>:gn=f:gl=throught, idea, device, consideration
+MV>	1321:sp=verb:gl=come, arrive at, happen, befall, PA bring, come, arrive, reach, attain
+MV>BN	17317:sp=subs:de=MV>BN>:gn=m:gl=patron, leader, promoter
+MVL	4831:sp=prep:gl=because of
+MVLL>	491:sp=subs:gn=f:gl=booth, shed, tent
+MVR	3019:sp=subs:gn=m:de=MVR>:gl=rain
+MVRT	15307:sp=subs:gn=f:de=MVRT>:gl=watch, guard, post
+MVCJ>JT	7207:sp=advb:gl=secretly, covertly
+MJ	5449:sp=subs:de=MJ>:gl=water
+MJK>	4931:sp=subs:ls=prop:st=abs:gn=m:gl=Micaiah
+MJNQT	7927:sp=subs:gn=f:de=MJNQT>:gl=wet-nurse
+MJC<	14591:sp=subs:ls=prop:st=abs:gn=m:gl=Mesha
+MK>	10259:sp=advb:gl=from this time, from this place
+MKJKW	907:sp=subs:de=MKJKWT>:gn=f:gl=lowliness, humility
+MKJL	19417:sp=advb:gl=thence, thereafter, therefore, so then
+MKK	12377:de=MK:sp=verb:gl=lie down flat, ETHPE be spread flat, PA humiliate, ETHPA pass. be strewn upon, refl. bow down, behave humbly, APH strew, lay low, cast down, humble, lower eyes, lower voice
+MKSNW	1051:sp=subs:de=MKSNWT>:gl=reproof, admonition, refutation
+MKTC	6547:sp=subs:gn=m:de=MKTC>:gl=contention, strife, trouble
+ML>	4457:sp=subs:gn=f:gl=word, saying, thing, affair
+ML>=	2531:sp=verb:gl=fill, complete, be full, PA fill up, fulfill, SHA do thoroughly, fulfil
+ML>K	15199:sp=subs:gn=m:gl=messenger, angel
+MLBVN	21577:sp=adjv:gl=hortatory, stimulating
+MLW	7481:sp=subs:ls=prop:st=abs:gl=Millo
+MLWK	3347:sp=subs:de=MLWK>:gn=m:gl=counsellor, adviser
+MLWKT	8363:sp=subs:de=MLWK>:gn=f:gl=counsellor, adviser
+MLX	9929:sp=subs:gn=f:gl=salt
+MLK	2281:sp=subs:gn=m:gl=king
+MLK=	311:sp=verb:gl=counsel, promise, reign
+MLK==	12251:sp=subs:gn=m:gl=counsel
+MLKW	16001:sp=subs:gn=f:gl=reign, kingdom, majesty
+MLKWM	18251:sp=subs:ls=prop:st=abs:gn=m:gl=Milcom
+MLKT	9277:sp=subs:gn=f:de=MLKT>:gl=queen, princess
+MLL	13903:de=ML:sp=verb:gl=PE ptc pss endowed with speech and reason, PA speak, ETHPA be spoken of, be accused
+MLQV	18233:sp=subs:gn=m:de=MLQV>:gl=tweezers, snuffers
+MMWN	21911:sp=subs:gn=m:gl=mammon, money, riches
+MMJQN	17351:sp=adjv:gl=mocking, scornful
+MMLL	397:sp=subs:gn=m:de=MMLL>:gl=speech, diction, eloquence
+MN	18481:sp=prep:gl=from
+MN=	6791:sp=pron:ls=prin:gl=who, which, what
+MN>	1721:sp=pron:ls=prin:de=MN:gl=what, why, wherefore
+MN>=	6131:sp=verb:gl=count
+MN>==	6361:sp=subs:gn=f:gl=hair, fur, musical string
+MNJ	6073:sp=subs:gn=m:de=MNJ>:gl=mina, pound
+MNJN	443:sp=subs:gn=m:de=MNJN>:gl=numbering, number, reckoning
+MNR>	19993:sp=subs:gn=f:gl=lamp stand, candlestick, minaret
+MNC>	16063:sp=subs:ls=prop:st=abs:gn=m:gl=Manasseh
+MNT	20611:sp=subs:gn=f:de=MNT>:gl=part, portion
+MNTML	13649:sp=advb:gl=day before yesterday, the other day
+MS>	463:sp=verb:gl=putrefy, melt, waste, drip away, ETHPE pine, decay, APH make to putrefy, wash away
+MSW	6491:sp=subs:de=MSWT>:gn=f:gl=rennet
+MSXW	13883:sp=subs:de=MSXWT>:gn=f:gl=washing, ablution
+MSKN	4943:sp=adjv:gl=poor, needy, miserable
+MSKNW	14843:sp=subs:de=MSKNWT>:gn=f:gl=poverty
+MSMK	20983:sp=subs:de=MSMK>:gn=m:gl=retiring, repose, couch
+MSN	16097:sp=subs:de=MSN>:gl=shoe, sandal
+MSN>	739:sp=subs:gn=f:gl=reed basket
+MSQ	9323:sp=subs:gn=m:gl=going or carrying up, ascent, sunrise, offering
+MSQ>	10247:sp=subs:gn=f:gl=ascent, climb, pass
+MSQN	10663:sp=subs:gn=m:de=MSQN>:gl=ascent, eminence, stairs
+MSRHB>JT	8951:sp=advb:gl=unrestrained, hastily (not in P.S.)
+MSRWXJT	17053:sp=subs:gn=f:de=MSRWXJT>:gl=oil-flask
+MST	1399:sp=subs:gn=m:gl=quanitity, sufficienty
+MSTRN	13441:sp=adjv:de=MSTRN>:gl=protecting, concealing, sheltering
+M<	12689:sp=subs:gn=m:de=M<>:gl=bowels, viscera
+M<>	5323:sp=subs:gn=m:gl=bowels, viscera
+M<DRN	1801:sp=adjv:gl=helpful, useful, advantageous, salutory
+M<HDN	233:sp=subs:gn=m:de=M<HDN>:gl=recorder, chronicler
+M<JN	3697:sp=subs:gn=f:gl=spring of water
+M<K>	8641:sp=subs:ls=prop:st=abs:gn=m:gl=Maacah
+M<K>=	9151:sp=subs:ls=prop:st=abs:gn=f:gl=Maacah
+M<K>==	12041:sp=subs:ls=prop:st=abs:gl=(Abel-beth-)Maacah
+M<KT	9511:sp=subs:ls=prop:st=abs:gn=m:gl=Maacat (Hebrew Maacathite)
+M<L	787:sp=subs:gn=m:gl=coming, entrance, return, beginning
+M<LN	5861:sp=subs:gn=m:de=M<LN>:gl=entrance, ingress
+M<MR	11677:sp=subs:gn=m:gl=dwelling, abode
+M<PR	1789:sp=subs:gn=m:de=M<PR>:gl=cloak, hood
+M<YRT	4507:sp=subs:gn=f:de=M<YRT>:gl=wine-press
+M<QBN	19031:sp=adjv:gl=searching, investigating, tracking
+M<R>	17497:sp=subs:gn=f:gl=cave, den
+M<RB	2833:sp=subs:gn=f:de=M<RB>:gl=setting of sun, west
+MPWLT	1933:sp=subs:de=MPWLT>:gn=f:gl=fall, falling, precipitation, calamity
+MPYJN	6373:sp=adjv:de=MPYJN>:gl=delivering, saving
+MPQ	16369:sp=subs:gn=m:gl=going out, exit, egress
+MPQN	14543:sp=subs:gn=m:de=MPQN>:gl=going forth, departure
+MPQT	11213:sp=subs:gn=f:de=MPQT>:gl=setting out, return, departure, version
+MY>	17291:sp=verb:gl=be able, be allowed, ETHPE be able, dare, oppose
+MY>=	11491:sp=verb:gl=suck, draw out, lap up, PA suck out, ETHPA be suck or squeezed out, APH drain out
+MYW	13487:sp=subs:de=MYWT>:gn=f:gl=strife, contention
+MYJDT	18289:sp=subs:de=MYJDT>:gn=f:gl=net, snare
+MY<J	461:sp=adjv:de=MY<J>:gl=middle, intermediate
+MY<T	20347:sp=subs:gn=f:de=MY<T>:gl=middle, centre
+MYPJ>	8677:sp=subs:ls=prop:st=abs:gl=Mizpah
+MYRJ	7457:sp=adjv:ls=gntl:gl=Egyptian
+MYRJN	13367:sp=subs:ls=prop:st=abs:fl=Egypt
+MQDC	5507:sp=subs:gn=m:de=MQDC>:gl=sanctuary, holy place
+MQM	5077:sp=subs:de=MQM>:gn=m:gl=act of standing
+MQY	6679:sp=subs:ls=prop:st=abs:gl=Makaz
+MR>	13627:sp=subs:gn=m:gl=lord
+MR>=	13628:sp=verb:gl=PA & ETHPA contend, strive, emulate, imitate
+MRGN	719:sp=subs:gn=f:de=MRGN>:gl=scourge of leathern thongs filled with sand and having sharp points
+MRGNJT	967:sp=subs:de=MRGNJT>:gn=f:gl=pearl
+MRD	18919:sp=verb:gl=rebel, go beyond, surpass
+MRD=	2617:sp=subs:gn=m:de=MRD>:gl=rebellion, stronghold
+MRD>	8039:sp=subs:gn=m:gl=journey, march
+MRDW	6421:sp=subs:gn=f:gl=rebellion, revolt, instruction,correction
+MRWD	19753:sp=adjv:gl=rebellious, refractory, insolent
+MRWDK	1543:sp=subs:ls=prop:st=abs:gn=m:gl=Marduk (Berodach-, -merodach)
+MRWM	18077:sp=subs:de=MRWM>:gl=height
+MRX	20947:sp=adjv:gl=bold, headstrong, wilful
+MRX=	2029:sp=verb:gl=be rash, be headstrong, APH venture, dare, be presumptuous
+MRXW	12889:sp=subs:de=MRXWT>:gn=f:gl=boldness, intrepidity, audacity
+MRXMN	2687:sp=adjv:gl=merciful, tender, compassionate
+MRJ>	5737:sp=subs:ls=prop:st=abs:de=MR>:gl=THE LORD
+MRKB>	15973:sp=subs:gn=f:gl=chariot, vehicle
+MRKBN	7573:sp=subs:gn=m:de=MRKBN>:gl=driver, charioteer
+MRMW	2927:sp=subs:de=MRMWT>:gn=f:gl=elevation, haughtiness
+MRMRM>JT	1871:sp=advb:gl=wonderfully, exceedingly
+MR<	16139:sp=subs:de=MR<>:gn=m:gl=sickness, disease
+MR<=	20899:sp=adjv:de=MR<>:gl=sick, ill
+MR<JT	11497:sp=subs:de=MR<JT>:gn=f:gl=pasture, flock
+MRR	4349:de=MR:sp=verb:gl=be bitter, be sour, be acid, PA irreg. make bitter, APH make bitter, make sad, PALPAL render bitter, exacerbate, ETHPALPAL be embittered, be saddened, be provoked to wrath
+MRR>	16673:sp=subs:gn=f:gl=bitterness
+MRT	3709:sp=subs:gn=f:de=MRT>:gl=lady, mistress
+MCBXN	9839:sp=adjv:gl=singing, praising
+MCWZBW	2467:sp=subs:de=MCWZBWT>:gn=f:gl=deliverance, preservation, salvation
+MCWZBN	13679:sp=adjv:gl=saving, delivering, redeeming
+MCWX	3637:sp=subs:de=MCWX>:gl=anointer, measurer, geometrician
+MCX	10939:sp=verb:gl=besmear, anoint, PA measure, proportion
+MCX=	4703:sp=subs:gn=m:de=MCX>:gl=ointment
+MCXN	643:sp=subs:gn=m:de=MCXN>:gl=salve
+MCK	4261:sp=subs:gn=m:de=MCK>:gl=skin, hide, leather
+MCKB>	10601:sp=subs:gn=f:gl=couch, bedroom
+MCKXN	15773:sp=adjv:de=MCKXN>:gl=finding, inventing, possible, productive
+MCKN	2447:sp=subs:gn=m:de=MCKN>:gl=tent, tabernacle, habitation
+MCLM	15643:sp=subs:ls=prop:st=abs:gn=m:gl=Meshullam
+MCLMT	6301:sp=subs:ls=prop:st=abs:gn=f:gl=Meshullemeth
+MCMCN	13451:sp=adjv:de=MCMCN>:gl=serving, ministering
+MCRJ	16823:sp=subs:de=MCRJ>:gn=m:gl=dwelling place, habitation
+MCRJT	4561:sp=subs:de=MCRJT>:gn=f:gl=camp, host
+MCTJ	1289:sp=subs:gl=drinking, feast
+MTJ	3137:sp=subs:ls=prop:st=abs:gn=m:gl=Amittai
+MTJNW	20341:sp=subs:de=MTJNWT>:gn=f:gl=slowness, laziness, patience
+MTL	2347:sp=subs:gn=m:de=MTL>:gl=proverb, parable, fable
+MTN	9413:sp=subs:ls=prop:st=abs:gn=m:gl=Mattan
+MTN=	14957:sp=verb:gl=ptc.pss slow, patient, ETHPA delay, linger, be slow
+MTNJ>	19603:sp=subs:ls=prop:st=abs:gn=m:gl=Mattaniah
+MTNJN	6977:sp=subs:ls=prop:st=abs:gl=Matanin (Hebrew Bashan)
+MTNT	18701:sp=subs:de=MTNT>:gn=f:gl=lions, side, ribs
+MTQWLT	10667:sp=subs:gn=f:de=MTQWLT>:gl=plummet, pouch
+MTQL	4519:sp=subs:gn=m:de=MTQL>:gl=weight, scale, balance
+MTQN	6763:sp=subs:gn=m:gl=base, pedestal, support, foundation
+MTRJ>	19441:sp=subs:gn=f:gl=liquid measure, bath
+N>	7901:sp=intj
+NB>	2593:sp=verb:gl=PA prophesy, ETHPA prophesy, behave as a prophet
+NBWZRDN	8171:sp=subs:ls=prop:st=abs:gn=m:gl=Nebuzaradan
+NBWKDNYR	1567:sp=subs:ls=prop:st=abs:gn=m:gl=Nebuchadnezzar
+NBWT	6871:sp=subs:ls=prop:st=abs:gn=m:gl=Naboth
+NBV	9941:sp=subs:ls=prop:st=abs:gn=m:gl=Nebat
+NBJ	15031:sp=subs:de=NBJ>:gn=m:gl=prophet
+NBJW	20753:sp=subs:gn=f:gl=prophecy
+NBJT	16333:sp=subs:de=NBJT>:gn=f:gl=prophetess
+NBL<M	13267:sp=subs:ls=prop:st=abs:gl=Ibleam #Hebrew
+NB<	1009:sp=verb:gl=spring up, flow, shoot up, APH pour forth, utter
+NGD	8317:sp=verb:gl=be long, PA repress, saw
+NGR	20719:sp=verb:gl=be long, continue, last, saw, PA repress, restrain, saw, APH make long
+NGR=	4793:sp=subs:gn=m:gl=workman, carpenter
+ND	15817:sp=verb:gl=loathe, abhor, ETHPE be abominable, ETHPA, become an abomination, APH be disgusted, abhor, agitate
+NDB	21601:sp=subs:ls=prop:st=abs:gn=m:gl=Nadab
+NDR	18691:sp=subs:gn=m:gl=vow
+NDR=	1361:sp=verb:gl=pour down, vow, devote
+NHJR	19469:sp=subs:gn=m:gl=light, luminary
+NHR	2621:sp=subs:gn=m:gl=stream, river, canal
+NHR=	17659:sp=verb:gl=be light, shine, PA bring to light, enlighten, make clear, ETHPA receive light, be enlightened, APH give forth light, shine brightly
+NWGH	19289:sp=subs:de=NWGH>:gn=m:gl=early dawn, twilight before dawn
+NWGR	2683:sp=subs:de=NWGR>:gn=m:gl=length, duration
+NWD	15083:sp=verb:gl=wave to and fro, stagger, tremble, APH shake, toss
+NWHR	14669:sp=subs:gn=m:gl=light, brightness
+NWX	19079:sp=verb:gl=rest, stay quiet
+NWX=	21773:sp=subs:ls=prop:st=abs:gn=m:gl=Noah
+NWVPT	11953:sp=subs:de=NWVPT>:gn=f:gl=drop, dropping
+NWKRJ	2437:sp=adjv:gl=strange, foreign, alien
+NWM>	16381:sp=subs:gn=f:gl=slumber, deep sleep
+NWN	14827:sp=subs:gn=m:de=NWN>:gl=fish
+NWN=	11657:sp=subs:ls=prop:st=abs:gn=m:gl=Nun
+NWS	929:sp=subs:gn=m:de=NWS>:gl=temple, shrine
+NWP	2707:sp=verb:gl=bend or move towards, APH lift up, lay to, move
+NWQJ	15289:sp=subs:gn=m:de=NWQJ>:gl=libation, drink offering
+NWR	8783:sp=subs:gn=f:gl=fire
+NWRB	3257:sp=subs:de=NWRB>:gl=sucker, shoot, offset
+NZJR	10181:sp=subs:gn=m:gl=Nazirite
+NXJR	2897:sp=subs:gn=m:de=NXJR>:gl=nose, nostril, nozzle, flange of folding doors
+NXL	21227:sp=subs:gn=m:gl=torrent, wady, gorge, valley
+NXM	12211:sp=verb:gl=PA raise, resuscitate, ETHPA be raised, APH same as Pael
+NXMJ>	19963:sp=subs:ls=prop:st=abs:gn=m:gl=Nehemiah
+NXC	73:sp=subs:gn=m:de=NXC>:gl=brass
+NXC=	4297:sp=verb:gl=whisper, divine, PA practise augury, divine, ETHPA be affected by divination
+NXC==	11959:sp=subs:de=NXC>:gl=augur, diviner
+NXCT>	12893:sp=subs:ls=prop:st=abs:gn=f:gl=Nehushta
+NXCTN	21943:sp=subs:ls=prop:st=abs:gl=Nehushtan
+NXT	4643:sp=verb:gl=descend, PA bring down, APH cause come down
+NXT=	19447:sp=subs:gn=m:de=NXT>:gl=long outer garment
+NVWR	12421:sp=subs:gn=m:de=NVWR>:gl=keeper, guard
+NVWRT	4019:sp=subs:gn=f:de=NVWRT>:gl=observance, precept, charge
+NVR	7877:sp=verb:gl=guard, APH put in a safe place
+NJZK	10657:sp=subs:de=NJZK>:gn=m:gl=lance, spear, javelin
+NJX	20123:sp=subs:gn=m:gl=rest, calm, quiet, satisfaction, will, pleasure
+NJX=	14939:sp=subs:ls=prop:st=abs:gl=Niya
+NJNW>	6779:sp=subs:ls=prop:st=abs:gl=Nineveh
+NJSN	6173:sp=subs:ls=prop:st=abs:gl=Nisan
+NJR	13907:sp=subs:gn=m:gl=yoke, servitude
+NJR=	19037:sp=subs:ls=prop:st=abs:gn=m:gl=Ner
+NJC	15331:sp=subs:gn=m:gl=ensign, sign, portent, aim, sense
+NKWLTN	3373:sp=adjv:gl=deceitful, wily
+NKL	12589:sp=subs:de=NKL>:gl=deceit, perfidy, treacery
+NKL=	20441:sp=verb:gl=deceive, beguile, ETHPE act deceitfully, PA beguile, APH deceive, suppose
+NKS	9049:sp=subs:de=NKS>:gn=m:gl=piece of flesh, wealth, riches
+NKS=	16759:sp=verb:gl=slay, kill
+NKPW	12119:sp=subs:de=NKPWT>:gn=f:gl=modeesty, chastity, honour, prudence
+NKR	20020:sp=verb:de=NKRJ:gl=PALI alienate, estrange, separate, ETHPALI be alien, become alien, be declared alien, be dispossessed, renounce, diwon, reject, abstain
+NKT	20021:sp=verb:gl=bite, sting, ETHPE be bitten, stung, PA sting sharply ETHPA be bitten repeatedly
+NMWS	2063:sp=subs:gn=m:gl=nome, prefecture, law, custom, usage
+NMR	20063:sp=subs:de=NMR>:gn=m:gl=leopard
+NS>	9649:sp=verb:gl=PA try, prove, make trial of
+NSB	14251:sp=verb:gl=take, receive
+NSJWN	797:sp=subs:de=NSJWN:gn=m:gl=trial, temptation
+NSJN	9227:sp=subs:de=NSJN>:gn=m:gl=proof, test, trial
+NSK	4139:sp=verb:gl=pour, flow into, smelt
+NSKT	21649:sp=subs:gn=f:de=NSKT>:gl=smelting, castingfounding
+NSR	5843:sp=subs:de=NSR>:gl=sawing, the part sawn, the cleft
+NSR=	17471:sp=verb:gl=saw, cut asunder, tear out hair
+NSRK	2297:sp=subs:ls=prop:st=abs:gl=Nisroch
+N<	22031:sp=subs:ls=prop:st=abs:gl=Hena #Hebrew
+N<M>	4783:sp=subs:ls=prop:st=abs:gn=f:gl=Naamah
+N<MN	14683:sp=subs:ls=prop:st=abs:gn=m:gl=Naaman
+NPX	15859:sp=verb:gl=breathe, inspire, blow, ETHPE be blown upon, PA winnow, ETHPA swell, bubble up
+NPVR	12413:sp=subs:de=NPVJR>:gn=m:gl=torch lantern
+NPL	12527:sp=verb:gl=fall
+NPL=	5669:sp=subs:gn=m:de=NPL>:gl=a deserter
+NPY	383:sp=verb:gl=shake, toss, throw away, impel, ETHPE be tossed, PA shake violently, ETHPA be stirred up, be shaken
+NPQ	8117:sp=verb:gl=go out, issue, proceed forth
+NPC	14753:sp=subs:gn=f:gl=breath, animal soul
+NPTDWR	5501:sp=subs:ls=prop:st=abs:gl=region of Dor #Hebrew
+NPTLJ	7109:sp=subs:ls=prop:st=abs:gl=Naphtali
+NY>	7523:sp=verb:gl=strive, contend, be contrary
+NYB	10223:sp=verb:gl=plant, implant, fix, found
+NYB>	4003:sp=subs:gn=f:gl=planting, power of reproduction, plant
+NQ>	9283:sp=verb:gl=be oppressed in mind, be inclined, PA pour libation, consecrate, offer
+NQB	18043:sp=subs:gn=m:de=NQB>:gl=hole, opening, tunnel
+NQB=	12373:sp=verb:gl=bore, pierce
+NQB>	6917:sp=subs:gn=f:de=NQB>:gl=female, feminine
+NQD	18793:sp=subs:de=NQD>:gl=herdsman, sheepmaster
+NQWC	1619:sp=subs:gn=m:de=NQWC>:gl=one knocking at the door,musical instrument
+NQM	12487:sp=verb:gl=ETHPE take vengeance, ETHPA take vengeance, be avenged
+NQM<M	19219:sp=subs:ls=prop:st=abs:gl=Yokneam #Hebrew
+NQP	661:sp=verb:gl=cleave, be joined, adhere
+NQC	9887:sp=verb:gl=knock, strike, clash, play (a musical instrument), fix a nail, clap hands
+NQT>JL	11321:sp=subs:ls=prop:st=abs:gl=Joktheel #Hebrew
+NRGL	7753:sp=subs:ls=prop:st=abs:gl=Nergal
+NC	1301:sp=verb:gl=become feeble, slack, inert, ETHPA become inert, stiff, APH make torpid, stupify
+NCB	20297:sp=subs:de=NCB>:gn=m:gl=noose, snare, net
+NCB=	17021:sp=subs:de=NCB>:gn=m:gl=blowing of the wind, storm
+NCM>	7331:sp=subs:gn=f:gl=breath, living being, soul
+NCP	15413:sp=verb:gl=pound, smoothe, pulverise, PA smoothe, rub fine, ETHPA be pick clean
+NCQ	17839:sp=verb:gl=kiss
+NCR	17840:sp=subs:gn=m:de=NCR>:gl=eagle, roof gabled in the centre with lower roofs slanting down to side walls
+NTL	10733:sp=verb:gl=only ipf give, make be, put
+NTN	2221:sp=subs:ls=prop:st=abs:gn=m:gl=Nathan
+NTNJ>	21683:sp=subs:ls=prop:st=abs:gn=m:gl=Nethaniah
+NTR	6571:sp=verb:gl=fall off, waste away, ETHPA be fallen away, be bald, APH shed, shake off
+S>>	8123:sp=subs:gn=f:gl=a measure (seah)
+S>B	9433:sp=verb:gl=grow old
+S>W	3557:sp=subs:ls=prop:st=abs:gn=m:gl=So
+S>M	15937:sp=subs:gn=m:de=S>M>:gl=silver
+SB	6857:sp=adjv:gl=elderly person
+SBL	3037:sp=verb:gl=carry, endure, PA fetch, make endure, APH made endure
+SB<	2713:sp=verb:gl=be full, satiated, ETHPE be fed, PA fill, satisfy, ETHPA be filled, sated, APH fill, satisfy
+SB<=	2269:sp=subs:gn=m:gl=fullness, plenty
+SBR	19237:sp=verb:gl=suppose, believe, PA announce, PAI bear, endure, APH think, suppose
+SBR=	11471:sp=subs:gn=m:gl=hope, trust, confidence
+SBRT	16103:sp=subs:gn=f:de=SBRT>:gl=good tidings
+SG>	4909:sp=verb:gl=increase, APH make more, increase, add
+SGD	13577:sp=verb:gl=bow, do obeisance
+SGJ	15427:sp=adjv:gl=much, many, great
+SGJ>W	6287:sp=subs:de=SGJ>WT>:gn=f:gl=great number, multitude
+SDWN	7013:sp=subs:gn=m:de=SDWN>:gl=a cloth, towel
+SDR	17183:sp=subs:gn=m:de=SDR>:gl=hanging, curtain, row, array, chant, anthem
+SDR=	11119:sp=verb:gl=arrange, set in order, ETHPE be drawn up, set in array
+SHD	7829:sp=verb:gl= witness, testify, APH bear witness, attest
+SHDW	1163:sp=subs:gn=f:gl=witness, evidence, confession
+SHR	16033:sp=subs:de=SHR>:gl=moon
+SWG	971:sp=verb:gl=hedge, enclose, ETHPE be stopped, blocked, PA fence round, repair, APH fence round, repair
+SWG>	19919:sp=subs:de=SWG>>:gl=multitude, great part
+SWD	16493:sp=verb:gl=PA talk, converse, ETHPA speak, talk, ETHTAPH be said
+SWK>	389:sp=subs:gn=f:gl=bough, branch, twig
+SWKL	16937:sp=subs:de=SWKL>:gn=m:gl=intelligence, understanding, thought
+SWKR	2069:sp=subs:gn=m:de=SWKR>:gl=bolt, bar, lock
+SWM	20809:sp=verb:gl=put, lay up, constitute
+SWMQ	2179:sp=adjv:gl=bloodred, reddish
+SWSJ	4721:sp=subs:gn=m:gl=horse
+SWST	307:sp=subs:gn=f:de=SWSJ:gl=mare
+SW<RN	17077:sp=subs:gn=m:gl=action, deed, thing, fact
+SWP	12619:sp=subs:gn=m:gl=the uttermost part, end, edge, border
+SWP=	8087:sp=subs:ls=prop:st=abs:gl=Red Sea #Hebrew
+SWP==	4093:sp=verb:gl=come an end, perish
+SWRHB	19739:sp=subs:gn=m:de=SWRHB>:gl=haste, hurry, commotion
+SWRXN	7559:sp=subs:gn=m:de=SWRXN>:gl=fault, defect, injury
+SX>	14951:sp=verb:gl=bathe, wash
+SXP	4969:sp=verb:gl=thrust, throw, pull down, PA utterly defeat, destroy
+SXP=	2161:sp=subs:gn=m:gl=a course of stones or wood, reversion
+SXRT	15497:sp=subs:gn=f:de=SXRT>:gl=walled enclosure, palace
+SV>	1097:sp=verb:gl=turn aside, depart (from)
+SVN	18637:sp=subs:gn=m:de=SVN>:gl=adversary
+SVR	12577:sp=subs:ls=ppre:gn=m:gl=side
+SJBW	4159:sp=subs:gn=f:de=SJBWT>:gl=old age
+SJBRT	18749:sp=subs:de=SJBRT>:gn=f:gl=nourishment, food
+SJG	3877:sp=subs:gn=m:gl=hedge, fence
+SJXWN	18523:sp=subs:ls=prop:st=abs:gn=m:gl=Sihon
+SJMT	1499:sp=subs:de=SJMT>:gl=treasure # PS Thesaurus
+SJSQ	10103:sp=subs:ls=prop:st=abs:gn=m:gl=Sisak (Rabsaris Hebrew)
+SJP	20249:sp=subs:gn=m:gl=sword
+SJR>	2551:sp=subs:ls=prop:st=abs:gn=m:gl=Sira
+SK	8933:sp=subs:gn=m:gl=end, bound, limit, sum, total
+SK>	12757:sp=verb:gl=PA wait for, look for, expect
+SKWLTN	1447:sp=adjv:gl=understanding, capable
+SKWLTNW	8353:sp=subs:gn=f:de=SKWLTNWT>:gl=understanding, intelligence
+SKWT	18433:sp=subs:ls=prop:st=abs:gl=Succoth
+SKL	16301:sp=adjv:gl=stupid, foolish
+SKL=	10343:sp=verb:gl=be stupid, act foolishly, ETHPE be known, PA make understand, ETHPA inspect, be capable, APH act foolishly, offend
+SKLW	16631:sp=subs:gn=f:gl=folly,offence
+SKN	5483:sp=verb:gl=MAPH make poor, weaken, ETHMAPH grow poor, grow weak, be imperfect
+SKR	6221:sp=subs:gn=f:de=SKR>:gl=round shield
+SKR=	21557:sp=verb:gl=shut, stop. block, ETHPE be shut, repaired, PA shut up closely, ETHPA be stopped
+SKT	12049:sp=subs:de=SKT>:gn=f:gl=pin,peg, pole, wedge
+SL>	3919:sp=verb:gl=despise, reject
+SL<	19391:sp=subs:de=SL<>:gl=a coin, a shekel
+SL<=	15443:sp=subs:ls=prop:st=abs:gl=Silla
+SLQ	8803:sp=verb:gl=go up, ascend
+SM	13219:sp=subs:gn=m:gl=drug, medicine, poison
+SMWK>	4027:sp=subs:gn=f:gl=stay, support
+SMJD	11383:sp=subs:gn=m:de=SMJD>:gl=finest wheat flour, meal offering
+SMK	983:sp=verb:gl=stay, sustain, ETHPE support oneself, lean on, rely upon, PA uphold, support, ETHPA lean on, be supported
+SMK=	9161:sp=subs:gn=m:de=SMK>:gl=prop, support, upholder
+SML	13709:sp=subs:gn=f:de=SML>:gl=left, left hand
+SN>	20411:sp=verb:gl=hate
+SN>=	883:sp=subs:de=SN>>:gl=hater, enemy, adversary
+SN>==	7247:sp=subs:gn=m:gl=bush, thorn, bramble
+SN>T	7248:sp=subs:gn=f:de=SN>T>:gl=hatred, enmity
+SNXRJB	7529:sp=subs:ls=prop:st=abs:gn=m:gl=Sennacherib
+SNJQW	8597:sp=subs:de=SNJQWT>:gn=f:gl=need, necessity, poverty
+SNJR	9601:sp=subs:ls=prop:st=abs:gl=Senir (Hermon)
+SNN	16249:sp=verb:de=SN:gl=strain, filter, purge
+SS	563:sp=subs:de=SS>:gl=moth, maggot, worm, rottenness
+SS=	569:sp=subs:de=SS>:gn=m:gl=vault, stars of the Milky Way 
+S<R	10337:sp=subs:gn=m:gl=hair
+S<R=	5303:sp=verb:gl=visit, inspect, deal, perform, act
+S<R>	18397:sp=subs:gn=f:gl=barley
+SP	14461:sp=subs:gl=doorpost, sill, threshold
+SP=	11617:sp=verb:gl=smoulder
+SP>	9689:sp=subs:gn=f:gl=lip, brim, edge
+SPJN>	21211:sp=subs:gn=f:gl=ship
+SPN	21101:sp=subs:gn=m:de=SPN>:gl=mariner, sailor
+SPQ	8521:sp=verb:gl=suffice, be enough (pass. ptc. empty, vacant)
+SPR	18899:sp=subs:gn=m:gl=writing, book, letters
+SPR=	20089:sp=subs:gn=m:de=SPR>:gl=scribe
+SPRWJ	7243:sp=adjv:ls=gntl:gl=Sepharvites
+SPRWJM	16573:sp=subs:ls=prop:st=abs:gl=Sepharvaim
+SQ	14533:sp=subs:gn=m:gl=sackcloth, haircloth, sack, bag
+SRB	7723:sp=verb:gl=talk idly, talk foolishly, accuse false, deny
+SRWX	18061:sp=adjv:de=SRWX>:gl=noxious, baneful, ravenous
+SRX	5279:sp=verb:gl=hurt, injure, ETHPE be wounded, PA grievously mar, mutilate, ETHPA be destroyed, APH propound, utter, question
+SRX=	17359:sp=subs:de=SRX>:gn=m:gl=corruption, depravity, violation of marriage
+SRXDWM	1787:sp=subs:ls=prop:st=abs:gn=m:gl=Esarhaddon #Hebrew
+SRJD	16433:sp=adjv:gl=remaining, surviving
+SRJQ>JT	13037:sp=advb:gl=emptily, vaily, without cause
+SRJQW	15889:sp=subs:de=SRJQWT>:gn=f:gl=vanity, nothingness, idol
+SRN	12821:sp=subs:gn=m:de=SRN>:gl=axle, axis, the pole
+SR<PJT	20369:sp=subs:de=SR<PJT>:gn=f:gl=branches, fork, layers
+SRQ	15461:sp=verb:gl=comb, tortune with iron, make void, ETHPE be combed, become empty, PA empty, lay bare, lay waste, ETHPA be emptied out, left bare, ETHPAU be overclouded
+SRQT	11047:sp=subs:de=SRQT>:gn=f:gl=linen or cotten waste, tow
+STR	8089:sp=verb:gl=break down, refute, ruin, ETHPE be thrown down, ruin, PA conceal, cover, ETHPA be concealed
+STR=	17987:sp=subs:de=STR>:gn=m:gl=secret, ruin
+STR==	103:sp=subs:de=STR>:gn=m:gl=covert, shelter
+<>D	19979:sp=subs:gn=m:de=<>D>:gl=day of assembly, festival, feast
+<>Z>	9029:sp=subs:ls=prop:st=abs:gl=Gaza
+<B	19577:sp=subs:gn=m:gl=thicket, thick wood, dense forest
+<B>	20357:sp=verb:gl=thicken, swell
+<BD	15053:sp=verb:gl=do, make, work
+<BD=	829:sp=subs:gn=m:gl=servant
+<BD==	2237:sp=subs:gn=m:gl=work
+<BD>	11057:sp=subs:ls=prop:st=abs:gn=m:gl=Abda
+<BDCLWM	1453:sp=subs:ls=prop:st=abs:gn=m:gl=Abishalom #Hebrew
+<BWD	17539:sp=adjv:de=<BWD>:gl=efficient, agentive (doer, maker)
+<BWR	12941:sp=subs:gn=m:de=<BWR>:gl=crop, produce, corn, food
+<BV	17609:sp=verb:gl=grow thick, thickly grown
+<BJ	8689:sp=subs:gn=m:de=<BJ>:gl=thickness, swelling, solid part
+<BKWR	6961:sp=subs:ls=prop:st=abs:gn=m:gl=Achbor
+<BR	9749:sp=verb:gl=pass on, pass over, APH cause to pass, transfer, remove
+<BR=	2767:sp=subs:gn=m:gl=crossing over, transgression (of law)
+<BR==	9103:sp=subs:gn=m:de=<BR>:gl=passing over, ford, strait, further shore
+<GL	9931:sp=advb:gl=quickly, forthwith
+<GL=	9803:sp=subs:gn=m:de=<GL>:gl=calf, antelope
+<D	14983:sp=prep:gl=while, until, unto
+<DW<JR	1613:sp=subs:ls=prop:st=abs:gl=Aroer #Hebrew
+<DWR	13859:sp=subs:de=<DWR>:gn=m:gl=helper
+<DKJL	691:sp=advb:de=see <D:gl=up now, until now, still, yet
+<DM>	3259:sp=prep:gl=until, as far as, unto, so that
+<DN	3613:sp=subs:gn=m:gl=a moment, minute
+<DN=	4657:sp=subs:ls=prop:st=abs:gl=Eden
+<DR	9721:sp=verb:gl=help, assist, PA help, favour, be useful, (with BTR) take the part of
+<DR=	10267:sp=subs:de=<DR>:gn=m:gl=help
+<W>	16087:sp=subs:ls=prop:st=abs:gl=Avva
+<WB	5813:sp=subs:gl=bosom
+<WBDJ>	6947:sp=subs:ls=prop:st=abs:gn=m:gl=Obadiah #Hebrew
+<WG	21767:sp=subs:ls=prop:st=abs:gn=m:gl=Og
+<WHDN	6337:sp=subs:gn=m:gl=memory, remembrance, memorial
+<WZJ>	11903:sp=subs:ls=prop:st=abs:gn=m:gl=Azariah, Uzziah 
+<WJ	8447:sp=adjv:ls=gntl:gl=Avvites
+<WL	16921:sp=adjv:gl=wicked
+<WL=	4877:sp=subs:gn=m:de=<WL>:gl=iniquity, injustice
+<WL==	9463:sp=subs:gn=m:gl=new-born babe
+<WL===	4447:sp=verb:gl=do iniquity
+<WMQ	5879:sp=subs:gn=m:de=<WMQ>:gl=the deep, depth, low-lying country
+<WMR	8369:sp=subs:de=<WMR>:gn=m:gl=living, life, habitation, monastery
+<WP	8573:sp=subs:gn=m:de=<WP>:gl=fowl
+<WP=	3673:sp=verb:gl=be double, double, enfold, twist, faint, swoon, ETHPA grow faint, APH enfeeble
+<WPJ	17491:sp=subs:de=<WPJ>:gn=m:gl=bloom, herb, flowers
+<WQ	9619:sp=verb:gl=loathe, be weary, APH annoy, distress
+<WR	18041:sp=verb:gl=wake, watch, PA wake, rouse, APH wake, awaken, ETTAPH awake, be awakened, aroused, excited, be attentive, sober, wake from the dead
+<WR=	15767:sp=verb:gl=PA & APH make blind
+<WRB	2657:sp=subs:gn=m:de=<WRB>:gl=raven, willow
+<WCN	3433:sp=subs:de=<WCN>:gn=m:gl=strength, multitude, stronghold
+<WTR	10711:sp=subs:gn=m:de=<WTR>:gl=riches, opulence
+<Z	8693:sp=subs:de=<Z>:gl=goat, Capella
+<ZL	19760:sp=verb:gl=spin, twist, twine, PAREL entwine, interweave, pass.ptc. implicated, involved, entangled, ETHPAREL be tangled, be intertwined, be knit together, join together in combat, be joined
+<ZQT	151:sp=subs:gn=f:de=<ZQT>:gl=a ring, signet-ring
+<ZRJ>	16901:sp=subs:ls=prop:st=abs:gn=m:gl=Azariah, Adaiah #Hebrew
+<V>	19759:sp=verb:gl=blot out, efface, cancel
+<VP	11287:sp=verb:gl=turn another way, reflect, clothe oneself, ETHPE be covered, PA cover, clothe, ETHPA wrap oneself, APH cover as with a garment
+<VR	16619:sp=verb:gl=exhale, steam, smoke, APH produce fume, burn incense or perfume
+<VR=	20759:sp=subs:de=<VR>:gn=m:gl=vapour, fume, steam, incense
+<JWN	4799:sp=subs:ls=prop:st=abs:gl=Ijon
+<JVRN	21169:sp=subs:de=<JVRN>:gn=m:gl=cedar resin or oil
+<JL	19373:sp=subs:de=<JL>:gn=m:gl=foal, colt
+<JN	9857:sp=subs:gn=f:gl=eye
+<KR	7307:sp=verb:gl=PA hinder, ETHPA be hindered
+<L	17957:sp=prep:ls=pcon:gl=upon, because
+<L=	19009:sp=verb:gl=enter, APH bring in, carry in
+<L>	3643:sp=verb:gl=PA raise, ETHPA be raised, be exalted, APH lift up, act perversely
+<LB	11689:sp=verb:gl=have the upper hand, take advantage, ETHPE ETHPA be defrauded, suffer wrong, PA exceed
+<LJ	3271:sp=adjv:gl=exalted, supreme, superior
+<LJ=	18047:sp=subs:ls=prop:gn=m:st=abs:gl=Eli
+<LJM	12553:sp=adjv:de=<LJM>:gl=a youth, maiden, young, juvenile
+<LJMW	7919:sp=subs:de=<LJMWT>:gn=f:gl=youth
+<LJT	7349:sp=subs:gn=f:de=<LJT>:gl=upper room, upper story
+<LLT	8719:sp=subs:f=gn:de=<LLT>:gl=ingathering, increase, harvest
+<LM	14821:sp=subs:gn=m:de=<LM>:gl=age, era, eternity
+<L<L	8093:sp=subs:gn=f:de=<L<L>:gl=whirlwind, hurricane
+<LT	15583:sp=subs:gn=f:de=<LT>:gl=offering, high place, altar
+<M	577:sp=prep:gl=with
+<M=	977:sp=subs:gn=m:gl=people
+<MD	12739:sp=verb:gl=dive, plunge, sink, ETHPE be baptised, APH dip, immerse
+<MWD	1151:sp=subs:gn=m:gl=column, pillar, platform, meteor
+<MWN	659:sp=subs:ls=prop:st=abs:gn=m:gl=Ammon
+<MWNJ	8147:sp=adjv:ls=gntl:de=<MWNJ>:gl=Ammonites
+<MWR	21587:sp=subs:gl=dweller, settler, f.emph. priest's housekeeper or concubine
+<MJR	19489:sp=subs:gl=grass, hay, fodder
+<ML	13103:sp=verb:gl=labour, toil, ETHPE labour under, APH wary, worry, trouble
+<ML=	9497:sp=subs:gn=m:gl=labour, toil, pain, trouble
+<MLJQ	17027:sp=subs:ls=prop:st=abs:gl=Anammelech #Hebrew
+<MS>	8681:sp=subs:ls=prop:st=abs:gn=m:gl=Amasa
+<MQ	15287:sp=verb:gl=PE ptcpss only deep, profound, hidden, extreme, PA go deep, APH penetrate deeply, hide far in
+<MR	8713:sp=verb:gl=dwell, stay, inhabit
+<MR=	10079:sp=subs:gn=m:gl=wool, pith
+<MRJ	13241:sp=subs:ls=prop:st=abs:gn=m:gl=Omri
+<N	10151:sp=subs:gn=f:de=<N>:gl=flock, small cattle
+<N>	9533:sp=verb:gl=answer
+<NB>	19853:sp=subs:gl=berries, grapes
+<ND	19661:sp=verb:gl=depart, be wanting
+<NWJW	6529:sp=subs:de=<NWJWT>:gn=f:gl=self denial, abstinence, asceticism
+<NJN	11173:sp=subs:gn=m:gl=toil, business, travail
+<NN	1973:sp=subs:gn=f:de=<NN>:gl=cloud, quicksilver
+<NTWT	193:sp=subs:ls=prop:st=abs:gl=Anathoth
+<SB	163:sp=subs:gn=m:gl=green herb, grass
+<SJRJ	2963:sp=adjv:ls=ordn:de=<SJRJ>:gl=tenth
+<SQ	2153:sp=verb:gl=be difficult, be vexed, ETHPE contend, resist
+<SR	20389:sp=subs:ls=card:gl=ten
+<SRJN	16361:sp=subs:ls=card:de=<SR:gl=twenty
+<STRWT	21407:sp=subs:ls=prop:st=abs:gn=f:gl=Astoreth
+<<JT	2741:sp=subs:de=<<JT>:gn=f:gl=battlement, pinnacle
+<PQ	3833:sp=verb:gl=embrace, cling, enclose
+<PR	557:sp=subs:gn=m:gl=dust, earth
+<YB	10211:sp=subs:de=<YB>:gn=m:gl=bandange, binding, remedy
+<YJNWGBR	17851:sp=subs:ls=prop:st=abs:gl=Eziongeber
+<YR	5081:sp=verb:gl=trample, squeeze, crush
+<Q>	2777:sp=subs:gn=f:gl=grief, adversity
+<QB	353:sp=verb:gl=take by the heel, hold back, follow closely, PA track, investigate, ETHPA be investigated, sort out
+<QB=	2851:sp=subs:gl=foot, heel, hoof, footstep
+<QB>	6043:sp=subs:gn=m:gl=succession, nvestigation
+<QD	355:sp=verb:gl=fix, settle, solidify, PAUEL coil as a serpent, bend in sitting down, ETHPAUAL coil, writhe, twist round, be perplexed
+<QM	10357:sp=verb:gl=ptc.pss. crooked, crafty, PA turn aside, pervert, ETHPA turn aside, be perverse
+<QR	743:sp=verb:gl=uproot, pull out, break down
+<QR=	5381:sp=subs:gn=m:gl=root, plant, shoot, origin, medicinal herb
+<QRB	14731:sp=subs:gn=f:de=<QRB>:gl=scorpion, Scorpio
+<QRWN	9923:sp=subs:ls=prop:st=abs:gl=Ekron
+<RB	9199:sp=verb:gl=set, go down
+<RB=	10273:sp=subs:gn=f:de=<RB>:gl=large wooden bowl, kneading trough, washtub, the west (rare), vetch, waterwheel
+<RB>	2251:sp=subs:ls=prop:st=abs:gl=Arabah
+<RB>=	97682:sp=subs:gn=f:gl=willow, asparagus
+<RBW	7333:sp=subs:de=<RBWT>:gn=f:gl=surety, pledge
+<RBJ	14243:sp=adjv:ls=gntl:de=<RBJ>:gl=Arabian
+<RBJ>	16529:sp=subs:ls=prop:st=abs:gl=Arabia
+<RD	19681:sp=subs:de=<RD>:gn=m:gl=wild ass
+<RDT	21617:sp=subs:de=<RD>:gn=f:gl=wild she ass
+<RWB	5647:sp=subs:gn=m:de=<RWB>:gl=swarm of vermin and insects, mixed multitude
+<RWB>	6911:sp=subs:ls=prop:st=abs:gn=f
+<RVLJ	7703:sp=adjv:gl=bare, naked
+<RJMW	823:sp=subs:gn=f:gl=craft, cunning, acuteness, subtility
+<RM	15901:sp=verb:gl=stand in a heap, be subtle, wily, lofty, ETHPE stand in a heap, become astute, PA steal subtly, make subtle, cause to swell, ETHPA be piled up, rise high, become astute
+<RS	3181:sp=subs:gn=f:de=<RS>:gl=couch, bed
+<RPL	21089:sp=subs:gn=f:gl=thick fog or mist, thick darkness
+<RY	3691:sp=verb:gl=occur, ETHPE receive nightly visitor
+<RQ	10039:sp=verb:gl=flee, avoid
+<RQ>	20873:sp=subs:gn=f:gl=leather strap, bell, band, transverse beam, thwart
+<CWQJ	19273:sp=subs:de=<CWQJ>:gn=m:gl=misrepresentation, slander
+<CJ>	13963:sp=subs:ls=prop:st=abs:gn=m:gl=Asaiah
+<CN	15683:sp=verb:gl=gain strength, prevail, PA strengthen, repair, APH set firmly, harden, repair
+<T	9587:sp=subs:de=<T>:gn=m:gl=deceit, knavery, villany
+<TD	2837:sp=verb:gl=PE only ptc pss ready, prepared, future, PA make ready, bring to pass
+<TLJ>	4547:sp=subs:ls=prop:st=abs:gn=f:gl=Athaliah
+<TQ	14639:sp=verb:gl=grow old, become antiquated
+<TR	15439:sp=verb:gl=be or grow rich
+P>R	21023:sp=subs:gn=m:de=P>R>:gl=fruit
+PGD	6353:sp=verb:gl=harness, bridle, PA make ready a chariot
+PG<	17569:sp=verb:gl=meet, arrive, happen upon
+PG<=	6833:sp=subs:gl=meeting, appearance, attack, accident
+PGR	1117:sp=subs:gn=m:gl=body, flesh, carcase
+PDN	11927:sp=subs:gn=f:gl=yoke, plough
+PH>	13799:sp=verb:gl=roam, wander, permeate, APH cause to wander, lead astray
+PWG	2411:sp=verb:gl=cool, grow cold, abate, ETHPE be quenched, PA cool, refresh, ETHPA be cooled, refreshed, APH quench
+PWX	20431:sp=verb:gl=breathe, PA breathe forth, ETHPA be exhaled, APH cause to exhale
+PWL	4801:sp=subs:ls=prop:st=abs:gn=m:gl=Pul
+PWLXN	1229:sp=subs:gn=m:gl=service, labour
+PWLV	4889:sp=subs:gn=m:gl=escape
+PWM	14657:sp=subs:gn=m:gl=mouth
+PWSQN	401:sp=subs:gn=m:de=PWSQN>:gl=portion, decision, decree, ordinance, fate
+PWQ	7187:sp=verb:gl=ETHPA yawn, hiccough
+PWQDN	3677:sp=subs:gn=m:de=PWQDN>:gl=visitation, commandment,authority
+PWRSM	6761:sp=subs:de=PWRSM>:gn=m:gl=balsam, balm
+PWR<N	10313:sp=subs:gl=retribution, vengeance, recompense, reward, germination, apodosis
+PWR<NW	19231:sp=subs:de=PWR<NWT>:gn=f:gl=requital, remuneration
+PWRQN	13009:sp=subs:gn=m:de=PWRQN>:gl=redemption, ransom, salvation
+PWC	11411:sp=verb:gl=remain, wait, cease (with MN)
+PX	10903:sp=subs:de=PX>:gn=f:gl=snare
+PXZ	13789:sp=verb:gl=PA act lewdly, ETHPA be voluptous, licentious, APH cause to be impudent
+PXZ=	4021:sp=adjv:gl=wanton
+PXZ==	3571:sp=subs:gl=wantonness
+PXM	10067:sp=verb:gl=be like, comparable, PA compare, treat as equal, ETHPA be compared
+PXR	19997:sp=subs:de=PXR>:gn=m:gl=potter
+PVJR	1373:sp=adjv:gl=fresh, untanned, unleavened, sincere
+PVM	509:sp=verb:gl=PA fatten
+PVM=	15377:sp=subs:de=PVM>:gl=fattening, fatling
+PVR	13967:sp=verb:gl=leave, return home, APH shoot out, bring to an end
+PJL	5227:sp=subs:gn=m:gl=elephant, ivory
+PJNXS	449:sp=subs:ls=prop:st=abs:gn=m:gl=Phinehas
+PJRM	19559:sp=subs:gn=m:de=PJRM>:gl=censer, incense
+PJCWN	1901:sp=subs:ls=prop:st=abs:gl=Pishon
+PK	2843:sp=subs:gn=m:gl=a blow, a slap, the jaw, the cheek
+PKN	20269:sp=adjv:de=PKN>:gl=loud tongued, vociferous
+PLG	15823:sp=verb:gl=divide, have a portion, PA divide into many parts
+PLG=	10177:sp=subs:gn=m:gl=half, part
+PLGW	7673:sp=subs:gn=f:gl=half, part, section
+PLGW=	2393:sp=subs:gn=f:gl=portion, division, dissension, duplicity
+PLX	10069:sp=verb:gl=labour, cultivate, worship
+PLX=	7823:sp=subs:gl=servant, worshipper
+PLV	14107:sp=verb:gl=escape, ETHPE be allowed escape, PA save, ETHPA make one's escape, APH set free
+PLN	4241:sp=subs:gl=so and so, a certain one, such and such
+PLCTJ	1831:sp=adjv:ls=gntl:gl=Philistine
+PN>	17599:sp=verb:gl=turn, return, repent, ETHPE betake oneself, turn towards, PA restore, APH cause to turn
+PNW>JL	14197:sp=subs:ls=prop:st=abs:gl=Penuel
+PNQ	109:sp=verb:gl=PA treat with affection, ETHPA delight oneself, be pampered
+PS>	19213:sp=subs:gn=f:gl=palm of hand, sole of foot, foot measure
+PS>=	19212:sp=verb:de=PRSJ:gl=PAREL strip naked, lay bare, expose, unmask, put to shame, ETHPALI (ETHPAREL) be made known openly, be exposed, be disclosed, be convicted of
+PSJLT	18257:sp=subs:gn=f:de=PSJLT>:gl=stone quarry, hewn stone
+PSL	11489:sp=verb:gl=quarry, hew stone
+PSS	113:sp=verb:gl=pss.ptc. be allowed, be permitted, ETHP be allowed, PA grant, APH grant permission, ETHTA obtain by lot, be allowed
+PS<	11243:sp=verb:gl=step, go forward, trample, ETHPE advance, PA tread out
+PS<>	19507:sp=subs:gn=f:gl=step, pace
+PSQ	11839:sp=verb:gl=cut, interrupt, make an agreement, PA cut to bits, break in fragments
+PSQ=	11117:sp=subs:gn=m:gl=cutting, hewing, decree, division
+P<L	15739:sp=subs:de=P<L>:gn=m:gl=hired labourer, day labourer
+P<L=	16691:sp=subs:de=P<L>:gn=m:gl=hired labour, day labour
+PY>	3917:sp=verb:gl=PA deliver, set free, pss.ptc. guiltless
+PY>=	131:sp=subs:gn=f:gl=piece, part, lot, share
+PYX	10163:sp=subs:gn=m:de=PYX>:gl=Passover, Passover lamb, Passover feast, Easter
+PQD	20663:sp=verb:gl=visit, command, entreat, PA give commission
+PQWD	8501:sp=subs:gl=superitendent, director, officer, imperative mood
+PQW<	4957:sp=subs:gn=m:de=PQW<>:gl=wild cucumber,unripe figs
+PQX	10973:sp=subs:ls=prop:st=abs:gn=m:gl=Pekah
+PQX=	97681:sp=adjv:gl=useful, expedient, better
+PQXJ>	21851:sp=subs:ls=prop:st=abs:gn=m:gl=Pekahiah
+PQJ<	14831:sp=subs:gn=m:de=PQJ<>:gl=capital of a pillar, brazen boss or support
+PQ<	997:sp=verb:gl=PE & ETHPE burst open, shatter, PA beat, part asunder, ETHPA be rent, APH make a noise
+PQ<=	18119:sp=subs:gn=m:gl=noise, crash, thunderbolt, rift, fissure, seaweed
+PQ<T	6637:sp=subs:gn=f:de=PQ<T>:gl=plain, broad valley, level tract, expanse
+PQQ	14149:sp=adjv:de=PQQ>:gl=talktative, garrulous
+PRD	12037:sp=verb:gl=flee, be scared away, place apart, ETHPE be crushed, PA scare away, break up, ETHPA flee, be crumbled, PAL break in pieces, ETHPAL be crumbled to pieces, APH disturb
+PRD>	2311:sp=subs:gn=f:gl=grain, berry, grape stone
+PRWD	4919:sp=subs #not in PS
+PRWX	8861:sp=subs:ls=prop:st=abs:gn=m:gl=Paruah
+PRWSTD	4639:sp=subs:gn=m:de=PRWSTD>:gl=porch,doorpost,lintel
+PRW<	15017:sp=subs:de=PRW<>:gn=m:gl=rewarded, avenger
+PRWQ	19801:sp=subs:gn=m:gl=saviour, deliverer
+PRZJ	6359:sp=adjv:ls=gntl:gl=Perizzites
+PRZL	1663:sp=subs:gn=m:de=PRZL>:gl=iron
+PRX	8287:sp=verb:gl=fly, float, pervade, PA flutter, squander, ETHPA be squandered, APH cause to fly, diffuse, ETHTAPH be allowed to fly
+PRXT	16831:sp=subs:gn=f:de=PRXT>:gl=flying creature, insect, bird
+PRJ>	12109:sp=subs:ls=prop:st=abs:gn=m:gl=Pedaiah #Hebrew
+PRJS	8663:sp=subs:de=PRJS>:gn=m:gl=veil, breastplate, mantle
+PRK	12143:sp=verb:gl=rub, bruise, PA shake out, ETHPA be bruised, PALP break in pieces, ETHPALP be broken up
+PRN	14969:sp=subs:ls=prop:st=abs:gl=Paran
+PRNJT	4409:sp=subs:de=PRNJT>:gn=f:gl=dowry paid to father of bride
+PRS	2539:sp=verb:gl=spread out, extend
+PRS>	3343:sp=subs:gn=f:gl=sole of foot, hoof, footstep, the lupine
+PRS>=	18149:sp=verb:gl=PAREL strip naked, expose, ETHPALI be made known openly
+PRSX	13033:sp=subs:gn=m:de=PRSX>:gl=a parasang (=three or four miles)
+PR<	1459:sp=verb:gl=bring forth, requite, repay, recompense
+PR<=	15217:sp=subs:gn=m:de=PR<>:gl=vengeance, bud, shoot, ramification, derived form, melon
+PR<WN	127:sp=subs:ls=prop:st=abs:gn=m:gl=Pharaoh
+PRPR	4421:sp=subs:ls=prop:st=abs:gl=Pharpar
+PRYWP	1237:sp=subs:gl=face, countenance, presence
+PRQ	13763:sp=verb:gl=separate, redeem, PA break off, rend, APH rend, cause to depart, drive away, remove
+PRC	15013:sp=subs:gn=m:de=PRC>:gl=horseman
+PRC=	5113:sp=verb:gl=separate, sever, divide
+PRT	9319:sp=subs:ls=prop:st=abs:gl=Euphrates
+PRT=	13049:sp=verb:gl=ETHPE burst asunder, PA tear open, rip up
+PCX	11483:sp=verb:gl=tear, rend, throw down
+PCV	1699:sp=verb:gl=stretch out, extend, reach out
+PCK	15667:sp=subs:gn=m:gl=handsbreadth, half a cubit
+PCR	14011
+PTGM	5749:sp=subs:gl=word, saying, matter, thing
+PTWR	19609:sp=subs:gn=m:gl=table, tray, gift
+PTX	13781:sp=verb:gl=open, unlock, admit
+PTJ	2549:sp=subs:gn=m:gl=breadth, latitude
+PTK	12113:sp=verb:gl=mix, mingle, PA vary, mix, ETHPA be curiously wrought, intermingled
+PTKR	5009:sp=subs:de=PTKR>:gl=(Sanskrit) idol
+PTT	10687:sp=subs:de=PTT>:gn=m:gl=morsel, slice, bit, scraps
+YB>	7951:sp=verb:gl=be willing, wish, seek to
+YBW	12959:sp=subs:gn=f:gl=matter, possession
+YBJN	4637:sp=subs:gn=m:gl=will, desire
+YB<	3559:sp=verb:gl=dip, moisten, dye
+YBT	5857:sp=subs:gn=m:gl=ornament (YPT>), decoration, embellishment
+YBT=	6719:sp=verb:gl=PA set in order, decorate, adorn, ETHPA adorn oneself, be adorned
+YD	5743:sp=verb:gl=fix the eye, cast an evil eye, gaze intently, APH fix the eyes or mind
+YD>	9883:sp=verb:gl=grow rusty, worn out, become deserted, PA lay waste, ETHPA be uninhabited, deserted, make sport, mock, APH make desolate
+YDD>	47:sp=subs:ls=prop:st=abs:gl=Zereda #Hebrew
+YDWQ	17623:sp=subs:ls=prop:st=abs:gn=m:gl=Zadok
+YDJ	6269:sp=subs:gn=m:de=YSJ>:gl=rust, waste, uncultivation, desert, solitude
+YDJD	4751:sp=subs:gn=m:de=YDJD>:gl=antimony, paint for the eyes
+YDQJ>	17321:sp=subs:ls=prop:st=abs:gn=m:gl=Zedekiah
+YH>	18127:sp=verb:gl=thirst, PA intensive, ETHPA idem, APH cause to thirst
+YHJWN	15749:sp=subs:ls=prop:st=abs:gl=Zion
+YHL	6257:sp=verb:gl=neigh, whinny
+YWB>	4903:sp=subs:ls=prop:st=abs:gl=Zobah
+YWB>=	20743:sp=subs:ls=prop:st=abs:gn=f:gl=Zibiah
+YWD	17387:sp=verb:gl=hunt, capture, ETHPE be caught, PA & APHE hunt
+YWXJ>	5623:sp=subs:gn=f:gl=railing, abuse
+YWLPT	4513:sp=subs:de=YWLPT>:gn=f:gl=wound, hurt, bruise
+YWM	17713:sp=verb:gl=fast, abstain
+YWM=	21283:sp=subs:gn=m:de=SWM<:gl=a fast
+YWR	9431:sp=subs:ls=prop:st=abs:gl=Tyre
+YWR=	15186:sp=verb:gl=form, fashion, paint, represent, signify, ETHPE be formed, PA paint, represent, pass part speckled, variegated
+YWRJ>	13831:sp=subs:ls=prop:st=abs:gn=m:gl=Zeruiah
+YWRT	21383:sp=subs:de=YWRT>:gn=f:gl=form, image, statue
+YWT	21179:sp=verb:gl=give ear, give heed, obey
+YX>	12253:sp=verb:gl=PA revile
+YXN	19861:sp=adjv:gl=filthy, impure
+YJDN	10613:sp=subs:ls=prop:st=abs:gl=Sidon
+YJDNJ	2423:sp=adjv:de=YJDNJ>:ls=gntl:gl=Sidonians
+YJR	20549:sp=subs:gn=m:gl=former, fashioner, carver, painter
+YL	263:sp=verb:gl=tingle (as the ears)
+YL>	5683:sp=verb:gl=incline, be prone to, PA pray, APH reach out
+YLW	11159:sp=subs:gn=f:gl=prayer, reconciliation
+YLX	11519:sp=verb:gl=prosper, succeed
+YLM	4111:sp=subs:gn=m:gl=image, figure, form
+YLP	1451:sp=verb:gl=bruise, wound
+Y<JR>	13697:sp=subs:ls=prop:st=abs:gl=Zair
+Y<R	16843:sp=verb:gl=be despised, bear disgrace, PA be overbearing, treat shamefully, ETHPA be brought into contempt, suffer dishonour
+Y<R=	7577:sp=subs:de=Y<R>:gn=m:gl=shame, dishonour, insult
+YPNJ>	5477:sp=subs:ls=prop:st=abs:gn=m:gl=Zephaniah
+YPR	13121:sp=subs:gl=early morning, daybreak, dawn
+YPRJ	14341:sp=subs:gn=m:de=YPRJ>:gl=a kid, yearling goat
+YPT	16547:sp=subs:de=YPT>:gn=f:gl=care, anxiety
+YPT=	19483:sp=subs:de=YPT>:gn=f:gl=stone or setting of ring, ornament(YBT>)
+YR>	7993:sp=verb:gl=tear apart, break through, ETHP be rent in twain, PA rend (garments), ETHPA be violently rent, burst
+YRW	11503:sp=subs:gn=f:de=YRWN(=pl):gl=torn pieces, tatters(pl)
+YRWB>	12011:sp=subs:ls=prop:st=abs:gn=f:gl=Zeruah #Hebrew
+YRJKW	9293:sp=subs:de=YRJKWT>:gn=f:gl=poverty, need, distress
+YRK	10729:sp=verb:gl=lack, be in want, ETHPE & ETHPA suffer want, be in need, APH impoverish
+YRPT	14537:sp=subs:ls=prop:st=abs:gl=Zarephath
+YRR	15187:sp=verb:de=YR:gl=tie up, bind fast, ETHPE & ETHPA be bound fast, PA bind up, sew up
+YRR=	1021:sp=subs:de=YRR>:gn=m:gl=bundle, package, purse
+YRTN	15881:sp=subs:ls=prop:st=abs:gl=Zarethan
+Q>BW	709:sp=subs:gn=f:de=Q>BWT>:gl=ark, chest, coffer, coffin
+QB	8543:sp=subs:de=QB>:gl=cab, measure
+QBWRT	15361:sp=subs:de=QBWRT>:gn=f:gl=burying, funeral, shroud
+QBL	2503:sp=verb:gl=PE accuse, impeach, PA receive, accept, APH be opposite, face
+QBR	6653:sp=verb:gl=bury, PA bury many, heap up
+QBR=	1913:sp=subs:gn=m:de=QBR>:gl=grave, tomb, sepulchre
+QD>	953:sp=verb:de=QDJ:gl=PA keep possession of, hold fast, retain, ETHPA be held fast, last, endure, APH make to endure
+QDJM	7351:sp=advb:gl=first, former
+QDJC	14401:sp=adjv:gl=pure, holy
+QDJCW	20963:sp=subs:gn=f:de=QDJCWT>:gl=holiness, sanctity, consecration, celibacy
+QDL	14281:sp=subs:gn=m:gl=neck, nape of neck, back
+QDM	1493:sp=prep:gl=before, in the presence of
+QDM=	16561:sp=verb:gl=go before, do first, PA rise early
+QDMJ	3631:sp=adjv:gl=first, early, primeval, ancient
+QDS	19973:sp=subs:gn=m:de=QDS>:gl=metal pot, cauldron
+QDR	9781:sp=subs:gn=m:de=QDR>:gl=runner, attendant
+QDRWN	439:sp=subs:ls=prop:st=abs:gl=Kidron
+QDC	8191:sp=verb:gl=be holy, PA hallow, sanctify, consecrate
+QDC=	19949:sp=subs:ls=prop:st=abs:gl=Kedesh
+QH>	16903:sp=verb:gl=be blunt, be dull, APH blunt, set on edge
+QHLN	8821:sp=adjv:de=QHLN>:gl=brawling, scolding, noisy
+QW>	13931:sp=verb:gl=PA abide, continue, remain, await
+QWBL	18269:sp=subs:gn=m:de=QWBL>:gl=face, aspect
+QWDM	4057:sp=subs:ls=ppre:de=QWDM>:gn=m:gl=the forepart, front, first, pl. former generations, of old times
+QWDC	15061:sp=subs:gn=m:de=QWDC>:gl=holiness, sanctity, holy things,sanctuary
+QWL>	8741:sp=subs:gn=f:gl=pitcher, ewer, cruise
+QWLB	20287:sp=subs:de=QWLB>:gn=m:gl=bracelet
+QWM	17393:sp=verb:gl=arise
+QWM>	1867:sp=subs:gn=f:gl=height, stature, time of life
+QWNM	15581:sp=subs:de=QWNM>:gl=cinnamon
+QWP	6883:sp=subs:gn=m:de=QWP>:gl=carrying staves
+QWP=	6884:sp=subs:gn=m:de=QWP>:gl=ape
+QWPJ	19121:sp=subs:gl=incense, basket
+QWQ>	10949:sp=subs:gn=f:gl=water pot, pitcher, cells of honeycomb
+QWRB	14033:sp=subs:de=QWRB>:gn=m:gl=nearness, intimacy, neighbourhood
+QWRB=	15149:sp=subs:de=QWRB>:gn=m:gl=offering, oblation
+QWRBN	9181:sp=subs:gn=m:de=QWRBN>:gl=offering
+QWRX	2399:sp=subs:ls=prop:st=abs:gn=m:gl=Kareah
+QWRNTJN	9539:sp=adjv:gl=bright #PS Thesaurus
+QWCT	10369:sp=subs:gn=m:de=QWCT>:gl=truth, right, justice
+QVWL	19081:sp=subs:de=QVWL>:gl=slayer
+QVWP	9871:sp=subs:de=QVWP>:gn=m:gl=grape gatherer
+QVL	16763:sp=verb:gl=kill, PA kill many
+QVL=	5153:sp=subs:de=QVL>:gn=m:gl=slaughter, murder
+QVM	17903:sp=subs:gn=m:gl=ash, ashes
+QVP	9349:sp=subs:gn=m:de=QVP>:gl=ingathering, vintage
+QVR	19541:sp=verb:gl=tie, bind, adjust, harden, stiffen, ETHPE be joined, linked, PA tie up, ETHPA be tied up, APH put on (crown), condense
+QVRWQ	21397:sp=subs:gn=m:de=QVRWQ>:gl=brazier for incense
+QVRQ	14029:sp=subs:de=QVRQ>:gn=f:gl=quiver
+QVRQ=	18947:sp=subs:de=QVRQ>:gn=m:gl=cypress, pine
+QVRQ==	10789:sp=subs:de=QVRQ>:gn=m:gl=almond tree
+QVRQV	6737:sp=subs:gn=m:de=QVRQV>:gl=sluice, cataract, staircase
+QJWM	701:sp=subs:de=QJWM>:gl=manager, superintendent, protector
+QJVWN	13997:sp=subs:gn=m:gl=bedchamber, private room
+QJM	5233:sp=subs:gn=m:gl=stability, station, statute, covenant
+QJM=	12227:sp=adjv:gl=in being, existing
+QJM==	5869:sp=advb:gl=in being, existing
+QJMT	6211:sp=subs:gn=f:de=QJMT>:gl=post, pillar, monument, statue, stalk, stem
+QJNJ	13523:sp=subs:de=QJNJ>:gn=m:gl=smith, blacksmith, silversmith, goldsmith
+QJS	3049:sp=subs:gn=m:gl=wood
+QJR	11131:sp=subs:ls=prop:st=abs:gl=Kir
+QJCWN	20477:sp=subs:ls=prop:st=abs:gl=Kishon
+QJTR	1931:sp=subs:gn=m:gl=harp
+QL	7841:sp=subs:gn=m:gl=voice, sound
+QLD	18371:sp=subs:gn=m:de=QLD>:gl=ring in camel's nostril
+QLWBJ	7643:sp=subs:de=QLWBJ>:gn=m:gl=birdcage, basket
+QLWBJ=	8431:sp=subs:de=QLWBJ>:gn=m:gl=outer garment without sleeves
+QLJL	11239:sp=adjv:gl=swift, light, rapid, small, few
+QLL	1559:sp=subs:de=QLL>:gn=m:gl=slighting, contempt, ignominy
+QLL=	3221:sp=verb:de=QL,gl=lessen, be swift, be lightened, PA lighten, make easier, ETHPA be lightened, become light, APH lighten, relieve, assuage, hasten, rise above, get the upper hand, make light of
+QL<	6967:sp=subs:gn=m:gl=sling
+QL<=	2473:sp=subs:gn=m:de=QL<>:gl=slinger
+QLP	139:sp=verb:gl=peel, pare, scrape off
+QLQWM	15569:sp=subs:de=QLQWM>:gl=bulwark, rampart
+QMX	14503:sp=subs:gn=m:de=QMX>:gl=flour, meal
+QMY	3407:sp=subs:gn=m:de=QMX>:gl=locust, parsnip
+QMR	6163:sp=subs:gn=m:de=QMR>:gl=strap, belt
+QN>	17257:sp=verb:gl=get, gain, purchase, obtain
+QN>T	1223:sp=subs:gn=f:de=QN>T>:gl=anger, indignation, enmity, virulence
+QNJ	20233:sp=subs:gn=m:de=QNJ>:gl=cane, reed, rope of rushes
+QNJN	4127:sp=subs:gn=m:gl=possessions, landed property
+QSW	11801:sp=subs:de=QSWT>:gl=sandalwood
+QSV	19937:sp=subs:gn=f:de=QSV>:gl=pint, liquid measure, pot
+Q<JLT	12071:sp=subs:gn=f:de=Q<JLT>:gl=plait, braid, wreath pattern
+QPS	11699:sp=verb:gl=contract muscles, hold in check, store, shorten, restrain oneself, ETHPE be drawn together, ETHPA be withheld, APH gather up, store, withdraw
+QY	20051:sp=subs:gn=m:gl=cutting off, end
+QYM	5693:sp=verb:gl=divine, consult an oracle, ETHPE dive, presage, PA give signs, give omens
+QYM=	1367:sp=subs:gn=m:de=QYM>:gl=augur, diviner
+QYM==	17333:sp=subs:gn=m:de=QYM>:gl=divination, omen, oracle, piece of barley bread used for divination, barley meal, millet
+QYY	20507:sp=verb:de=QY:gl=agree, cut short, ETHPE be reckoned or imputed as sin, be stipulated, PA cut off, hack, ETHPA be reckoned, be credited, be creditable, APH reckon against a debt, take into consideration, repay
+QYR	4583:sp=subs:gn=m:de=QYR>:gl=fuller
+QR>	20599:sp=subs:gn=f:gl=town, village
+QR>=	8059:sp=verb:gl=call, read, ETHPE be called, be read, APH summon, make to read, provoke, TAPH read, ETHTAPH oppose
+QRB	21673:sp=verb:gl=draw near, touch, PA bring, offer, ETHPA be brought near, touch, APH join battle
+QRB=	6247:sp=subs:gn=m:de=QRB>:gl=nearness, war
+QRBTN	1327:sp=adjv:gl= warlike, brave, pugnacious, contentious, a man of war, warrior
+QRDL	479:sp=subs:gn=m:de=QRDL>:gl=large handing pot, calidarium
+QRWK	9811:sp=subs:gn=m:de=QRWK>:gl=two-horse chariot
+QRX	3541:sp=adjv:gl=bald
+QRJ	1783:sp=subs:gn=f:gl=beam, plank
+QRJ=	10301:sp=subs:gn=m:de=QRJ>:gl=crying, crowing
+QRM	13259:sp=verb:gl=overlay, plate, overspread
+QRM=	11779:sp=subs:gn=m:de=QRM>:gl=layer, plate, covering
+QRN	8017:sp=subs:gn=f:gl=horn
+QRS	3929:sp=subs:gn=m:de=QRS>:gl=chariot
+QRY	12203:sp=subs:de=QRY>:gl=gnawed or broken morsel, slander
+QRR	10141:sp=verb:de=QR:gl=grow cold, APH cool, PAU cool, become cool, ETHPAU cool, grow cold
+QC>	347:sp=verb:gl=PE ptc hard, rough, strong, stern, PA harden, APH make grievous
+QCJ>JT	941:sp=advb:gl=roughly, severely, harshly, grievously
+QCJW	17939:sp=subs:de=QCJWT>:gl=hardness, difficulty, severity
+QCC	17117:sp=verb:de=QC:gl=grow old, collect, pick up, pass ptc de=QCJC, ETHPE be the eldest, PA place as eldest, give precedence
+QCT	3943:sp=subs:gl=bow
+QCT=	13597:sp=subs:gn=m:de=QCT>:gl=archer, bowman
+R>Z	21737:sp=subs:gn=m:gl=secret, mystery
+RB	3623:sp=adjv:gl=great
+RB=	10159:sp=verb:gl=grow great, PAUPEL give great occasion against, ETHPAUP be magnified, behave insolently, arrogantly
+RB>	3947:sp=verb:gl=grow, grow up, PA bring up, educate
+RBW	1069:sp=subs:gn=f:gl=myriad, ten thousand
+RBWT	10463:sp=subs:gn=f:gl=grandeur, magnitude, magnificence, dignity
+RBWT=	10464:sp=subs:ls=prop:st=abs:gl=Aruboth #Hebrew
+RBJ<	20047:sp=subs:gl=tabor, timbrel, early rain
+RBJ<J	5087:sp=subs:gl=spring rain, fourth, tetra
+RBJT	18121:sp=subs:de=RBJT>:gl=steward
+RB<	18973:sp=verb:gl=recline, drum, PA pss ptc four-sided, quadrangular
+RG>	9007:sp=subs:gn=f:gl=desire, longing, object of desire
+RG>WB	6389:sp=subs:ls=prop:st=abs:gn=m:gl=Arbog #Hebrew
+RGG	3881:sp=verb:de=RG:gl=desire, covet, lust, PALP make to long, arouse desire, ETHPALP long sorely, yearn, earnestly desire, APH long, covet
+RGWCJ	17747:sp=subs:gn=m:de=RGWCJ>:gl=rushing sound of water
+RGZ	6007:sp=verb:gl=be angry, APH provoke to anger
+RGL	17417:sp=subs:gn=f:gl=foot, hoof
+RGLJ	4157:sp=subs:gn=m:de=RGLJ>:gl=a foot-soldier, infantry
+RGM	17911:sp=verb:gl=stone, heap stones
+RD>	16889:sp=verb:gl=journey, continue, emanate, insruct, chastise
+RDWP	11351:sp=subs:gn=m:gl=persecutor
+RDP	6823:sp=verb:gl=urge on, banish, chase away, pursue
+RHB	349:sp=verb:gl=PE (ptc. pass. only), hasten, ETHPE be disquieted, be afraid, APH trouble, disquiet, hasten, ESTAPH make haste, hasten, SAPH hasten, impel, urge on, ESTAPH make haste, hasten
+RHV	12601:sp=subs:gn=m:de=RHV>:gl=runner, courier, foot guard
+RHV=	4289:sp=verb:gl=run, have free course, be eager, APH drive, urge forward
+RW>	5399:sp=verb:gl=become drunken, ETHPE drink to excess, APH give drink, satiate, intoxicate
+RWB	21011:sp=subs:gn=m:de=RWB>:gl=row, clamour, resounding
+RWBJL	9461:sp=subs:ls=prop:st=abs:gl=Reuben #Hebrew
+RWB<	2039:sp=subs:gn=m:de=RWB<>:gl=quarter
+RWGZ	13001:sp=subs:gn=m:gl=rage
+RWDDPN	8291:sp=subs:de=RWDDPN>:gn=m:gl=nerium oleander
+RWZ	21751:sp=subs:de=RWZ>:gn=m:gl=exultation, rejoicing
+RWX	8779:sp=subs:gn=f:gl=breath, wind, spirit
+RWX=	503:sp=verb:gl=take breath, ETHPE smell, PA soften, soothe, mitigate, ETHPA be quieted, relieved, appeased, APH scent
+RWXQ	16267:sp=subs:gn=m:de=RWXQ>:gl=(with preposition L, D, B) afar, (with MN) from afar, long ago
+RWJ	3793:sp=adjv:gl=drunken, thirsty, enthusiastic
+RWM	5783:sp=verb:gl=be high, ETHPE go up, be lifted up, PALP lift up, ETHPALP become great, PA set on high, APH raise
+RWM=	6029:sp=subs:gn=m:de=RWM>:gl=height, breadth, size
+RWMX	457:sp=subs:gn=f:de=RWMX>:gl=spear, lance
+RWMLJ>	17419:sp=subs:ls=prop:st=abs:gn=m:gl=Remaliah
+RWMN	19139:sp=subs:gn=m:de=RWMN>:gl=pomegranate
+RW<N	6599:sp=subs:gn=f:de=RW<N>:gl=pl. wild herbs, esp. mallow
+RWQ<	16189:sp=subs:de=RWQ<>,>WRQ<T>:gn=f:gl=cloth, clout, rag
+RWRB	107:sp=adjv:de=RWRB>:gl=great, grown up, nobles, chiefs
+RWC<	16649:sp=subs:de=RWC<>:gn=m:gl=ungodliness, impiety, wickedness
+RXB<M	18719:sp=subs:ls=prop:st=abs:gn=m:gl=Rehoboam
+RXM	14747:sp=verb:gl=love, desire, PA have mercy upon
+RXM=	22027:sp=subs:gn=m:gl=womb, tenderness, compassion
+RXMW	5179:sp=subs:de=RXMWT>:gn=f:gl=kindness, friendship
+RXMT	10559:sp=subs:de=RXMT>:gn=f:gl=love, friendship
+RXMTN	13751:sp=adjv:de=RXMTN>:gl=compassionate, merciful
+RXQ	11369:sp=verb:gl=ptc.pss remote, distant (de=RXJQ), PA put far away, ETHPA journey afar, avoid, APH depart afar, ETTAPH be removed far
+RXC	7879:sp=verb:gl=creep, move slowly
+RXC=	7321:sp=subs:gn=m:de=RXC>:gl=reptiles, vermin, insects, hoarseness, gangrene
+RVWNJ	1063:sp=subs:de=RVWNJ>:gl=murmuring, gainsaying, contradiction
+RVWNJ=	2213:sp=adjv:de=RVWNJ>:gl=gainsaying, contradictious grumbling
+RJX	20807:sp=subs:gn=m:gl=scent, savour, odour, pl. perfumes, spices
+RJC	4993:sp=subs:gn=m:gl=head, top, summit
+RJCJ	14593:sp=adjv:gl=chief, best, choice
+RJCJT	11833:sp=subs:gn=f:de=RJCJT>:gl=chief part, beginning, origin
+RKB	6863:sp=verb:gl=ride, APH make ride, set
+RKB=	18097:sp=subs:gn=m:de=RKB>:gl=horseman, mounted soldier
+RKB==	15401:sp=subs:ls=prop:st=abs:gn=m:gl=Rechab
+RKWB	21929:sp=subs:de=RKWB>:gl=conveyance, vessel, mount
+RKK	15121:sp=verb:de=RK:gl=be soft, tender, PA soften, mollify, ETHPE & ETHPA be soft, be softened, APH soften, soothe, ETHPALP be softened, moderated
+RKN	3469:sp=verb:gl=turn, decline, ETHPE incline oneself, bend, be bent, dismount, descend, APH lower, let down, incline
+RKC	14929:sp=subs:de=RKC>:gn=m:gl=horse
+RKCT	20333:sp=subs:de=RKCT>:gn=f:gl=horse
+RM	7639:sp=adjv:gl=tall, high, exalted, sublime, proud
+RM=	3464:sp=verb:de=RWM:gl=ETHPE go up, be lifted on high, be haughty, ETHPALP become great, be exaluted, PAEL pass.ptc. set on high, lofty, APH raise, set up, lift up , take up, take away
+RM>	3463:sp=verb:gl=PE only ptc place, cast - but see 1K19,28 ipf, PA tell tales, APH throw, cast, impart, place
+RMW	7853:sp=subs:de=RMWT>:gn=f:gl=elevation, height, pride
+RMWN	2677:sp=subs:ls=prop:st=abs:gl=Rimmon
+RMZ	10831:sp=verb:gl=make signs, beckon, wink, ETHPE be indicated, signified, PA beckon, make signs, APH beckon, glance
+RMC	5107:sp=subs:gn=m:gl=evening, eventide
+RMT	8539:sp=subs:gn=f:de=RMT>:gl=high place, hill
+RMT=	11783:sp=subs:gn=f:de=RMT>:gl=pool, pond
+RMT==	8540:sp=subs:ls=prop:st=abs:gl=Ramat
+RMTGL<D	15787:sp=subs:ls=prop:st=abs:gl=Ramat-Gilead
+RN>	6037:sp=verb:gl=think, reflect, heed, ETHPE be thought, considered, ETHPA consider, relfect, APH insinuate a thought, direct thoughts
+RNJ	8699:sp=subs:gn=m:de=RNJ>:gl=reflection, meditation
+RS	21871:sp=verb:gl=besprinkle, drop, purify
+RS>	3529:sp=verb:de=TRSJ:gl=TAPH nourish, support, rear
+R<	19841:sp=verb:gl=beat, break to pieces
+R<>	6469:sp=verb:gl=feed, rule, be contented, ETHPE feed, think, PA please, appease, heal
+R<J	14389:sp=subs:gn=m:de=R<J>:gl=pasture, fodder
+R<JN	1201:sp=subs:gn=m:gl=mind, intellect, conscience, opinion
+R<M	5197:sp=verb:gl=thunder, sound, resound, feel pity, ETHPE be angry, PA rage, make to resound, ETHPA proclaim, clamour, be enraged, APH make to resound, ETTAPH be made angry
+R<P	16871:sp=subs:gn=m:de=RCP>:gl=flat cake, bread baked on gridle or ashes
+RP>	20483:sp=verb:gl=PE ptc.pss.loose, porous, soft, PA loosen, enfeeble, desert, APH leave, let alone
+RPD	8627:sp=subs:ls=prop:st=abs:gl=Arpad #Hebrew
+RPJW	12547:sp=subs:de=RPJWT>:gn=f:gl=softness, weakness, laxity
+RYN	6427:sp=subs:ls=prop:st=abs:gn=m:gl=Resin
+RYP	5653:sp=subs:gn=m:de=RYP>:gl=pavement, density
+RYP=	14851:sp=subs:ls=prop:st=abs:gl=Rezeph
+RYY	4188:sp=verb:de=RY:gl=bruise, crush, PA bruise, cruse, strain, sprain, ETHPA be entirely crushed, be entirely bruised, APH pass ptc torn
+RQD	4177:sp=verb:gl=dance, PA dance, APH mourn
+RQJ<	14699:sp=subs:de=RQJ<>:gn=m:gl=expanse of heaven, firmanent
+RQQ	4178:sp=verb:de=RQ:gl=spit, pass.ptc. fine, thin, shallow, scorned, ETHPE be spat upon, PA make thin, draw fine, ETHPA be thinned, set far apart, PALPEL drivel, talk in a contemptible manner, APH make thin, attenuate
+RCJ<	11887:sp=adjv:de=RCJ<>:gl= lawless, wicked, impious
+RCM	10531:sp=verb:gl=grace, engrave, inscribe
+RC<	7621:sp=verb:gl=APH speak or act impiously, do wickedness, SHAPH conceal wickedness
+C>L	12923:sp=verb:gl=ask, ETHPE excuse oneself, decline, eschew, PA ask qustions, ETHPA be questioned, APH lend, bestow
+C>LT	3911:sp=subs:gn=f:de=C>LT>:gl=request, petition
+CB>	17167:sp=verb:gl=take captive, lead away captive
+CB>=	20627:sp=subs:ls=prop:st=abs:gl=Sheba
+CBB	8161:sp=adjv:gl=neighbouring, neighbour
+CBHRN	1231:sp=adjv:gl=boastful, vainglorious
+CBHRNW	21841:sp=subs:de=CBHRNT>:gn=f:gl=boastfulness, vainglory
+CBX	18367:sp=verb:gl=ptc. pass. only, glorious illustrious
+CBV	11197:sp=subs:gn=m:de=CBV>:gl=rod, stripe, tribe
+CBJ	13007:sp=subs:de=CBJ>:gn=m:gl=captives, captivity, devastation
+CBJ=	16253:sp=subs:de=CBJ>:gn=m:gl=captor, capturer, robber
+CBJL	5641:sp=subs:gn=m:gl=path, road, trace
+CBJ<J	7129:sp=adjv:ls=ordn:gl=seventh
+CBL>	2351:sp=subs:de=CBLT>:gn=f:gl=spike, blade of grass
+CBN>	11579:sp=subs:ls=prop:st=abs:gn=m:gl=Shebna
+CB<	8731:sp=subs:ls=card:gl=seven
+CB<JN	13619:sp=subs:ls=card:de=CB<:gl=seventy
+CB<M>>	17791:sp=subs:ls=card:gl=seven hundred
+CB<SR	19727:sp=subs:ls=card:gl=seventeen
+CBQ	10099:sp=verb:gl=leave, leave behind, dismiss, remit
+CBT	5387:sp=subs:gn=f:de=CBT>:gl=Sabbath, Saturday
+CGWCJ	17573:sp=subs:de=CGWCJ>:gn=m:gl=commotion, tumult, sedition
+CGR	13399:sp=verb:gl=kindle, heat, ETHPE be kindled, heated, glow, PA let down a line into the sea, APH remove, quit
+CGC	4723:sp=verb:gl=trouble, stir up, PA throw into confusion
+CD>	6607:sp=verb:gl=hurl, shoot, ETHPE be shot, discharged, be rejected, expelled, PA hurl, cast off, ETHPA be cast out, APH cast out
+CDK	7211:sp=subs:de=CDK>:gn=m:gl=proposal of marriage, gifts before marriage, foundation of an undertaking
+CDL	4787:sp=verb:gl=soothe, cajole, PA beguile, entice
+CDMW>JT	5563 #not in PS, 2K23,4 fields Hebrew
+CDR	20359:sp=verb:gl=PA send, dismiss, ETHPA be sent out, commissioned, be thrown away
+CHR	19889:sp=subs:gn=m:gl=vigil, watch
+CW>	21313:sp=verb:gl=be even, equal, sufficient, be worth, ETHPE be equal, PA lay even, wipe, treat as equal, agree, ETHPA be laid low, agree, APH level, make even
+CW>L	3119:sp=subs:gn=m:gl=petition, prayer, inquiry
+CWB	21757:sp=subs:de=CWB>:gn=m:gl=parching or sultry heat
+CWBX	9239:sp=subs:de=CWBX>:gn=m:gl=praise, honour
+CWBQN	18979:sp=subs:de=CWBQN>:gn=m:gl=release, being forsaken
+CWG	15091:sp=verb:gl=PA wash, APH wash, wash away, purify
+CWXD	18521:sp=subs:gn=m:de=CWXD>:gl=bribe, blood-money, forced contribution
+CWXLP	7151:sp=subs:gn=m:gl=change, alteration, difference, variety
+CWXN	2083:sp=subs:gn=m:de=CWXN>:gl=ulcer, abcess
+CWV	16699:sp=verb:gl=treat with contempt
+CWV=	17489:sp=subs:gn=m:de=CWV>:gl=whip, last, scourge, stroke
+CWKR	5209:sp=subs:gn=m:gl=abuse, insult, dishonour
+CWLVN	18731:sp=subs:gn=m:gl=power, authority, right, rule, government, ruler, commander
+CWLM	2543:sp=subs:gn=m:gl=end of a fixed period
+CWMN	3719:sp=subs:gn=m:de=CWMN>:gl=fat, fatness, plumpness
+CWNQ	15761:sp=subs:de=CWNQ>:gn=m:gl=suffering, punishment, torture
+CW<	6089:sp=subs:gn=m:de=CW<>:gl=rock
+CW<BD	5827:sp=subs:gn=m:gl=subjection, obedience, tyranny
+CW<JT	14159:sp=subs:de=CW<JT>:gn=f:gl=talk, discourse, tale
+CW<L	1709:sp=subs:gn=m:de=CW<L>:gl=the hollow of the hand
+CWPR	521:sp=subs:gn=m:de=CWPR>:gl=grace, fairness, virtue
+CWQ	13723:sp=subs:gn=m:gl=an open space, street, square, market-place
+CWQP	1997:sp=subs:gn=m:de=CWQP>:gl=buffeting, beating, slaughter, contention
+CWQR	21701:sp=subs:gn=m:de=CWQR>:gl=lying, falsehood
+CWR	4129:sp=subs:gn=m:de=CWR>:gl=city wall, fortification
+CWR=	19543:sp=verb:gl=leap, bound, spring, ETHPE rise, spring up, PA dance, dart, startle
+CWCN	13109:sp=subs:gn=f:gl=lily 
+CWTP	3617:sp=subs:de=CWTP>:gn=m:gl=partaker, partner, companion
+CXWRW	11399:sp=subs:de=CXWRWT>:gn=f:gl=roughness, difficulty of road
+CXL	14549:sp=subs:gn=m:de=CXL>:gl=strainer, filter, colander, firepan, sprinkler
+CXM	14207:sp=verb:gl=be dusky, be black, be unrefined, be common
+CXN	13691:sp=verb:gl=grow warm, PA warm, ETHPA be warmed, ETHPALP suffer from ulcer, PAI enrage, excite with drink, ETHPAI rage, burn with desire, APH make warm, cause inflamation
+CXQ	10567:sp=subs:de=CXQ>:gn=m:gl=wear and tear, fatigue, wearisomeness, misery
+CV>	13901:sp=verb:gl=go wrong, misbehave, be beside oneself, ETHPE act foolishly, ETHPA take to wicked folly, misconduct oneself, APH infatuate, accuse of folly
+CVJW	2659:sp=subs:de=CVJWT>:gn=f:gl=senselessness, madness
+CVP	8237:sp=verb:gl=cleave asunder, cut obliquely
+CJWL	12791:sp=subs:gn=f:gl=Sheol, the pit, lower regions
+CJLW	5059:sp=subs:ls=prop:st=abs:gl=Shiloh
+CJLWX>	12637:sp=subs:ls=prop:st=abs:gl=Gihon #Hebrew
+CJLWMJ	16567:sp=adjv:ls=gntl:gl=Shunammite
+CJLWNJ	1319:sp=adjv:ls=gntl:gl=Shilonite
+CJM	541:sp=subs:ls=prop:st=abs:gn=m:gl=Shem
+CJPWR	7591:sp=subs:gn=m:de=CJPWR>:gl=trumpet
+CJC>	5711:sp=subs:ls=prop:st=abs:gn=m:gl=Shisha
+CJCL>	6199:sp=subs:gn=f:gl=chain, bound, fetter, line, series
+CJCQ	6691:sp=subs:ls=prop:st=abs:gn=m:gl=Shishak
+CJT	733:sp=subs:ls=prop:st=abs:gn=m:gl=Shit
+CKB	4817:sp=verb:gl=lie down
+CKWB	1481:sp=subs:ls=prop:st=abs:gn=m:gl=Segub
+CKX	21467:sp=verb:gl=find, happen, attain, be able, ETHPE be found, be present, exist, happen
+CKJM	6959:sp=subs:ls=prop:st=abs:gl=Sichem
+CKJNT	14779:sp=subs:de=CKJNT>:gn=f:gl=resting place, habitation, tabernacle, temple
+CKN	3769:sp=verb:gl=alight, settle, rest upon, PA bestow, confer, ETHPA be bestowed, granted, APH make to settle, place, pledge
+CL>	4481:sp=verb:gl=draw out, ETHPE be taken out of the water, APH draw out
+CLD	16603:sp=subs:gn=f:de=CLD>:gl=corpse, body, carcass
+CLHBJT	12457:sp=subs:de=CLHBJT>:gn=f:gl=flame, blaze, flesh of arms, burning fever
+CLWM	6577:sp=subs:ls=prop:st=abs:gn=m:gl=Shallum
+CLX	10753:sp=verb:gl=send, PA strip, despoil
+CLX=	15359:sp=subs:ls=prop:st=abs:gn=m:gl=Shilhi
+CLV	8311:sp=verb:gl=bear rule, bear sway, APH set in authority
+CLV=	9127:sp=subs:gn=m:de=CLV>:gl=quiver
+CLJ	4759:sp=subs:gl=stillness, calm, stupor, silence
+CLJ=	4391:sp=verb:gl=cease, desist, be silent, dwell in peace, ETHPA cease, be stilled, APH come to quiet
+CLJV	11353:sp=subs:gn=m:gl=taskmaster, ruler, leader, prince
+CLJVN	11354:sp=subs:gn=m:gl=taskmaster, ruler, leader, prince
+CLJMWN	9551:sp=subs:ls=prop:st=abs:gn=m:gl=Solomon
+CLM	20399:sp=verb:gl=be complete, come to an end, agree to, yield, surrender, PA make an end, deliver up, hand over, APH bring to completion, give up, surrender
+CLM=	13381:sp=subs:gn=m:gl=peace, safety, welfare
+CLM==	2797:sp=adjv:gl=whole, entire, complete #JQ\:D> CL\:M> (often elliptical), whole burnt offerings
+CLMLM	71:sp=adjv:gl=whole, entire, perfect
+CLMN<SR	18089:sp=subs:ls=prop:st=abs:gn=m:gl=Shalmanezer
+CM	14813:sp=subs:gn=m:gl=name, appellation, title
+CMH	17749:sp=verb:gl=PA name, call, ETHPA be called, named
+CMW>L	6317:sp=subs:ls=prop:st=abs:gn=m:gl=Samuel
+CMW<	19259:sp=adjv:de=CMW<>:gl=attentive, listener
+CMV	6343:sp=verb:gl=draw out, pull out (a sword), ETHPE be unsheathed, be drawn out, ETHPA get loose from harness, throw off yoke, APH draw off sandals
+CMJ	19597:sp=subs:de=CMJ>:gl=heaven, ceiling, roof, eaves
+CMJR	16879:sp=subs:ls=prop:st=abs:gn=m:gl=Shemer, Shomer
+CMN	4483:sp=verb:gl= be or grow fat, ripen, ETHPE grow fat, PA fatten
+CM<	15991:sp=verb:gl=hear, ETHPE be heard, be obedient, APH let or make hear, announce
+CM<=	5167:sp=subs:gn=m:de=CM<>:gl=hearing, report, narration
+CM<WN	2011:sp=subs:ls=prop:st=abs:gn=m:gl=Shimon, Simeon
+CM<J	887:sp=subs:ls=prop:st=abs:gn=m:gl=Shimei
+CM<J>	14767:sp=subs:ls=prop:st=abs:gn=m:gl=Shemaiah
+CM<JT	8969:sp=subs:ls=prop:st=abs:gn=m:gl=Shimeath
+CMRJN	4729:sp=subs:ls=prop:st=abs:gn=f:gl=Samaria
+CMC	10391:sp=subs:gl=sun
+CMC=	19867:sp=verb:gl=PA serve, ETHPA be served
+CMC==	10392:sp=subs:ls=prop:st=abs:gl=Shamosh (name of sun god)
+CN	9341:sp=subs:gn=f:gl=tooth
+CN>	14321:sp=subs:gn=f:gl=year
+CN>=	8111:sp=verb:gl=be altered, remove, depart, ETHPE rave, PA change, alter, ETHPA be changed, be troubled, PAGLI alter, remove from its place, transform, ETHPAGLI be removed, displaced, become different, disguise oneself
+CNQ	20543:sp=verb:gl=PA punish, abuse, inflict severe pain, ETHPA be pained, tormented, oppressed
+CNT	20749:sp=subs:gn=f:gl=sleep
+C<	19813:sp=subs:gn=f:gl=hour, moment, time, season
+C<>	4099:sp=verb:gl=smooth down, please, stop up holes, ETHPE gamble, sport, ETHPA relate, ETTAPH mock
+C<LBJM	14867:sp=subs:ls=prop:st=abs:gl=Shaalbim
+CPWL	2309:sp=subs:gn=m:de=CPWL>:gl=skirts, outskirts, uttermost parts, borders, lower parts
+CPV	1031:sp=subs:ls=prop:st=abs:gn=m:gl=Shaphat
+CPJR	1032:sp=adjv:gl=fair, good, lovely, pleasing
+CPL	5657:sp=verb:gl=be weary, faint, PA humble, bring low, ETHPA be weary, give oneself trouble, APH bring low, humble, overpower, be wearied out
+CPN	21191:sp=subs:ls=prop:st=abs:gn=m:gl=Shaphan
+CP<	6329:sp=verb:gl=pour forth, overflow, abound, PA pour out, give abundantly, ETHPE ETHPA overflow, rush forth, APH pour forth, make to abound
+CPR	3967:sp=verb:gl=be fair, be merry, please, ETHPE be pleased, ETHPA be pleasing, find favour, APH do well, make fair
+CPR=	331:sp=subs:gn=m:gl=early dawn, twilight
+CQ>	5953:sp=verb:gl=PE ptc only, PA water drop by drop, APH water, irrigate, give to drink
+CQ>=	18457:sp=subs:gl=cupbearer, water seller, canal
+CQW	20231:sp=subs:gn=f:de=CQWT>:gl=watering, irrigation, drinking
+CQWLT	20771:sp=subs:gn=f:de=CQWLT>:gl=elevation, exaltation, conveyance, transport
+CQJ	1093:sp=subs:de=CQJ>:gn=m:gl=watering, irrigation, watercourse, channel
+CQJP	19991:sp=subs:de=CQJP>:gn=m:gl=steep rock, crag, precipice
+CQL	17827:sp=verb:gl=lift up, carry, break up, march
+CQM>	8429:sp=subs:gn=f:gl=sycamore tree
+CQP	11549:sp=verb:gl=beat, dash against the ground, PA dash against the ground, batter
+CQR	20147:sp=verb:gl=PA deceive, do wickedness secretly, ETHPA tell lies
+CR>	3109:sp=verb:gl=loosen, dwell, encamp, PA begin, APH call a halt, cause to dwell
+CR>YR	13711:sp=subs:ls=prop:st=abs:gn=m:gl=Sharezer
+CRB>	16421:sp=subs:gn=f:gl=generation, family, race, tribe
+CRG	7069:sp=subs:gn=m:de=CRG>:gl=lamp
+CRG=	17449:sp=verb:gl=be dim, light, ETHPA be illuminated, ETHPALP have the sight dimmed, imagine, hasten, APH dazzle
+CRGRGJT	211:sp=subs:gn=f:de=CRGRGJT>:gl=twinkling, sparkling, pl. hallucination, illusion
+CRW	13729:sp=subs:gn=f:de=CRWT>:gl=meal, repast, banquet
+CRWJN	1571:sp=subs:de=CRWJN>:gl=cypress
+CRJ>	12653:sp=subs:ls=prop:st=abs:gn=m:gl=Seraiah
+CRJN	18743:sp=subs:gn=m:gl=corselet, cuirass, breastplate
+CRJR>JT	7177:sp=advb:gl=truly, verily, indeed
+CRJRW	3499:sp=subs:de=CRJRWT>:gn=f:gl=firmness, soundness, health, reality, truth
+CRK	14419:sp=subs:gn=m:de=CRK>:gl=remnant, rest
+CRKN	431:sp=subs:gn=m:de=CRKN>:gl=remainder, remnant, rest
+CRQ	839:sp=verb:gl=PE ptc. hollow, empty, brainless, APH whistle, hiss
+CRR	859:de=CR:sp=verb:gl=be strong, be true, PA fix firmly, ETHPA gecome strong, get wel, APH set firmly, make strong, ETTAPH make oneself believed, assert strongly
+CRR=	3581:sp=subs:gl=truth #mentioned PS under verb CR
+CRC	9109:sp=subs:de=CRC>:gn=m:gl=root
+CCL	6151:sp=subs:de=CCL>:gn=f:gl=chain
+CT	15923:sp=subs:ls=card:gl=six
+CT>	10639:sp=verb:gl=drink, imbibe
+CT>ST	10487:sp=subs:gn=f:de=CT>ST>:gl=base of wall, foundation
+CTJ	17683:sp=subs:de=CTJ>:gn=m:gl=drinker
+CTJN	7027:sp=subs:ls=card:de=CT:gl=sixty
+CTL	13477:sp=verb:gl=plant, transplant, lay down, ETHPE be planted
+CTM>>	8461:sp=subs:ls=card:de=CT:gl=sixhundred
+CTS	2477:sp=verb:gl=PA found, establish, ETHPA be founded, firmly set
+CTP	11257:sp=verb:de=CWTP:gl=PAU make partaker, ETHPAU be made partaker, share
+CTQ	8419:sp=verb:gl=cease, keep silence, hold his peace, PA still, stop, silence, ETHPA be silenced
+CTT<SR	19211:sp=subs:ls=card:gl=sixteen
+T>GWRT	7691:sp=subs:de=T>GWRT>:gn=f:gl=commerce, merchandise
+T>NT	18541:sp=subs:gn=f:de=T>NT>:gl=fig (tree and fruit)
+T>RTN	8963:sp=subs:ls=prop:st=abs:gn=m:gl=Tartan
+TBW<	13417:sp=subs:de=TBW<>:gn=m:gl=avenger, creditor, detective
+TBJL	18439:sp=subs:gl=habitable earth
+TBN	283:sp=subs:de=TBN>:gl=straw
+TBNJ	20681:sp=subs:ls=prop:st=abs:gn=m:gl=Tibni
+TB<	5437:sp=verb:gl=seek, demand, avenge, ETHPE avenge oneself, be avenged, be required, compelled
+TBR	2203:sp=verb:gl=break, rend, PA break, shatter
+TBR=	4051:sp=subs:de=TBR>:gn=m:gl=breaking, shipwreck, ruin, fracture, bruise, wound
+TBT	17207:sp=subs:gn=f:de=TBT>:gl=dung, excrement, filth
+TG	9209:sp=subs:gn=m:gl=diadem, crown
+TGLTPLSR	15647:sp=subs:ls=prop:st=abs:gn=m:gl=Tiglathpeleser
+TGR	9391:sp=subs:gn=m:de=TGR>:gl=merchant
+TD>	6907:sp=subs:gn=m:de=TD>>:gl=sprouting grass, tender grass, spring
+TDMWR	2671:sp=subs:ls=prop:st=abs:gl=Tamar #Hebrew
+TDMWRT	2081:sp=subs:de=TDMWRT>:gn=f:gl=marvel, wonder
+THWM	1511:sp=subs:de=THWM>:gn=m:gl=chaos, deep abyss
+TWB	11299:sp=advb:gl=again, back
+TWB=	13553:sp=verb:gl=return, flow back, repent
+TWDJ	14621:sp=subs:gn=f:gl=acknowledgement, profession, thanksgiving
+TWK	3001:sp=subs:de=TWK>:gn=m:gl=harm, loss, injury, misery
+TWK=	21529:sp=verb:gl=be contained, enclosed, be abashed, PA rail, fence in, coerce, ETHPA be restrained, APH put a stop to, hurt, abash
+TWKLN	6481:sp=subs:gn=m:de=TWKLN>:gl=trust, confidence
+TWLDT	6271:sp=subs:de=TWLDT>:gn=f:gl=generation
+TWL<	9043:sp=subs:gn=f:de=TWL<>:gl=worm, tapeworm, cochineal kermes, scarlet dye, firefly, grub, larva, embryo
+TWLT	16187:sp=subs:gn=m:de=TWLT>:gl=a third part
+TWN	2339:sp=subs:gn=m:gl=an inner chamber
+TWN=	6949:sp=verb:gl=make water
+TWNJ	17389:sp=subs:gn=m:de=TWNJ>:gl=tale, byword, story
+TWQL>	1061:sp=subs:gn=f:gl=stumbling block, offence, scandal
+TWQN	3779:sp=subs:de=TWQN>:gn=m:gl=work, making, thing made, meal
+TWQP	1627:sp=subs:de=TWQP>:gn=m:gl=bottom, force, strength, power
+TWR	14323:sp=subs:gn=m:de=TWR>:gl=bull, ox
+TWR=	20327:sp=verb:gl=stir, APH plough
+TWR<>	499:sp=subs:gn=f:gl=breach, rift
+TWTB	12343:sp=subs:gl=sojourner, foreigner, settler
+TXWJ	13457:sp=subs:gn=f:gl=appearance, token, example
+TXWM	21799:sp=subs:gn=m:de=TXWM>:gl=limit, boundary, precept, regulation
+TXNNT	17981:sp=subs:gn=f:de=TXNNT>:gl=fervent prayer, supplication
+TXPJS	17579:sp=subs:ls=prop:st=abs:gn=f:gl=Tahpenes, Tiphsah
+TXT	21419:sp=prep:gl=under, beneath
+TXTJ	8999:sp=subs:ls=padv:gl=lowness, inferiority
+TXTJ=	9000:sp=adjv:gl=lower, inferior, lowest, earthly
+TJBW	8923:sp=subs:gn=f:gl=backsliding, recantation, return, conversion, repentance
+TJMN	21803:sp=subs:gn=f:gl=the south
+TJMNJ	15731:sp=adjv:gl=southern
+TJN	21787:sp=subs:gn=m:nu=pl:de=TJN>:gl=urine, oil of sulphur
+TKJL>JT	4073:sp=advb:gl=trustfully, confidently, faithfully
+TKL	13933:sp=verb:gl=PE ptc only trust, put confidence in, ETHPE trust, rely upon
+TKLT	18199:sp=subs:de=TKLT>:gn=f:gl=dark blue, violet, purple, pl. purple robes
+TKSJ	12437:sp=subs:gn=f:gl=covering, garment
+TLG	20323:sp=subs:gn=m:de=TLG>:gl=snow
+TLJTJ	19267:sp=adjv:ls=ordn:de=TLJTJ>:gl=third
+TLMJD	12611:sp=subs:gl=disciple, servant of prophet
+TLT	7963:sp=subs:ls=card:gl=three
+TLT=	20849:sp=verb:gl=PA divide by three, multiply by three, triple
+TLTJN	21187:sp=subs:ls=card:de=TLT:gl=thirty
+TLTM>>	15349:sp=subs:ls=card:gl=three hundred
+TLT<SR	2383:sp=subs:ls=card:gl=thirteen
+TMH	15959:sp=verb:gl=be numb, be torpid, be rigid, be speechless
+TMH=	239:sp=subs:gn=m:de=TMH>:gl=torpor, stupor, amazement
+TMJM>JT	21977:sp=advb:gl=innocently, simply, unwittingly
+TMJMW	7607:sp=subs:gn=f:de=TMJMWT>:gl=guidelessness, harmlessness, simplicity, innocence
+TMJNJ	21863:sp=adjv:ls=ordn:gl=eighth
+TMN	14717:sp=advb:gl=there, yonder
+TMN>	7193:sp=subs:ls=card:gl=eight
+TMN>JN	3767:sp=subs:ls=card:de=TMN>:gl=eighty
+TMN<SR	13757:sp=subs:ls=card:gl=eighteen
+TN>	21563:sp=verb:gl=repeat, do again, ETHPE & ETHPA be repeated, PA narrate, recount
+TNWR	5741:sp=subs:de=TNWR>:gl=furnace, oven, lamp
+TNXMT	16231:sp=subs:ls=prop:st=abs:gn=m:gl=Tanhumeth
+TNJN	17033:sp=adjv:de=TNJN>:gl=second, double, two years old, mate, second in authority
+TNN	5701:sp=subs:de=TNN>:gn=m:gl=smoke, steam, reek, fumes
+T<NK	277:sp=subs:ls=prop:st=abs:gl=Taanach
+TP>	7487:sp=verb:gl=set on, put on (a caldron)
+TPNJQ	1019:sp=subs:de=TPNJQ>:gn=m:gl=good cheer, luxury
+TPSX	12539:sp=subs:ls=prop:st=abs:gl=Tiphsah
+TPT	14087:sp=subs:ls=prop:st=abs:gl=Topheth
+TYBJT	9643:sp=subs:gn=f:de=TYBJT>:gl=decoration, ornament, carved or decorative work
+TQW>	9011:sp=subs:ls=prop:st=abs:gn=m:gl=Tikvah
+TQL	10037:sp=verb:gl=weigh, pay
+TQN	3761:sp=verb:gl=be in good order, be established, PA construct, fashion, APH construct, fix, furnish
+TQP	21647:sp=verb:gl=wax strong, prevail
+TR>	12433:sp=subs:gn=m:de=TR>>:gl=tutor, pedagogue
+TRB	3089:sp=subs:gn=m:gl=fat
+TRHQ	14771:sp=subs:ls=prop:st=abs:gn=m:gl=Tirhakah
+TRJN	7417:sp=subs:ls=card:gl=two
+TRJYW	12823:sp=subs:gn=f:gl=uprightness, integrity, directness
+TR<	22013:sp=subs:gn=m:de=TR<>:gl=gate, door, entrance
+TR<=	13043:sp=subs:de=TR<>:gn=m:gl=porter
+TR<==	16729:sp=verb:gl=break through, open a vein, let flow, make a breach, transgress a law, ETHPA be riven, rent, broken, burst forth, PA tear asunder
+TR<W	21491:sp=subs:de=TR<WT>:gn=f:gl=reconciliation, truth, benevolence
+TR<JT	97:sp=subs:gn=f:de=TR<JT>:gl=mind, sense, opinion
+TR<SR	18539:sp=subs:ls=card:gl=twelve
+TR<T	6581:sp=subs:de=TR<>:gn=f:gl=portress
+TRY	3671:sp=verb:gl=direct, make straight, correct, PA do rightly, direct, rebuild, ETHPA stand erect, be directed, APH correct
+TRY>	3931:sp=subs:ls=prop:st=abs:gl=Tirzah
+TRCJC	2791:sp=subs:ls=prop:st=abs:gl=Tarshish
+TRTQ	13721:sp=subs:ls=prop:st=abs:gl=Tartak
+TCBWXT	14249:sp=subs:gn=f:de=TCBWXT>:gl=praise, honour, hymn, canticle
+TCBJ	269:sp=subs:ls=prop:st=abs:gl=Thisbe
+TCWJT	15139:sp=subs:de=TCWJT>:gn=f:gl=rug, carpet, mattress, bed
+TCJ<J	2861:sp=adjv:de=TCJ<J>:ls=ordn:gl=ninth
+TCMCT	16057:sp=subs:gn=f:de=TCMCT>:gl=serving, service, worship
+TC<	13841:sp=subs:ls=card:gl=nine
+TC<SR	6709:sp=subs:ls=card:gl=nineteen
+TCRJ	5569:sp=subs:ls=prop:st=abs:gn=f:gl=Tishrin

@@ -1,12 +1,10 @@
 ########################################################################
-#								       #
-#	Grammar at Word Level in Peshitta Syriac drafted in	       #
-#	preparation for merging into the future word grammar of        #
-#	Greater Aramaic 					       #
-#								       #
+#                                                                      #
+#      Grammar at Word Level in Peshitta Syriac                        #
+#                                                                      #
 ########################################################################
 
-#ident "@(#)syrwgr	1.4 17/09/18"
+#ident @(#)syriac/word_grammar	1.9 04/07/22
 
 # Word skeleton in terms of morpheme types
 word
@@ -20,10 +18,13 @@ word
       core =
 	 lex: {} "lexeme"
       infix =
+         vix: {"^","^"} "verbal infix"
       suffix =
+	 frv: {"|"} "final (reduplicated) verbal stem element"
 	 vbe: {"["} "verbal ending"
 	 nme: {"/"} "nominal ending"
 	 emf: {"~"} "emphatic marker"
+	 prs: {"+"} "pronominal suffix"
       pattern =
 	 vpm: {":"} "vowel pattern"
 
@@ -39,14 +40,18 @@ forms
    pfx = ">T"
    vbs = ">", "S", "C", "T", "M"
    lex < lexicon
+   vix = "W", "J", "M", "R", "WR", "G"
    vbe = "", "W", "WN", "J", "J=", "JN", "JN=", "N", "N=", "T", "T=",
 	 "T==", "TWN", "TJ", "TJN"
-   nme = "", ">", "W", "WT", "J", "J=", "J==", "JN", "JN=", "N", "T",
-	 "T=", "TJ", "TJN"	# J== en TJ toegevoegd 14-8-2007 (Dirk)
+   nme = "", ">", "W", "WT", "J", "J=", "J==", "JN", "JN=", "N", "T", "T=", "TJ", "TJN"   # J== en TJ toegevoegd 14-8-2007 (Dirk)
    emf = ">"
+   prs = "H", "H=", "HWN", "HJ", "HJN", "J", "K", "KWN", "KJ", "KJN",
+	 "N", "NJ"
    vpm = c, d, p, dp
 
    rt < lexicon
+   frv = "", "B", "BS", "J", "K", "L", "M", "MR", "Y", "Q", "QL", "R",
+	 "RG", "RM"
 
 
 # Definition of grammatical functions: mnemonic and function name
@@ -60,9 +65,7 @@ functions
       f: "feminine", m: "masculine"
    ls: "lexical set" =
       card: "cardinalia",
-      cjad: "conjunctive adverb",
       demo: "demonstrativa",
-      focp: "focus particle",
       gntl: "gentilicia",
       nmex: "noun of existence",
       ordn: "ordinalia",
@@ -111,30 +114,29 @@ inflection
    not exist(vbe) :: -vt, -vs, -ps
 
    exist(emf) && not exist(nme) :: reject
+   exist(frv) && not exist(vbe) :: reject
+   exist(vix) && not exist(vbe) :: reject
    exist(pfm) && not exist(vbe) :: reject
    exist(pfx) && not exist(vbe) :: reject
    exist(vbs) && not exist(vbe) :: reject
 
    exist(nme) :: sp=subs, +nu, +gn, +st
-   nme == ">"   :: nu=sg, gn=f, st=abs
-   nme == "J="  :: nu=du, st=cst	# toegevoegd 14-8-2007 (Dirk)
-   nme == "J==" :: nu=sg, gn=f, st=abs	# /aJ gewijzigd 14-8-2007 (Dirk)
-   nme == "T"   :: nu=sg, gn=f, st=cst	# /aT
-   nme == "JN"  :: nu=pl, gn=m, st=abs
-   nme == "JN=" :: nu=du, st=abs	# /EJN
-   nme == "TJN" :: nu=du, gn=f, st=abs	# 1Kings 18,32 S>(>/TJN
-   nme == "J"   :: nu=pl, gn=m, st=cst
-   nme == "N"   :: nu=pl, gn=f, st=abs
-   nme == "T="  :: nu=pl, gn=f, st=cst	# /AT
-   nme == "TJ"  :: nu=du, gn=f, st=cst	# toegevoegd 14-8-2007 (Dirk)
-   nme == "W"   :: st=abs
-   nme == "WT"  :: st=cst
+   nme == ">"  :: nu=sg, gn=f, st=abs
+   nme == "J=" :: nu=du, st=cst   # toegevoegd 14-8-2007 (Dirk)
+   nme == "J==" :: nu=sg, gn=f, st=abs	# /aJ  # gewijzigd 14-8-2007 (Dirk)
+   nme == "T"  :: nu=sg, gn=f, st=cst	# /aT
+   nme == "JN" :: nu=pl, gn=m, st=abs
+   nme == "JN=" :: nu=du, st=abs  # /EJN
+   nme == "TJN":: nu=du, gn=f, st=abs   # 1Kings 18,32 S>(>/TJN
+   nme == "J"  :: nu=pl, gn=m, st=cst
+   nme == "N"  :: nu=pl, gn=f, st=abs
+   nme == "T=" :: nu=pl, gn=f, st=cst	# /AT
+   nme == "TJ" :: nu=du, gn=f, st=cst   # toegevoegd 14-8-2007 (Dirk)
+   nme == "W" :: st=abs
+   nme == "WT" :: st=cst
    nme == {"W", "WT"} && not exist(vbe) :: reject
 
    exist(vbe) :: sp=verb, vo=act, vs=pe
-   exist(vbs) :: vs=af
-   vpm == {d, dp} :: vs=pa
-
    vbe == "J"   :: gn=f
    vbe == "JN"  :: gn=f, nu=sg	# [iJN
    vbe == "JN=" :: gn=f, nu=pl	# [eJ"N
@@ -149,9 +151,12 @@ inflection
    vbe == "W"   :: gn=m, nu=pl	# [W quiescent
    vbe == "WN"  :: gn=m, nu=pl	# [uWN
 
+   exist(vbs) :: vs=af
+   exist(frv) :: vs=pa
+
    emf == ">"   :: st=emph
 
-   vpm == {dp, p} || pfx == ">T" :: vo=pas
+   vpm == p || pfx == ">T" || vix == "J" :: vo=pas
 
    shared { not exist(pfm) && exist(vbe) && not exist(nme) :: vt=pf }
       vbe == "" :: ps=third, nu=sg, gn=m
@@ -199,14 +204,14 @@ inflection
       # Pe`al infinitive and participle are distinguished from one
       # another by the pfm "M" on the infinitive which is lacking in
       # the participle.
-      shared { not (exist(pfx) || exist(vbs) || vpm == {d, dp}) }
+      shared { not exist(pfx) && not exist(vbs) && not exist(frv) }
 	 not exist(pfm) :: vt=ptc
 	 pfm == "M" :: vt=inf, -nu, -gn
       end
       # Non-pe`al infinitives are distinguished from non-pe`al
       # participles by a "W" ending
-      shared { (exist(pfx) || exist(vbs) || vpm == {d, dp}) &&
-	 pfm == "M" :: vt=ptc
+      shared { (exist(pfx) || exist(vbs) || exist(frv)) && pfm == "M" ::
+	 vt=ptc
       }
 	 nme == {"W", "WT"} :: vt=inf, -nu, -gn
       end

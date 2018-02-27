@@ -6,7 +6,7 @@
 #								   #
 ####################################################################
 
-#ident "@(#)syrlex	1.52 10/10/20"
+#ident "@(#)syrlex	1.58 17/07/18"
 
 =	0:sp=intj	# DB
 >>WN	2370 #OLD
@@ -224,7 +224,7 @@
 >SR	3851:sp=verb:gl=to bind
 >STR>	27947:sp=subs:gn=f:gl=ashtoret, ashera	# WP
 ><P>	21818:sp=subs:gl=double #Formerly sp=advb
->P	18869:sp=conj:gl=also, and, truly, even
+>P	18869:sp=advb:ls=focp:gl=even
 >PDN	10847:sp=subs:de=>PDN>:gn=m:gl=palace, citadel
 >PWDJ	12983:sp=subs:gl=flute #PS Thesaurus
 >PL>	11393:sp=conj:gl=not even, nor
@@ -514,7 +514,7 @@ GXK	21019:sp=verb:gl=to laugh, to be merry, to dance
 GJGL	2689:sp=subs:gn=f:gl=wheel, round stone, circle, ring
 GJXWN	11437:sp=subs:ls=prop:st=abs:gl=Gihon
 GJS	18329:sp=subs:gn=m:de=GJS>:gl=band of robbers, a foray
-GJR	5689:sp=conj:gl=for, but, indeed, however
+GJR	5689:sp=advb:ls=cjad:gl=however
 GJR=	7861:sp=subs:gl=one who commits whoredom
 GL	13469:sp=verb:gl=to be in a state of motion, to be put in motion, ptc.pss. round, PA to surge, to swell, AF to roll, to unfold
 GL=	12361:sp=subs:gl=straw, wave	# HR
@@ -650,7 +650,7 @@ DXC	11113:sp=subs:gn=m:de=DXC>:gl=guard, attendant (only plural)
 DJ>TJQJ	12386:sp=subs:gn=f:gl=covenant, Testament	# HR
 DJL	3823:sp=prep:gl=[possessive]
 DJN	409:sp=subs:gn=m:gl=judgement, law, custom
-DJN=	11527:sp=conj:gl=but, however, for, then
+DJN=	11527:sp=advb:ls=cjad:gl=then
 DJN==	1811:sp=subs:gn=m:gl=judge
 DJY	14081:sp=subs:de=DJY>:gn=m:gl=exultation, leaping for joy
 DJY=	17029:sp=subs:de=DJY>:gn=m:gl=he rock-goat, ibex
@@ -733,7 +733,7 @@ HJMN	13184:sp=verb:gl=to believe
 HJMNW	21121:sp=subs:gn=f:de=HJMNWT>:gl=firmness, truth, faithfulness
 HJN	10182:sp=pron:ls=pers:ps=third:gn=f:nu=pl:gl=they
 HKWT	8168:sp=advb:gl=so, thus, likewise
-HKJL	10629:sp=conj:gl=now, then, thus, so, therefore, for
+HKJL	10629:sp=advb:ls=cjad:gl=now then
 HKN>	8167:sp=advb:de=HKN:gl=thus, so, such
 HLJN	2243:sp=pron:ls=demo:nu=pl:gl=these
 HLJN=	37513:sp=subs:ls=prop:st=abs:gn=m:gl=Hillen    # MT Jdg 12,13: Hillel # WP
@@ -1332,7 +1332,7 @@ KJ=	49465:sp=pron:ls=pers:ps=second:gn=f:nu=sg:gl=you	# WP
 KJL	6827:sp=subs:gn=m:de=KJL>:gl=measure, amount, quality
 KJN	18235:sp=subs:gl=nature
 KJS	16519:sp=subs:gn=m:gl=small bag, pouch, purse
-KJT	21402:sp=conj:gl=that is to say, indeed	#AG
+KJT	21402:sp=advb:ls=cjad:gl=namely
 KKWLT	12073:sp=subs:gn=f:de=KKWLT>:gl=cake of bread
 KKR	12301:sp=subs:gn=f:de=KKR>:gl=talent
 KKR=	16127:sp=subs:ls=prop:st=abs:gl=Kikar (Hebrew plain)
@@ -2445,6 +2445,7 @@ Y<R=	7577:sp=subs:de=Y<R>:gn=m:gl=shame, dishonour, insult
 YPWR	68708:sp=subs:ls=prop:st=abs:gn=m:gl=Zippor	# WP
 YPNJ>	5477:sp=subs:ls=prop:st=abs:gn=m:gl=Zephaniah
 YPR	13121:sp=subs:gl=early morning, daybreak, dawn
+YPR=    13122:sp=subs:gm=m:de=YPR>:gl=eyelid, eyelash   # JV
 YPRJ	14341:sp=subs:gn=m:de=YPRJ>:gl=a kid, yearling goat
 YPT	16547:sp=subs:de=YPT>:gn=f:gl=care, anxiety
 YPT=	19483:sp=subs:de=YPT>:gn=f:gl=stone or setting of ring, ornament(YBT>)
@@ -2646,6 +2647,7 @@ RWZ	21751:sp=subs:de=RWZ>:gn=m:gl=exultation, rejoicing
 RWZ=	21752:sp=verb:gl=to exult, rejoice greatly; to flourish, thrive	# JV
 RWX	8779:sp=subs:gn=f:gl=breath, wind, spirit
 RWX=	503:sp=verb:gl=to take breath, ETHPE to smell, PA to soften, soothe, mitigate, ETHPA to be quieted, relieved, appeased, APH to scent
+RWX==   504:sp=verb:gl=to be enlarged, make wide, relieved, to expand. # JV
 RWX>	24868:sp=subs:de=RWXT>:gl=open space, room	# WP
 RWXQ	16267:sp=subs:gn=m:de=RWXQ>:gl=(with preposition L, D, B) afar, (with MN) from afar, long ago
 RWJ	3793:sp=adjv:gl=drunken, thirsty, enthusiastic
@@ -3057,6 +3059,7 @@ TMNM	58939:sp=subs:ls=prop:st=abs:gl=Timnam    # MT Jdg 15,6: Timnite # WP
 TMN<SR	13757:sp=subs:ls=card:gl=eighteen
 TMNT	71375:sp=subs:ls=prop:st=abs:gl=Timnath	# WP
 TMR	12017:sp=subs:ls=prop:st=abs:gl=Tamar	# WP
+TMR=    12016:sp=subs:gn=m:de=TMR>:gl=eyelid, eyelash                   # JV 
 TN>	21563:sp=verb:gl=to repeat, to do again, ETHPE ETHPA to be repeated, PA to narrate, recount
 TNWR	5741:sp=subs:de=TNWR>:gl=furnace, oven, lamp
 TNX>	59679:sp=subs:gn=f:gl=usually pl., groan, sigh; also T>NX>	# JV
@@ -3108,3 +3111,96 @@ TC<	13841:sp=subs:ls=card:gl=nine
 TC<J	30023:sp=subs:gn=f:de=TC<JT>:gl=relation, narration, account	# WP
 TC<SR	6709:sp=subs:ls=card:gl=nineteen
 TCRJ	5569:sp=subs:ls=prop:st=abs:gn=f:gl=Tishrin
+KMR	37268:sp=verb:vc=K\:MAR:gl=be sad
+MXCWL	72841:sp=subs:vc=MAX\:CW.L:gl=storm
+NJNWJ   76979:sp=adjv:ls=gntl:vc=NIJN\:W@J:gl=Ninevite
+SLP	89828:sp=verb:vc=S\:LAP:gl=twist
+<BRJ	56271:sp=adjv:ls=gntl:vc=<IB\:R@J:gl=Hebrew
+CVR	64547:sp=subs:vc=C\:V@R:gl=document
+XLC	78971:sp=verb:vc=XLC:gl=PA to weaken, ETHPA to be enfeebled, discouraged
+BLHJ	12123:sp=verb:vc=BLHJ:gl=PA to terrify, to hasten, ETHPA to be stonished, dismayed
+KWM	34343:sp=verb:vc=KOWM:gl=to conceal, to be reserved
+CBWQ	98721:sp=subs:vc=CBWQ:gl=pardoning, forgiving
+TGR=	27896:sp=verb:vc=TGR:gl=ETHPA to earn wages. to trade, to acquire
+YN<	87656:sp=verb:vc=YANA<:gl=PA to plot, scheme, ETHPA to contrive, to be caught by guile, APH to devise artifices
+>GWN	89621:sp=subs:vc=>;GON:gl=trail, contest, struggle
+TXLWY	78621:sp=subs:vc=TAXLWUY:gl=spoil, plunder
+RMWT	78961:sp=subs:vc=RAMWUT:gl=elevation, height, pride
+XR	78694:sp=verb:vc=XAR:gl=to be dry, to be dumb, PA to manumit, set free, ETHPA to be freed, set free
+XRP	23123:sp=verb:vc=XRAP:gl=to mix, mingle, PA to infuse, sharpen, ETPA to be stimulated, APH to sharpen, to egg
+TNWJ	98123:sp=subs:vc=TANWAJ:gl=agreement, contract, condition, term
+MRJ	58723:sp=verb:vc=MARIJ:gl=PA to contend, strive, imitate. ETPA to contend, strive, imitate
+XWYP	23463:sp=subs:vc=XWUYAP:gl=boldness, imprudence
+>SKM	98654:sp=subs:vc=>ESKIM:gl=form, habit, manners, appearance
+SWRD	65436:sp=subs:vc=SWURAD:gl=terror, fright
+VBX	87650:sp=subs:vc=VAB@X:gl=butcher, slaughterer, cook
+<ZJZ>JT	43524:sp=advb:vc=<AZIJZ@>IJT:gl=vigorously, vehemently
+XKJM>JT	98632:sp=advb:vc=XAKIJM@>IJT:gl=wisely
+S<WR	98631:sp=subs:vc=SA<WUR:gl=efficient, maker, worker, overseer
+>XCMJT	65562:sp=subs:vc=>AXC@MIJT:gl=supper, banquet
+RJCN	42253:sp=subs:vc=RIJC@N:gl=ruler, noble, prince
+PYX=	23531:sp=verb:vc=P\:YAX:gl=to be glad, gay, merry, ETHPE to be bright, ETHPA to exult, APH to gladden, joke
+P>J	34552:sp=verb:vc=PA>J:gl=to be becoming, PA to adorn, ETHPA to be adorned, beautified, APH to beautify, ETHTAPH to be beautified
+TJB	78685:sp=subs:vc=TAJ@B:gl=backslider,  penitent
+>XCMJ	51385:sp=subs:vc=B:gl=?
+>MWR	36804:sp=subs:vc=B:gl=?
+ZHJRW	15191:sp=subs:vc=B:gl=?
+XNG	76711:sp=subs:vc=B:gl=?
+VPS	70220:sp=verb:vc=B:gl=?
+K>MT	22640:sp=subs:vc=B:gl=?
+MLG	30862:sp=verb:vc=B:gl=pluck out, rub
+MRJR>JT	12469:sp=advb:vc=B:gl=?
+MTQRBN	94759:sp=subs:vc=B:gl=?
+PCQ	78020:sp=verb:vc=B:gl=?
+YWRN	49474:sp=subs:vc=B:gl=?
+YVN	82292:sp=verb:vc=B:gl=?
+QBWR	53451:sp=subs:vc=B:gl=?
+QWDX	17172:sp=subs:vc=B:gl=?
+RTX	8388:sp=verb:vc=B:gl=?
+CBR	17571:sp=subs:vc=B:gl=?
+CBRW	64644:sp=subs:vc=B:gl=?
+CXL=	27721:sp=verb:vc=B:gl=?
+CPJ	53536:sp=verb:vc=B:gl=?
+TKS	76564:sp=verb:vc=B:gl=?
+HKP	87634:sp=verb:vc=B:gl=?
+BWY	51893:sp=subs:vc=B:gl=byssus:co=Greek 
+GRGX	89656:sp=verb:vc=B:gl=?
+SDQ	89787:sp=verb:vc=B:gl=to separate
+YWR==	87921:sp=verb:vc=B:gl=depict
+KLT	23879:sp=subs:vc=B:gl=bride
+PXT	61313:sp=subs:vc=B:gl=gulf, gasm:co=East Syriac? (PS 441)
+PWRP	23214:sp=subs:vc=B:gl=luxury, pleasure
+BL<	89721:sp=verb:vc=B:gl=swallow up, devour
+HWT	32121:sp=subs:vc=B:gl=abyss
+NYX	98732:sp=verb:vc=B:gl=shine
+GNBRJ	23012:sp=subs:vc=B:gl=hero, warrior
+MRB<>	23897:sp=subs:vc=B:gl=womb, covert, den
+NMRWD	89723:sp=subs:vc=B:gl=Nimrod
+LBB	87968:sp=verb:vc=B:gl=PA to encourage:co=only used in PA 
+LBJBW	98211:sp=subs:vc=B:gl=fortitude
+K>WR	12412:sp=subs:vc=B:gl=reproach
+JWBL	87923:sp=subs:vc=B:gl=course, series:co=toledot (Gn)
+LXM=	89762:sp=verb:vc=B:gl=to fit, agree
+<DL	98612:sp=verb:vc=B:gl=to blame, find a fault
+TKCPT	89731:sp=subs:vc=B:gl=supplication
+MLX==	22721:sp=verb:vc=B:gl=to salten
+CBBW	95387:sp=subs:vc=B:gl=neighbourhood
+<CP	86723:sp=subs:vc=B:gl=ax
+MQR	32124:sp=subs:vc=B:gl=ax
+MSR	78962:sp=subs:vc=B:gl=ax
+MJQ	89631:sp=verb:vc=B:gl=??AA
+KWJL	89612:sp=subs:vc=B:gl=ark:co=esp.Noah's ark
+QBWT	72356:sp=subs:vc=B:gl=ark
+CJ<>JT	97413:sp=adjv:vc=B:gl=hastely
+KRWZW	25424:sp=subs:vc=B:gl=proclamation, herald
+PWRTK	24552:sp=subs:vc=B:gl=changing colours, diversity
+CNJW	47884:sp=subs:vc=B:gl=madness
+VBR=	87692:sp=subs:vc=B:gl=toddler
+MLL	65713:sp=advb:vc=B:gl=eloquent, full of talk
+LWXM	23864:sp=subs:vc=B:gl=threat
+KJW	89732:sp=subs:vc=B:gl=?
+MXZJ	23451:sp=subs:vc=B:gl=mirror
+RDWJ	29731:sp=adjv:vc=B:gl=fluid, frail
+RDWJ=	89745:sp=subs:vc=B:gl=traveller, instructor
+RHJBW	98624:sp=subs:vc=B:gl=perturbation, trepidation
+

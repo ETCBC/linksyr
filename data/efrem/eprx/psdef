@@ -1,0 +1,170 @@
+########################################################################
+#								       #
+#	Format and contents of PS2 file for Peshitta Syriac	       #
+#								       #
+#	This version is drafted in preparation for merging into        #
+#	the future word grammar of Greater Aramaic		       #
+#								       #
+########################################################################
+
+#ident "@(#)syrpsd	1.3 08/06/05"
+
+booklabels
+  "1R":		" IKON%02d,%02d"
+  "2R":		"IIKON%02d,%02d" 
+  "ApBarA":	"BARUA%02d,%02d" 
+  "ApBarB":	"BARUB%02d,%02d" 
+#  "BLC":	" BLC %02d,%02d" 	# would affect *.phd etc.
+  "Jdc":	"RICHT%02d,%02d" 
+  "OrManA":	"MANASA%01d,%02d" 
+  "OrManB":	"MANASB%01d,%02d" 
+  "Ps":		" PS%03d,%03d" 
+  "Sir":	"SIRA %02d,%02d" 
+  "eprx":	"EPRX %02d,%02d" 
+
+
+format
+# default format: 12 columns of width 2, with default value -1
+
+   default : 12 * 2 = -1
+   k[1]    += 1
+   k[7]    += 2
+   k[11]   += 3
+   lexeme  = 18
+
+
+rules
+
+# k[0] : lexical set
+      set k[0] = 0	# default for lexical set is not -1 but 0
+      ls == card :: k[0] = -1
+      ls == gntl :: k[0] = -2
+      ls == nmex :: k[0] = -5
+      ls == ordn :: k[0] = -3
+      ls == padv :: k[0] = -4
+      ls == pcon :: k[0] = -1	# subset of prepositions
+      ls == pint :: k[0] = -7	# not entirely clear
+      ls == ppre :: k[0] = -3
+      ls == quot :: k[0] = -1
+      ls == vbex :: k[0] = -2
+
+
+# k[1] : part of speech
+      sp == verb :: k[1] = 1
+      sp == subs :: k[1] = 2
+      sp == subs && ls == prop :: k[1] = 3
+      sp == advb :: k[1] = 4
+      sp == prep :: k[1] = 5
+      sp == conj :: k[1] = 6
+      sp == pron && ls == pers :: k[1] = 7
+      sp == pron && ls == demo :: k[1] = 8
+      sp == pron && ls == prin :: k[1] = 9
+      sp == intj :: k[1] = 10
+      sp == nega :: k[1] = 11
+      sp == inrg :: k[1] = 12
+      sp == adjv :: k[1] = 13
+
+
+# k[2] : preformatives on verbs
+      not exist(pfm) && sp == verb :: k[2] = 0
+      pfm == ""   :: k[2] = 1
+      pfm == ">"  :: k[2] = 4
+      pfm == "M"  :: k[2] = 6
+      pfm == "N"  :: k[2] = 5
+      pfm == "N=" :: k[2] = 7
+      pfm == "T"  :: k[2] = 3
+      pfm == "T=" :: k[2] = 8
+
+
+# k[3] : verbal stem
+# the PS2 values in column 3 encode the verbal stem per se,
+# rather than the verbal stem morpheme.
+
+      vs == pe    &&  not exist(pfx)  ::  k[3] = 17	# peal
+      vs == pa    &&  not exist(pfx)  ::  k[3] = 18	# pael
+      vs == af    &&  not exist(pfx)  ::  k[3] = 15	# afel
+      vbs == "C"  &&  not exist(pfx)  ::  k[3] = 16	# shafel
+
+      vs == pe    &&  pfx == ">T"     ::  k[3] = 21	# etpeel
+      vs == pa    &&  pfx == ">T"     ::  k[3] = 13	# etpaal
+      vs == af    &&  pfx == ">T"     ::  k[3] =  9	# ettafal
+      vbs == "C"  &&  pfx == ">T"     ::  k[3] = 22	# eshtafal
+
+
+# k[4] : verbal endings
+      not exist(vbe) && sp == verb :: k[4] = 0	# coding error
+      vbe == ""    :: k[4] =  1
+      vbe == "W"   :: k[4] =  2
+      vbe == "WN"  :: k[4] =  3
+      vbe == "J"   :: k[4] =  4
+      vbe == "J="  :: k[4] =  5
+      vbe == "JN"  :: k[4] =  6
+      vbe == "JN=" :: k[4] =  7
+      vbe == "N"   :: k[4] =  8
+      vbe == "N="  :: k[4] =  9
+      vbe == "T"   :: k[4] = 10
+      vbe == "T="  :: k[4] = 11
+      vbe == "T==" :: k[4] = 12
+      vbe == "TWN" :: k[4] = 13
+      vbe == "TJ"  :: k[4] = 14
+      vbe == "TJN" :: k[4] = 15
+
+
+# k[5] : nominal ending
+      not exist(nme) && sp == verb :: k[5] =  0	# all right
+      not exist(nme) && sp == subs :: k[5] =  0	# coding error
+      not exist(nme) && sp == adjv :: k[5] =  0	# coding error
+      nme == ""    :: k[5] =  1
+      nme == ">"   :: k[5] =  2
+      nme == "W"   :: k[5] =  3
+      nme == "WT"  :: k[5] =  4
+      nme == "J"   :: k[5] =  5
+      nme == "J="  :: k[5] =  6
+      nme == "J==" :: k[5] =  7
+      nme == "JN"  :: k[5] =  8
+      nme == "JN=" :: k[5] =  9
+      nme == "N"   :: k[5] = 10
+      nme == "T"   :: k[5] = 11
+      nme == "T="  :: k[5] = 12
+      nme == "TJ"  :: k[5] = 13
+      nme == "TJN" :: k[5] = 14
+
+
+# k[6] : The column for pronominal suffix is not used.
+# They are treated as enclitic personal pronouns with word status.
+
+
+# k[7] : verbal tense
+      vt == ipf :: k[7] = 1
+      vt == pf  :: k[7] = 2
+      vt == imp :: k[7] = 3
+      vt == inf :: k[7] = 4
+      vt == ptc && vo == act :: k[7] = 6
+      vt == ptc && vo == pas :: k[7] = 62
+
+
+# k[8] : person
+      exist(ps) :: k[8] = 0
+      ps == first   :: k[8] = 1
+      ps == second  :: k[8] = 2
+      ps == third   :: k[8] = 3
+
+
+# k[9] : number
+      exist(nu) :: k[9] = 0
+      nu == sg      :: k[9] = 1
+      nu == du      :: k[9] = 2
+      nu == pl      :: k[9] = 3
+
+
+# k[10] : gender
+      exist(gn) :: k[10] = 0
+      gn == f       :: k[10] = 1
+      gn == m       :: k[10] = 2
+
+
+# k[11] : nominal state
+      exist(st)  :: k[11] = 0
+      st == cst  :: k[11] = 1
+      st == abs  :: k[11] = 2
+      st == emph :: k[11] = 3
