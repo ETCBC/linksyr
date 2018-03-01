@@ -46,12 +46,34 @@ class wrdgrm:
         self._m = {}
         self._f = {}
         morphemes = []
-        # a=analyzed form, p=paradigmatic form, s=surface form
+        surface_form = '' # this is the surface form of the whole word
+        # a=analyzed form, p=paradigmatic form, s=surface form (of the morpheme)
         for mt, a in self.split_morphemes(string):
+            # Previously, infixes were not handled properly by split_morphemes(),
+            # so after a lexeme was interrupted by an infix, the second part of
+            # the lexeme (and therefore also the rest of the word) were not
+            # recognized.
+            # By checking if the current morpheme type is 2 (i.e. infix), and
+            # if so not closing the previous morpheme by setting prevmt to None,
+            # the remainder of the lexeme is also recognized.
+            # However, since the lexeme parts are now separate items in the
+            # morphemes list, they have to be joined together in analyze_word().
+            # An alternative would be to join them together already in
+            # split_morphemes(), but then the surface_form cannot be recovered
+            # since the position of the infix is unknown. A possibly easier
+            # way could be to have split_morphemes() also return the
+            # surface_form.
             if a is not None:
-                p, s = self.analyze_morpheme(a)
-                self._m[mt] = p # store paradigmatic forms
-                morphemes.append((mt, (p,s,a)))
+                p, s = self.an_decode(a)
+                surface_form += s
+                if mt not in self._m:
+                    self._m[mt] = p # store paradigmatic forms
+                    morphemes.append((mt, (p,s,a)))
+                else: # if mt is already registered it is apparently a lexeme split by an infix
+                    self._m[mt] += p # combine parts of paradigmatic form
+                    # then find the mt in the morphemes list, and combine
+                    i,m = [(i,m) for i,m in enumerate(morphemes) if m[0]==mt][0]
+                    morphemes[i] = (mt, tuple(x+y for x,y in zip(m[1],(p,s,a))))
             else:
                 self._m[mt] = None
         # apply rules one by one, which will set functions in self._f
@@ -73,7 +95,7 @@ class wrdgrm:
 
             functions = tuple(self._f.items())
 
-            return (tuple(morphemes), functions, lex)
+            return (surface_form, tuple(morphemes), functions, lex)
 
         else:
             raise Exception('No paradigmatic form found.')
@@ -103,7 +125,8 @@ class wrdgrm:
             elif l >= p and prevmt is not None:
                 result.append((prevmt.ident, s[p:l]))
                 p = l + len(m[0])
-                prevmt = None
+                if mt.pos != 2:
+                    prevmt = None
             elif l == p:
                 p += len(m[0])
             elif l == -1 or l > p: # not found at current position
@@ -124,7 +147,7 @@ class wrdgrm:
             result.append((prevmt.ident, s[p:]))
         return result
 
-    def analyze_morpheme(self, a):
+    def an_decode(self, a):
         """Return paradigmatic and surface forms of annotated string"""
         meta = None
         p, s = [], []  # p: paradigmatic form, s: surface form

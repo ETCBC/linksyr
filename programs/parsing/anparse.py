@@ -135,7 +135,7 @@ def print_anfile(an_file, *args):
     for word in parse_anfile(an_file, *args):
         verse, surface, analysis, word_elements = word
         yield '\t'.join((verse, surface, analysis))
-        for word_element, (morphemes, functions, lex) in word_elements:
+        for word_element, (surface_form, morphemes, functions, lex) in word_elements:
             yield '    ' + word_element
             yield '\tmorphemes: ' + str(morphemes)
             yield '\tfunctions: ' + str(functions)
@@ -145,8 +145,8 @@ def dump_anfile(project_name, an_file, *args):
     for word in parse_anfile(an_file, *args):
         verse, surface, analysis, word_elements = word
         heading = f'{project_name} {verse}'
-        for word_element, (morphemes, functions, lex) in word_elements:
-            surface_form = ''.join((m[1][1] for m in morphemes if m[0] != 'vpm'))
+        for word_element, (surface_form, morphemes, functions, lex) in word_elements:
+            # surface_form = ''.join((m[1][1] for m in morphemes if m[0] != 'vpm'))
             lexeme = dict(morphemes)['lex'][0]
             affixes = [m for m in morphemes if m[0] != 'lex'] # TODO affix may not be the right term?
             affix_str = ('-' if not affixes else
