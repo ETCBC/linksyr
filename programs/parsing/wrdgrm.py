@@ -1,4 +1,104 @@
 import wgr, alphabet, lexicon
+from collections import namedtuple
+
+########################################################################
+#   Class WordGrammar:                                                 #
+#   Word grammar                                                       #
+########################################################################
+class WordGrammar:
+    '''Word grammar thingy
+
+    Class with attributes and methods used by wgr.py
+    to create word grammar tables, and methods to
+    apply the word grammar tables to
+    '''
+
+    _morpheme_type = namedtuple('MORPHEME_TYPE',
+        ['ident', 'mclass', 'pos', 'markers'])
+    _meta_keys = namedtuple('META_KEYS',
+        ['addition', 'elision', 'root_sep', 'homography'])
+
+    def __init__(self, word_grammar_file, lexicon_file): # , alphabet_file):
+        """Set initial values"""
+
+        # export current word grammar object to wgr module
+        wgr.W = self
+
+        # set lexicon and alphabet
+        self.lexicon = lexicon.Lexicon(lexicon_file).lexicon
+        # self.alphabet = alphabet.Alphabet(alphabet_file).letters # not used
+
+        self._ds = {}       # descriptive strings
+        self._mclass = None # morpheme class: mc_inflection or mc_derivation
+        self._mtypes = []   # list of morpheme types and markers
+        self._mvalues = {}  # lists of possible values per mtype
+        self._fvalues = {}  # lists of possible values per function
+        self._metas = None  # meta symbols
+        self._rules = []    # word grammar rules
+
+        with open(word_grammar_file, 'r') as f:
+            text = f.read()
+
+        # The wgr functions will set the attributes of wgr.W,
+        # which is this WordGrammar object (set above: wgr.W = self)
+        wgr.parse('grammar', text)
+
+    def reset(self):
+        # TODO remove call to this function from wgr.[py|g]
+        pass
+
+    def setmclass(self, mclass):
+        """Set morpheme class: mc_inflection or mc_derivation"""
+        self._mclass = mclass
+
+    def getmclass(self):
+        """Get morpheme class: mc_inflection or mc_derivation"""
+        return self._mclass
+
+    def addmt(self, mtid, p, m, ds):
+        """Add new morpheme type"""
+        self._mtypes.append(
+            self._morpheme_type(mtid, self._mclass, p, m))
+        self._ds[mtid] = ds
+        # self._values[mtid] = None
+
+    def addmvenum(self, mtid, mvenum):
+        """Add new list of morpheme values"""
+        self._mvalues[mtid] = mvenum
+
+    def addwf(self, wfid, ds):
+        """Add new word function"""
+        self._ds[wfid] = ds
+        # self._values[wfid] = None
+
+    def addfv(self, fvid, ds):
+        """Add new word function value descriptive string"""
+        self._ds[fvid] = ds
+
+    def addfvenum(self, wfid, fvenum):
+        """Add new list of word function values"""
+        self._fvalues[wfid] = fvenum
+
+    def getds(self, ident):
+        """Return description string for identifier"""
+        return self._ds[ident]
+
+    def setmetas(self, metas):
+        """Add meta symbols"""
+        if self._metas:
+            raise Exception('Meta symbols already set')
+        self._metas = self._meta_keys._make(metas)
+
+    def getmetas(self, s=None):
+        """Return meta symbols"""
+        if not self._metas:
+            raise Exception('Meta symbols not set')
+        return self._metas
+
+    def addrule(self, rule, mclass=0):
+        """Add word grammar rule"""
+        self._rules.append(rule)
+
 
 ########################################################################
 #   Class Word:                                                        #
@@ -12,21 +112,9 @@ class Word:
     apply the word grammar tables to
     '''
 
-    def __init__(self, word, word_grammar_file, lexicon_file, alphabet_file):
+    def __init__(self, word, word_grammar):
         """Init"""
-        # self.alphabet = alphabet.get_alphabet(alphabet_file)['letters']
-        # self.lexicon = lexicon.get_lexicon(lexicon_file)
-        self.alphabet = alphabet.Alphabet(alphabet_file).letters
-        self.lexicon = lexicon.Lexicon(lexicon_file).lexicon
-        # wgr also needs attribute lexicon, esp on line 337
-        # (in the method implicit_enum()):
-        # ``` W.addmvenum(mtid, getattr(W, T_IDENTIFIER)) ```
-        # where T_IDENTIFIER can only have the value 'lexicon'.
-        # TODO: find better way to pass the lexicon to wgr
-        wgr.W.lexicon = self.lexicon
-
-        with open(word_grammar_file, 'r') as f:
-            self.wgr = wgr.parse('grammar', f.read())
+        self.wgr = word_grammar
 
         split_word = self.split_word(word, self.wgr._mtypes)
         meta_word = ''.join(m[1] for m in split_word)
@@ -39,7 +127,7 @@ class Word:
 
         self.morphemes = self.get_morphemes(split_word, self.wgr._metas)
         self.lexeme = dict(self.morphemes)['lex'][0] # paradigmatic form of 'lex' morpheme
-        self.lex = self.lexicon[self.lexeme]
+        self.lex = self.wgr.lexicon[self.lexeme]
         self.functions = self.analyze_word()
 
     def get_morphemes(self, split_word, metas):
