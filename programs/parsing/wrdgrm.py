@@ -1,10 +1,10 @@
 import wgr, alphabet, lexicon
 
 ########################################################################
-#   Class wrdgrm:                                                      #
-#   Word grammar                                                       #
+#   Class Word:                                                        #
+#   Analyzed word                                                      #
 ########################################################################
-class wrdgrm:
+class Word:
     '''Word grammar thingy
 
     Class with attributes and methods used by wgr.py
@@ -12,7 +12,7 @@ class wrdgrm:
     apply the word grammar tables to
     '''
 
-    def __init__(self, word_grammar_file, lexicon_file, alphabet_file):
+    def __init__(self, word, word_grammar_file, lexicon_file, alphabet_file):
         """Init"""
         # self.alphabet = alphabet.get_alphabet(alphabet_file)['letters']
         # self.lexicon = lexicon.get_lexicon(lexicon_file)
@@ -28,80 +28,81 @@ class wrdgrm:
         with open(word_grammar_file, 'r') as f:
             self.wgr = wgr.parse('grammar', f.read())
 
+        split_word = self.split_word(word, self.wgr._mtypes)
+        meta_word = ''.join(m[1] for m in split_word)
+        p, s = self.an_decode(meta_word, self.wgr._metas)
 
-        self._jump = None
-        # replace m and f by word object:
-        # self.word = None
-        self._m = {}
-        self._f = {}
+        self.word = word            # fully annotated form
+        self.meta_word = meta_word  # word annotated with meta characters
+        self.paradigmatic_form = p  # paradigmatic form
+        self.surface_form = s       # surface form
 
+        self.morphemes = self.get_morphemes(split_word, self.wgr._metas)
+        self.lexeme = dict(self.morphemes)['lex'][0] # paradigmatic form of 'lex' morpheme
+        self.lex = self.lexicon[self.lexeme]
+        self.functions = self.analyze_word()
+
+    def get_morphemes(self, split_word, metas):
+        '''Returns tuples with morphemes: (mtype, (p, s, a))
+
+        Where mtype is a string with the morpheme type,
+        and p, s and a are the different realizations of the morpheme:
+        p=paradigmatic form, s=surface form, a=annotated metastring
+        '''
+        mtypes = []
+        morphemes = []
+        for mtype, a in split_word:
+            if mtype in mtypes:
+                morphemes[mtypes.index(mtype)] += a
+            else:
+                mtypes.append(mtype)
+                morphemes.append(a)
+
+        # replace annotated metastring with tuple (p,s,a)
+        # where p=paradigmatic form, s=surface form, a=annotated metastring
+        morphemes = ((*self.an_decode(a, metas), a) for a in morphemes)
+
+        # return tuples
+        return tuple( zip(mtypes, morphemes) )
 
     ####################################################################
     # Morpheme operations
     ####################################################################
 
-    def analyze_word(self, string):
-        """Returns word object with analyzed word forms"""
-        # self.word = word(string)
-        self._m = {}
-        self._f = {}
-        morphemes = []
-        surface_form = '' # this is the surface form of the whole word
-        # a=analyzed form, p=paradigmatic form, s=surface form (of the morpheme)
-        for mt, a in self.split_morphemes(string):
-            # Previously, infixes were not handled properly by split_morphemes(),
-            # so after a lexeme was interrupted by an infix, the second part of
-            # the lexeme (and therefore also the rest of the word) were not
-            # recognized.
-            # By checking if the current morpheme type is 2 (i.e. infix), and
-            # if so not closing the previous morpheme by setting prevmt to None,
-            # the remainder of the lexeme is also recognized.
-            # However, since the lexeme parts are now separate items in the
-            # morphemes list, they have to be joined together in analyze_word().
-            # An alternative would be to join them together already in
-            # split_morphemes(), but then the surface_form cannot be recovered
-            # since the position of the infix is unknown. A possibly easier
-            # way could be to have split_morphemes() also return the
-            # surface_form.
-            if a is not None:
-                p, s = self.an_decode(a)
-                surface_form += s
-                if mt not in self._m:
-                    self._m[mt] = p # store paradigmatic forms
-                    morphemes.append((mt, (p,s,a)))
-                else: # if mt is already registered it is apparently a lexeme split by an infix
-                    self._m[mt] += p # combine parts of paradigmatic form
-                    # then find the mt in the morphemes list, and combine
-                    i,m = [(i,m) for i,m in enumerate(morphemes) if m[0]==mt][0]
-                    morphemes[i] = (mt, tuple(x+y for x,y in zip(m[1],(p,s,a))))
-            else:
-                self._m[mt] = None
-        # apply rules one by one, which will set functions in self._f
+    def analyze_word(self):
+        """Returns analyzed word functions"""
+        self._jump = None   # may contain label to jump to
+        self._m = {}        # contains morphemes
+        self._f = {}        # contains functions
+
+        # make dict with paradigmatic form, or None, for all morpheme types
+        for mtype in self.wgr._mtypes:
+            self._m[mtype.ident] = None
+        for mtype, (p, s, a) in self.morphemes:
+            self._m[mtype] = p
+
+        # apply all rules from the grammar
         for rule in self.wgr._rules:
             self.apply_rule(rule)
             if self._jump == False: # TODO dirty hack
                 break
 
-        if self._f is not None:     # TODO dirty hack
-            lexeme = dict(morphemes)['lex'][0]
-            lex = self.lexicon[lexeme]
-
+        # If self._f is None, no paradigmatic form was found. That should
+        # probably be indicated in a more elegant way such as an Exception
+        if self._f is None:     # TODO dirty hack
+            raise ValueError('No paradigmatic form found.')
+        else:
             # update functions with values from lexicon
-            for f, v in lex[1]: # loop through descriptions in lexicon
+            for f, v in self.lex[1]: # loop through descriptions in lexicon
                 if f in self.wgr._fvalues: # check if function name is valid
                     # Values from lexicon always take precedence,
                     # also if the value was already set, even to False.
                     self._f[f] = v
 
-            functions = tuple(self._f.items())
+        return tuple(self._f.items())
 
-            return (surface_form, tuple(morphemes), functions, lex)
-
-        else:
-            raise Exception('No paradigmatic form found.')
-
-    def split_morphemes(self, s, mclass=0):
-        """Splits morphologically analyzed string into morphemes.
+    def split_word(self, s, mtypes, mclass=0):
+        """Splits morphologically analyzed word into morphemes.
 
         Returns a list of tuples with as first member the
         morpheme type identifier, and as second member the
@@ -116,7 +117,7 @@ class wrdgrm:
         p = 0           # position in string
         prevmt = None   # previous morpheme type - set when right marker
                         # is not set, so end cannot yet be determined
-        for mt in [mt for mt in self.wgr._mtypes if mt.mclass == mclass]:
+        for mt in (mt for mt in mtypes if mt.mclass == mclass):
             m = mt.markers
             l = s.find(m[0], p) if m[0] else None
             if l is None:
@@ -130,13 +131,13 @@ class wrdgrm:
             elif l == p:
                 p += len(m[0])
             elif l == -1 or l > p: # not found at current position
-                result.append((mt.ident, None))
+                # result.append((mt.ident, None))
                 continue
             r = s.find(m[1], p) if m[1] else None
             if r is None:
                 prevmt = mt
             elif r == -1 and l is None: # not found
-                result.append((mt.ident, None))
+                # result.append((mt.ident, None))
                 continue
             elif r == -1:   # r not found, while l was found
                 raise Exception(leftnotright.format(mt.ident))
@@ -145,22 +146,25 @@ class wrdgrm:
                 p = r + len(m[1])
         if prevmt is not None:
             result.append((prevmt.ident, s[p:]))
-        return result
+        return tuple(result)
 
-    def an_decode(self, a):
+    def an_decode(self, a, metas):
         """Return paradigmatic and surface forms of annotated string"""
+
         meta = None
         p, s = [], []  # p: paradigmatic form, s: surface form
+
         for c in a:
-            if c in (self.wgr._metas.addition, self.wgr._metas.elision):
+            if c in (metas.addition, metas.elision):
                 meta = c
             else:
-                if meta is None or meta == self.wgr._metas.addition:
+                if meta is None or meta == metas.addition:
                     p.append(c)
-                if c != self.wgr._metas.homography and (meta is None
-                        or meta == self.wgr._metas.elision):
+                if c != metas.homography and (meta is None
+                        or meta == metas.elision):
                     s.append(c)
                 meta = None
+
         return (''.join(p), ''.join(s))
 
     ####################################################################
@@ -232,11 +236,6 @@ class wrdgrm:
                 if self.evaluate(e):
                     return True
             return False
-
-class word:
-    """Analyzed word"""
-    def __init__():
-        pass
 
 
 ########################################################################
