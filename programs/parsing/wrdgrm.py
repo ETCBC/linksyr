@@ -1,6 +1,7 @@
 import wgr, alphabet, lexicon
 from collections import namedtuple
 
+
 ########################################################################
 #   Class WordGrammar:                                                 #
 #   Word grammar                                                       #
@@ -42,6 +43,11 @@ class WordGrammar:
         # The wgr functions will set the attributes of wgr.W,
         # which is this WordGrammar object (set above: wgr.W = self)
         wgr.parse('grammar', text)
+
+    def analyze(self, word):
+        return Word(word, self)
+
+    #### FUNCTIONS USED BY wgr.py ####
 
     def reset(self):
         # TODO remove call to this function from wgr.[py|g]
