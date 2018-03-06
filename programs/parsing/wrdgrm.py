@@ -123,7 +123,8 @@ class Word:
         self.wgr = word_grammar
 
         split_word = self.split_word(word, self.wgr._mtypes)
-        meta_word = ''.join(m[1] for m in split_word)
+        # TODO the 'vpm' filter below should not be hardcoded! But based on mt.pos == 4 (to not include patterns)
+        meta_word = ''.join(m[1] for m in split_word if m[0] != 'vpm')
         p, s = self.an_decode(meta_word, self.wgr._metas)
 
         self.word = word            # fully annotated form
