@@ -1,5 +1,6 @@
 # import modules
-import os, wrdgrm
+import os
+from wrdgrm import WordGrammar
 
 # set base directory for data projects
 data_dir = os.path.abspath('../../data')
@@ -121,36 +122,37 @@ def parse_args(an_file, *args):
 
 def parse_anfile(an_file, *args):
     an_file, alphabet, lexicon, psdef, word_grammar = parse_args(an_file, *args)
-    w = wrdgrm.wrdgrm(word_grammar, lexicon, alphabet)
+    wg = WordGrammar(word_grammar, lexicon) #, alphabet)
     with open(an_file) as f:
         for line in f:
             verse, s, a = line.split() # verse, surface form, analyzed form
-            yield (verse, s, a, tuple((e, w.analyze_word(e)) for e in a.split('-')))
+            yield (verse, s, a, tuple(wg.analyze(e) for e in a.split('-')))
 
 # e.g.:
 # laws=parse_anfile('/home/gdwarf/github/etcbc/linksyr/data/blc/Laws.an')
 # next(laws)
 
 def print_anfile(an_file, *args):
-    for word in parse_anfile(an_file, *args):
-        verse, surface, analysis, word_elements = word
+    for line in parse_anfile(an_file, *args):
+        verse, surface, analysis, words = line
         yield '\t'.join((verse, surface, analysis))
-        for word_element, (surface_form, morphemes, functions, lex) in word_elements:
-            yield '    ' + word_element
-            yield '\tmorphemes: ' + str(morphemes)
-            yield '\tfunctions: ' + str(functions)
-            yield '\tlex      : ' + str(lex)
+        for word in words:
+        # for word_element, (surface_form, morphemes, functions, lex) in word_elements:
+            yield '    ' + word.word
+            yield '\tmorphemes: ' + str(word.morphemes)
+            yield '\tfunctions: ' + str(word.functions)
+            yield '\tlex      : ' + str(word.lex)
 
 def dump_anfile(project_name, an_file, *args):
-    for word in parse_anfile(an_file, *args):
-        verse, surface, analysis, word_elements = word
+    for line in parse_anfile(an_file, *args):
+        verse, surface, analysis, words = line
         heading = f'{project_name} {verse}'
-        for word_element, (surface_form, morphemes, functions, lex) in word_elements:
+        for word in words:
             # surface_form = ''.join((m[1][1] for m in morphemes if m[0] != 'vpm'))
-            lexeme = dict(morphemes)['lex'][0]
-            affixes = [m for m in morphemes if m[0] != 'lex'] # TODO affix may not be the right term?
+            # lexeme = dict(morphemes)['lex'][0]
+            affixes = [m for m in word.morphemes if m[0] != 'lex'] # TODO affix may not be the right term?
             affix_str = ('-' if not affixes else
                 ','.join((f'{e[0]}="{e[1][0]}"' if e[0] != 'vpm' else f'{e[0]}={e[1][0]}' for e in affixes)))
-            func_str = ','.join(('+'+fn if fv is None else fn+'='+fv for fn, fv in functions if fv != False))
+            func_str = ','.join(('+'+fn if fv is None else fn+'='+fv for fn, fv in word.functions if fv != False))
 
-            yield '\t'.join((heading, word_element, surface_form, lexeme, affix_str, func_str))
+            yield '\t'.join((heading, word.word, word.surface_form, word.lexeme, affix_str, func_str))
