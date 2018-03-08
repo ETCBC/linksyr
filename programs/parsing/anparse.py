@@ -125,7 +125,8 @@ def parse_args(*args, **kw):
     if len(args) == 3:
         if len(kw): # both positional AND keyword args is too much
             raise ValueError(err_many)
-        word_grammar_file, lexicon_file = (check_file(arg) for arg in args[1:])
+        word_grammar_file = check_file(args[1], project_dir)
+        lexicon_file = check_file(args[2], project_dir)
 
     # if not: look for at2ps.conf, either provided in args[1] or default
     elif len(args) == 1 or len(args) == 2:
