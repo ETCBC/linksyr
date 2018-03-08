@@ -29,8 +29,6 @@ def conf_parser(conf_file):
 
     import re
 
-    keys = ('alphabet', 'lexicon', 'psdef', 'word_grammar')
-
     definitions = {}
     values = {}
 
@@ -51,25 +49,39 @@ def conf_parser(conf_file):
                 key, value = (e.strip() for e in line.split(':'))
                 values[key] = value
 
-    if all(e in values for e in keys):
-        return tuple(values[key] for key in keys)
-    else:
-        raise ValueError(f'Invalid configuration file: {conf_file}')
+    return values
 
-def check_file(filename, default_dir):
+def check_file(filename, default_dir=data_dir):
+    # replace '/projects' directory with our own data directory
+    replace = ('/projects/', '/home/')
+
     if filename[0] != '/':
         filename = os.path.join(default_dir, filename)
-    if not os.path.isfile(filename):
-        raise ValueError(f'File not found: {filename}')
-    return os.path.abspath(filename)
 
-def parse_args(an_file, *args):
+    for string in replace: # replace /projects and /home, except if the path actually exists on local machine
+        if filename.startswith(string) and not os.path.isfile(filename):
+            filename = os.path.join(data_dir, filename[len(string):])
+
+    # if os.path.isfile(filename):
+    return os.path.abspath(filename)
+    # else:
+        # return False #raise ValueError(f'File not found: {filename}')
+
+def parse_args(*args, **kw):
     '''
     Resolves arguments into filenames of auxiliary files
 
-    args: an_file [, alphabet, lexicon, psdef, word_grammar]   |
-          an_file [, conf_file='at2ps.conf']
+    args: an_file, word_grammar_file, lexicon_file        |
+          an_file [, [conf_file=]'at2ps.conf']
+                  [, word_grammar = 'word_grammar_file']
+                  [, lexicon = 'lexicon_file']         |
+          an_file, WordGrammar
 
+    Three positional arguments are assumed to be an_file, word_grammar_file
+    and lexicon_file.
+    Two positional arguments can be either an_file and conf_file, or an_file
+    and WordGrammar. If the second argument is a WordGrammar object, no
+    keyword arguments are accepted.
     Filenames are assumed to be either absolute, starting with
     a slash '/', or relative to the data directory, which is set
     in the module variable data_dir.
@@ -77,52 +89,61 @@ def parse_args(an_file, *args):
 
     # set default filename for configuration file
     conf_file = 'at2ps.conf'
-    # replace '/projects' directory with our own data directory
-    replace = '/projects'
 
-    if len(args) not in (0, 1, 4):
-        raise ValueError(f'Not enough arguments. One, two or five expected, {len(args)+1} given.')
+    err_none = 'At least one argument \'an_file\' is required.'
+    err_many = 'Too many arguments. One, two or three expected.'
+
+    if len(args) == 0:
+        raise ValueError(err_none)
+    elif len(args) > 3:
+        raise ValueError(err_many)
 
     # check an_file, and expand if necessary
-    an_file = check_file(an_file, data_dir)
+    an_file = check_file(args[0], data_dir)
+
+    # if second argument is a WordGrammar object, we are done
+    if len(args) > 1 and type(args[1]) is WordGrammar:
+        if len(args) > 2 or len(kw):
+            raise ValueError(err_many)
+        return an_file, args[1]
+
+    # otherwise continue:
     # set project dir to containing directory
     # (to look for auxiliary files)
     project_dir = os.path.dirname(an_file)
 
-    if len(args) == 4: # if separate auxiliary files provided:
-        aux_files = args
-    else:
-        # if conf_file provided, replace default
-        if len(args) == 1 and type(args[0]) is str:
-            conf_file = args[0]
-        # expand path if necessary and check if file exists
+    word_grammar_file = None
+    lexicon_file = None
+
+    # check if filenames are provided in keyword args
+    if 'word_grammar' in kw:
+        word_grammar_file = check_file(kw['word_grammar'], project_dir)
+    if 'lexicon' in kw:
+        lexicon_file = check_file(kw['lexicon'], project_dir)
+
+    # if word_grammar_file and lexicon_file have been explicitly provided:
+    if len(args) == 3:
+        if len(kw): # both positional AND keyword args is too much
+            raise ValueError(err_many)
+        word_grammar_file, lexicon_file = (check_file(arg) for arg in args[1:])
+
+    # if not: look for at2ps.conf, either provided in args[1] or default
+    elif len(args) == 1 or len(args) == 2:
+        if len(args) == 2:
+            conf_file = args[1]
         conf_file = check_file(conf_file, project_dir)
-        # change project dir to the containing directory
-        # of the conf_file, if that is different from
-        # that of the an_file
-        project_dir = os.path.dirname(conf_file)
-        # parse conf_file to get auxiliary filenames
-        aux_files = conf_parser(conf_file)
+        project_dir = os.path.dirname(conf_file)        # update project dir in case conf_file is in another location
+        conf_dict = conf_parser(conf_file)
+        if word_grammar_file is None and 'word_grammar' in conf_dict:
+            word_grammar_file = check_file(conf_dict['word_grammar'], project_dir)
+        if lexicon_file is None and 'lexicon' in conf_dict:
+             lexicon_file = check_file(conf_dict['lexicon'], project_dir)
 
-    # replace '/projects' directory with our own data directory
-    aux_files = (e.replace(replace, data_dir, 1) if e.startswith(replace) else e for e in aux_files)
-    # prefix filenames without path with project directory
-    # aux_files = (os.path.join(project_dir, e) if not '/' in e else e for e in aux_files)
-    aux_files = (check_file(aux_file, project_dir) for aux_file in aux_files)
+    # attempt to return a WordGrammar object with the obtained filenames
+    return(an_file, WordGrammar(word_grammar_file, lexicon_file))
 
-    return (an_file, *aux_files)
-
-# e.g.:
-# parse_args('/home/gdwarf/github/etcbc/linksyr/data/blc/Laws.an')
-# ('/home/gdwarf/github/etcbc/linksyr/data/blc/Laws.an',
-#  '/home/gdwarf/github/etcbc/linksyr/data/lib/syriac/alphabet',
-#  '/home/gdwarf/github/etcbc/linksyr/data/blc/syrlex',
-#  '/home/gdwarf/github/etcbc/linksyr/data/blc/syrpsd',
-#  '/home/gdwarf/github/etcbc/linksyr/data/blc/syrwgr')
-
-def parse_anfile(an_file, *args):
-    an_file, alphabet, lexicon, psdef, word_grammar = parse_args(an_file, *args)
-    wg = WordGrammar(word_grammar, lexicon) #, alphabet)
+def parse_anfile(*args, **kw):
+    an_file, wg = parse_args(*args, **kw)
     with open(an_file) as f:
         for line in f:
             verse, s, a = line.split() # verse, surface form, analyzed form
@@ -132,8 +153,8 @@ def parse_anfile(an_file, *args):
 # laws=parse_anfile('/home/gdwarf/github/etcbc/linksyr/data/blc/Laws.an')
 # next(laws)
 
-def print_anfile(an_file, *args):
-    for line in parse_anfile(an_file, *args):
+def print_anfile(*args, **kw):
+    for line in parse_anfile(*args, **kw):
         verse, surface, analysis, words = line
         yield '\t'.join((verse, surface, analysis))
         for word in words:
@@ -143,16 +164,20 @@ def print_anfile(an_file, *args):
             yield '\tfunctions: ' + str(word.functions)
             yield '\tlex      : ' + str(word.lex)
 
-def dump_anfile(project_name, an_file, *args):
-    for line in parse_anfile(an_file, *args):
+def dump_anfile(title, *args, **kw):
+    for line in parse_anfile(*args, **kw):
         verse, surface, analysis, words = line
-        heading = f'{project_name} {verse}'
+        heading = f'{title} {verse}'
         for word in words:
-            # surface_form = ''.join((m[1][1] for m in morphemes if m[0] != 'vpm'))
-            # lexeme = dict(morphemes)['lex'][0]
-            affixes = [m for m in word.morphemes if m[0] != 'lex'] # TODO affix may not be the right term?
-            affix_str = ('-' if not affixes else
-                ','.join((f'{e[0]}="{e[1][0]}"' if e[0] != 'vpm' else f'{e[0]}={e[1][0]}' for e in affixes)))
-            func_str = ','.join(('+'+fn if fv is None else fn+'='+fv for fn, fv in word.functions if fv != False))
-
+            func_str = get_func_str(word.functions)
+            affix_str = get_affix_str(word.morphemes)
             yield '\t'.join((heading, word.word, word.surface_form, word.lexeme, affix_str, func_str))
+
+def get_func_str(functions):
+    return ','.join(('+'+fn if fv is None else fn+'='+fv for fn, fv in functions if fv != False))
+
+def get_affix_str(morphemes):
+    affixes = [m for m in morphemes if m[0] != 'lex'] # TODO affix may not be the right term?
+    affix_str = ('-' if not affixes else
+        ','.join((f'{e[0]}="{e[1][0]}"' if e[0] != 'vpm' else f'{e[0]}={e[1][0]}' for e in affixes)))
+    return affix_str
