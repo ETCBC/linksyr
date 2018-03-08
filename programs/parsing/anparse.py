@@ -177,7 +177,7 @@ def get_func_str(functions):
     return ','.join(('+'+fn if fv is None else fn+'='+fv for fn, fv in functions if fv != False))
 
 def get_affix_str(morphemes):
-    affixes = [m for m in morphemes if m[0] != 'lex'] # TODO affix may not be the right term?
+    affixes = [m for m in morphemes if m.mt.ident != 'lex'] # TODO affix may not be the right term?
     affix_str = ('-' if not affixes else
-        ','.join((f'{e[0]}="{e[1][0]}"' if e[0] != 'vpm' else f'{e[0]}={e[1][0]}' for e in affixes)))
+        ','.join((f'{m.mt.ident}="{m.p}"' if m.mt.ident != 'vpm' else f'{m.mt.ident}={m.p}' for m in affixes)))
     return affix_str

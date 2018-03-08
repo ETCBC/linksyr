@@ -106,6 +106,15 @@ class WordGrammar:
         self._rules.append(rule)
 
 
+class Morpheme:
+    '''Morpheme class'''
+
+    def __init__(self, mt, p, s, a):
+        self.mt = mt
+        self.p = p
+        self.s = s
+        self.a = a
+
 ########################################################################
 #   Class Word:                                                        #
 #   Analyzed word                                                      #
@@ -121,10 +130,19 @@ class Word:
     def __init__(self, word, word_grammar):
         """Init"""
         self.wgr = word_grammar
+        # Two morpheme types need special treatment: lexemes, which constitute
+        # the main morpheme of a word and need to be found in a dictionary,
+        # and pattern markers, which are actually not morphemes at all and
+        # need to be excluded from any constructed string representation.
+        # Since their identifiers are set in the word_grammar, they cannot
+        # be hardcoded, but must be determined by their position attribute
+        # which is 1 for lexeme, and 4 for pattern.
+        self.mt_lexemes = tuple(mt.ident for mt in self.wgr._mtypes if mt.pos == 1)
+        self.mt_patterns = tuple(mt.ident for mt in self.wgr._mtypes if mt.pos == 4)
 
         split_word = self.split_word(word, self.wgr._mtypes)
         # TODO the 'vpm' filter below should not be hardcoded! But based on mt.pos == 4 (to not include patterns)
-        meta_word = ''.join(m[1] for m in split_word if m[0] != 'vpm')
+        meta_word = ''.join(m for mt, m in split_word if mt not in self.mt_patterns) # != 'vpm')
         p, s = self.an_decode(meta_word, self.wgr._metas)
 
         self.word = word            # fully annotated form
@@ -133,9 +151,12 @@ class Word:
         self.surface_form = s       # surface form
 
         self.morphemes = self.get_morphemes(split_word, self.wgr._metas)
-        self.lexeme = dict(self.morphemes)['lex'][0] # paradigmatic form of 'lex' morpheme
+        self.lexeme = self.get_lexeme(self.morphemes, 1) # dict(self.morphemes)['lex'][0] # paradigmatic form of 'lex' morpheme
         self.lex = self.wgr.lexicon[self.lexeme]
         self.functions = self.analyze_word()
+
+    def get_lexeme(self, morphemes, mt_pos):
+        return next(m.p for m in morphemes if m.mt.pos == mt_pos)
 
     def get_morphemes(self, split_word, metas):
         '''Returns tuples with morphemes: (mtype, (p, s, a))
@@ -145,20 +166,26 @@ class Word:
         p=paradigmatic form, s=surface form, a=annotated metastring
         '''
         mtypes = []
+        a_strs = []
         morphemes = []
-        for mtype, a in split_word:
-            if mtype in mtypes:
-                morphemes[mtypes.index(mtype)] += a
+
+        for mt, a in split_word:
+            if mt in mtypes:
+                a_strs[mtypes.index(mt)] += a
             else:
-                mtypes.append(mtype)
-                morphemes.append(a)
+                mtypes.append(mt)
+                a_strs.append(a)
 
         # replace annotated metastring with tuple (p,s,a)
         # where p=paradigmatic form, s=surface form, a=annotated metastring
-        morphemes = ((*self.an_decode(a, metas), a) for a in morphemes)
+        # morphemes = ((*self.an_decode(a, metas), a) for a in morphemes)
+        for mt, a in zip(mtypes, a_strs):
+            p, s = self.an_decode(a, metas)
+            morphemes.append(Morpheme(mt, p, s, a))
 
         # return tuples
-        return tuple( zip(mtypes, morphemes) )
+        # return tuple( zip(mtypes, morphemes) )
+        return tuple(morphemes)
 
     ####################################################################
     # Morpheme operations
@@ -171,10 +198,10 @@ class Word:
         self._f = {}        # contains functions
 
         # make dict with paradigmatic form, or None, for all morpheme types
-        for mtype in self.wgr._mtypes:
-            self._m[mtype.ident] = None
-        for mtype, (p, s, a) in self.morphemes:
-            self._m[mtype] = p
+        for mt in self.wgr._mtypes:
+            self._m[mt.ident] = None
+        for m in self.morphemes:
+            self._m[m.mt.ident] = m.p
 
         # apply all rules from the grammar
         for rule in self.wgr._rules:
@@ -219,28 +246,28 @@ class Word:
                 if prevmt is not None:
                     raise Exception(emptymarkers.format(mt.ident))
             elif l >= p and prevmt is not None:
-                result.append((prevmt.ident, s[p:l]))
+                result.append((prevmt, s[p:l]))
                 p = l + len(m[0])
                 if mt.pos != 2:
                     prevmt = None
             elif l == p:
                 p += len(m[0])
             elif l == -1 or l > p: # not found at current position
-                # result.append((mt.ident, None))
+                # result.append((mt, None))
                 continue
             r = s.find(m[1], p) if m[1] else None
             if r is None:
                 prevmt = mt
             elif r == -1 and l is None: # not found
-                # result.append((mt.ident, None))
+                # result.append((mt, None))
                 continue
             elif r == -1:   # r not found, while l was found
                 raise Exception(leftnotright.format(mt.ident))
             elif r >= p:
-                result.append((mt.ident, s[p:r]))
+                result.append((mt, s[p:r]))
                 p = r + len(m[1])
         if prevmt is not None:
-            result.append((prevmt.ident, s[p:]))
+            result.append((prevmt, s[p:]))
         return tuple(result)
 
     def an_decode(self, a, metas):
