@@ -142,7 +142,7 @@ class Word:
         self.lex = self.wgr.lexicon[self.lexeme]
         self.functions = self.analyze_word()
 
-    def get_dmp_str(self, title, verse):
+    def dmp_str(self, title, verse):
         heading = f'{title} {verse}'
         func_str = get_func_str(self.functions)
         affix_str = get_affix_str(self.morphemes)
@@ -255,9 +255,7 @@ class Word:
                     return True
             return False
 
-
 # helper functions for Word class
-
 def split_word(s, mtypes, mclass=0):
     """Splits morphologically analyzed word into morphemes.
 

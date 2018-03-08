@@ -167,4 +167,4 @@ def print_anfile(*args, **kw):
 def dump_anfile(title, *args, **kw):
     for verse, surface, analysis, words in parse_anfile(*args, **kw):
         for word in words:
-            yield(word.get_dmp_str(title, verse))
+            yield(word.dmp_str(title, verse))
