@@ -150,7 +150,7 @@ def parse_anfile(*args, **kw):
             yield (verse, s, a, tuple(wg.analyze(e) for e in a.split('-')))
 
 # e.g.:
-# laws=parse_anfile('/home/gdwarf/github/etcbc/linksyr/data/blc/Laws.an')
+# laws=parse_anfile('blc/Laws.an')
 # next(laws)
 
 def print_anfile(*args, **kw):
@@ -165,19 +165,6 @@ def print_anfile(*args, **kw):
             yield '\tlex      : ' + str(word.lex)
 
 def dump_anfile(title, *args, **kw):
-    for line in parse_anfile(*args, **kw):
-        verse, surface, analysis, words = line
-        heading = f'{title} {verse}'
+    for verse, surface, analysis, words in parse_anfile(*args, **kw):
         for word in words:
-            func_str = get_func_str(word.functions)
-            affix_str = get_affix_str(word.morphemes)
-            yield '\t'.join((heading, word.word, word.surface_form, word.lexeme, affix_str, func_str))
-
-def get_func_str(functions):
-    return ','.join(('+'+fn if fv is None else fn+'='+fv for fn, fv in functions if fv != False))
-
-def get_affix_str(morphemes):
-    affixes = [m for m in morphemes if m.mt.ident != 'lex'] # TODO affix may not be the right term?
-    affix_str = ('-' if not affixes else
-        ','.join((f'{m.mt.ident}="{m.p}"' if m.mt.ident != 'vpm' else f'{m.mt.ident}={m.p}' for m in affixes)))
-    return affix_str
+            yield(word.get_dmp_str(title, verse))
