@@ -160,7 +160,7 @@ def print_anfile(*args, **kw):
         for word in words:
         # for word_element, (surface_form, morphemes, functions, lex) in word_elements:
             yield '    ' + word.word
-            yield '\tmorphemes: ' + str(word.morphemes)
+            yield '\tmorphemes: ' + str(tuple((m.mt.ident, m.p) for m in word.morphemes))
             yield '\tfunctions: ' + str(word.functions)
             yield '\tlex      : ' + str(word.lex)
 
