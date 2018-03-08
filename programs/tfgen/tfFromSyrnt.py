@@ -111,6 +111,7 @@ def parseCorpus():
     oSlots = collections.defaultdict(set)
     (bookEn, verseLabels) = getVerseLabels()
     (prevBook, prevChapter) = (None, None)
+    lexemes = set()
     for p in readCorpus():
         (book, chapter, verse) = verseLabels[cur['verse']]
         if book != prevBook:
@@ -158,8 +159,19 @@ def parseCorpus():
                 nodeFeatures[featureName][wordNode] = value
                 if values is None:
                     nodeFeatures[feature][wordNode] = value.translate(tosyr)
+            lexeme = nodeFeatures['lexeme'][wordNode]
+            if lexeme not in lexemes:
+                lexemes.add(lexeme)
+                cur['lexeme'] += 1
+                lexNode = ('lexeme', cur['lexeme'])
+                nodeFeatures['lexeme'][lexNode] = lexeme
+                nodeFeatures['lexeme_ascii'][lexNode] = (
+                        nodeFeatures['lexeme_ascii'][wordNode]
+                )
+            context.append(('lexeme', cur['lexeme']))
             for (nt, curNode) in context:
                 oSlots[(nt, curNode)].add(curSlot)
+            context.pop()
         context.pop()
     context.pop()
     context.pop()
