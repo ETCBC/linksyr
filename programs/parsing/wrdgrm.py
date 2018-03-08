@@ -45,7 +45,12 @@ class WordGrammar:
         wgr.parse('grammar', text)
 
     def analyze(self, word):
+        '''Return Word object with word analyses'''
         return Word(word, self)
+
+    def desc(self, name):
+        '''Return descriptive string for name'''
+        return self._ds[name]
 
     #### FUNCTIONS USED BY wgr.py ####
 
@@ -147,7 +152,6 @@ class Word:
         func_str = get_func_str(self.functions)
         affix_str = get_affix_str(self.morphemes)
         return '\t'.join((heading, self.word, self.surface_form, self.lexeme, affix_str, func_str))
-
 
     ####################################################################
     # Morpheme operations
