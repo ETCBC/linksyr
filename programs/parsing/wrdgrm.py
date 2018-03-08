@@ -357,7 +357,7 @@ def get_affix_str(morphemes):
     for m in (m for m in morphemes if m.mt.pos != 1):  # ignore lexemes
             affixes.append(f'{m.mt.ident}="{m.p}"' if m.mt.pos != 4
                            else f'{m.mt.ident}={m.p}') # no quotes around patterns
-    return ','.join(affixes)
+    return ','.join(affixes) if affixes else '-'
 
 def get_func_str(functions):
     return ','.join(('+'+fn if fv is None else fn+'='+fv for fn, fv in functions if fv != False))
