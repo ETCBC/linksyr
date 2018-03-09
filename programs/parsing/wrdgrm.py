@@ -45,7 +45,12 @@ class WordGrammar:
         wgr.parse('grammar', text)
 
     def analyze(self, word):
+        '''Return Word object with word analyses'''
         return Word(word, self)
+
+    def desc(self, name):
+        '''Return descriptive string for name'''
+        return self._ds[name]
 
     #### FUNCTIONS USED BY wgr.py ####
 
@@ -122,43 +127,31 @@ class Word:
         """Init"""
         self.wgr = word_grammar
 
-        split_word = self.split_word(word, self.wgr._mtypes)
-        # TODO the 'vpm' filter below should not be hardcoded! But based on mt.pos == 4 (to not include patterns)
-        meta_word = ''.join(m[1] for m in split_word if m[0] != 'vpm')
-        p, s = self.an_decode(meta_word, self.wgr._metas)
+        # word_elements is a tuple with all word elements in the order they
+        # were found in the annotated string. It is needed to reconstruct
+        # the surface form, since the location of e.g. infixes in lexemes
+        # cannot be determined from the morphemes list.
+        word_elements = split_word(word, self.wgr._mtypes)
+
+        # meta_form with meta characters, without patterns (mt.pos 4)
+        a = ''.join(e for mt, e in word_elements if mt.pos != 4)
+        p, s = an_decode(a, self.wgr._metas)
 
         self.word = word            # fully annotated form
-        self.meta_word = meta_word  # word annotated with meta characters
+        self.meta_form = a          # word annotated with meta characters
         self.paradigmatic_form = p  # paradigmatic form
         self.surface_form = s       # surface form
 
-        self.morphemes = self.get_morphemes(split_word, self.wgr._metas)
-        self.lexeme = dict(self.morphemes)['lex'][0] # paradigmatic form of 'lex' morpheme
+        self.morphemes = get_morphemes(word_elements, self.wgr._metas)
+        self.lexeme = next(m.p for m in self.morphemes if m.mt.pos == 1)
         self.lex = self.wgr.lexicon[self.lexeme]
         self.functions = self.analyze_word()
 
-    def get_morphemes(self, split_word, metas):
-        '''Returns tuples with morphemes: (mtype, (p, s, a))
-
-        Where mtype is a string with the morpheme type,
-        and p, s and a are the different realizations of the morpheme:
-        p=paradigmatic form, s=surface form, a=annotated metastring
-        '''
-        mtypes = []
-        morphemes = []
-        for mtype, a in split_word:
-            if mtype in mtypes:
-                morphemes[mtypes.index(mtype)] += a
-            else:
-                mtypes.append(mtype)
-                morphemes.append(a)
-
-        # replace annotated metastring with tuple (p,s,a)
-        # where p=paradigmatic form, s=surface form, a=annotated metastring
-        morphemes = ((*self.an_decode(a, metas), a) for a in morphemes)
-
-        # return tuples
-        return tuple( zip(mtypes, morphemes) )
+    def dmp_str(self, title, verse):
+        heading = f'{title} {verse}'
+        func_str = get_func_str(self.functions)
+        affix_str = get_affix_str(self.morphemes)
+        return '\t'.join((heading, self.word, self.surface_form, self.lexeme, affix_str, func_str))
 
     ####################################################################
     # Morpheme operations
@@ -171,10 +164,10 @@ class Word:
         self._f = {}        # contains functions
 
         # make dict with paradigmatic form, or None, for all morpheme types
-        for mtype in self.wgr._mtypes:
-            self._m[mtype.ident] = None
-        for mtype, (p, s, a) in self.morphemes:
-            self._m[mtype] = p
+        for mt in self.wgr._mtypes:
+            self._m[mt.ident] = None
+        for m in self.morphemes:
+            self._m[m.mt.ident] = m.p
 
         # apply all rules from the grammar
         for rule in self.wgr._rules:
@@ -195,72 +188,6 @@ class Word:
                     self._f[f] = v
 
         return tuple(self._f.items())
-
-    def split_word(self, s, mtypes, mclass=0):
-        """Splits morphologically analyzed word into morphemes.
-
-        Returns a list of tuples with as first member the
-        morpheme type identifier, and as second member the
-        found morpheme, or None if it was not found.
-        """
-        # Message strings
-        emptymarkers = '{}: Empty left marker after empty right marker.'
-        leftnotright = '{}: Found left marker but not right marker.'
-
-        result = []
-
-        p = 0           # position in string
-        prevmt = None   # previous morpheme type - set when right marker
-                        # is not set, so end cannot yet be determined
-        for mt in (mt for mt in mtypes if mt.mclass == mclass):
-            m = mt.markers
-            l = s.find(m[0], p) if m[0] else None
-            if l is None:
-                if prevmt is not None:
-                    raise Exception(emptymarkers.format(mt.ident))
-            elif l >= p and prevmt is not None:
-                result.append((prevmt.ident, s[p:l]))
-                p = l + len(m[0])
-                if mt.pos != 2:
-                    prevmt = None
-            elif l == p:
-                p += len(m[0])
-            elif l == -1 or l > p: # not found at current position
-                # result.append((mt.ident, None))
-                continue
-            r = s.find(m[1], p) if m[1] else None
-            if r is None:
-                prevmt = mt
-            elif r == -1 and l is None: # not found
-                # result.append((mt.ident, None))
-                continue
-            elif r == -1:   # r not found, while l was found
-                raise Exception(leftnotright.format(mt.ident))
-            elif r >= p:
-                result.append((mt.ident, s[p:r]))
-                p = r + len(m[1])
-        if prevmt is not None:
-            result.append((prevmt.ident, s[p:]))
-        return tuple(result)
-
-    def an_decode(self, a, metas):
-        """Return paradigmatic and surface forms of annotated string"""
-
-        meta = None
-        p, s = [], []  # p: paradigmatic form, s: surface form
-
-        for c in a:
-            if c in (metas.addition, metas.elision):
-                meta = c
-            else:
-                if meta is None or meta == metas.addition:
-                    p.append(c)
-                if c != metas.homography and (meta is None
-                        or meta == metas.elision):
-                    s.append(c)
-                meta = None
-
-        return (''.join(p), ''.join(s))
 
     ####################################################################
     # Rules
@@ -331,6 +258,123 @@ class Word:
                 if self.evaluate(e):
                     return True
             return False
+
+# helper functions for Word class
+def split_word(s, mtypes, mclass=0):
+    """Splits morphologically analyzed word into morphemes.
+
+    Returns a list of tuples with as first member the
+    morpheme type identifier, and as second member the
+    found morpheme, or None if it was not found.
+    """
+    # Message strings
+    emptymarkers = '{}: Empty left marker after empty right marker.'
+    leftnotright = '{}: Found left marker but not right marker.'
+
+    result = []
+
+    p = 0           # position in string
+    prevmt = None   # previous morpheme type - set when right marker
+                    # is not set, so end cannot yet be determined
+    for mt in (mt for mt in mtypes if mt.mclass == mclass):
+        m = mt.markers
+        l = s.find(m[0], p) if m[0] else None
+        if l is None:
+            if prevmt is not None:
+                raise Exception(emptymarkers.format(mt.ident))
+        elif l >= p and prevmt is not None:
+            result.append((prevmt, s[p:l]))
+            p = l + len(m[0])
+            if mt.pos != 2:
+                prevmt = None
+        elif l == p:
+            p += len(m[0])
+        elif l == -1 or l > p: # not found at current position
+            # result.append((mt, None))
+            continue
+        r = s.find(m[1], p) if m[1] else None
+        if r is None:
+            prevmt = mt
+        elif r == -1 and l is None: # not found
+            # result.append((mt, None))
+            continue
+        elif r == -1:   # r not found, while l was found
+            raise Exception(leftnotright.format(mt.ident))
+        elif r >= p:
+            result.append((mt, s[p:r]))
+            p = r + len(m[1])
+    if prevmt is not None:
+        result.append((prevmt, s[p:]))
+    return tuple(result)
+
+def get_morphemes(word_elements, metas):
+    '''Returns tuples with morphemes: (mtype, (p, s, a))
+
+    Where mtype is a string with the morpheme type,
+    and p, s and a are the different realizations of the morpheme:
+    p=paradigmatic form, s=surface form, a=annotated metastring
+    '''
+    mtypes = []
+    a_strs = []
+    morphemes = []
+
+    for mt, a in word_elements:
+        if mt in mtypes:
+            a_strs[mtypes.index(mt)] += a
+        else:
+            mtypes.append(mt)
+            a_strs.append(a)
+
+    # p=paradigmatic form, s=surface form, a=annotated metastring
+    for mt, a in zip(mtypes, a_strs):
+        p, s = an_decode(a, metas)
+        morphemes.append(Morpheme(mt, p, s, a))
+
+    return tuple(morphemes)
+
+def an_decode(a, metas):
+    """Return paradigmatic and surface forms of annotated string"""
+
+    meta = None
+    p, s = [], []  # p: paradigmatic form, s: surface form
+
+    for c in a:
+        if c in (metas.addition, metas.elision):
+            meta = c
+        else:
+            if meta is None or meta == metas.addition:
+                p.append(c)
+            if c != metas.homography and (meta is None
+                    or meta == metas.elision):
+                s.append(c)
+            meta = None
+
+    return (''.join(p), ''.join(s))
+
+# helper functions for Word.get_dmp_str()
+def get_affix_str(morphemes):
+    affixes = []
+    for m in (m for m in morphemes if m.mt.pos != 1):  # ignore lexemes
+            affixes.append(f'{m.mt.ident}="{m.p}"' if m.mt.pos != 4
+                           else f'{m.mt.ident}={m.p}') # no quotes around patterns
+    return ','.join(affixes) if affixes else '-'
+
+def get_func_str(functions):
+    return ','.join(('+'+fn if fv is None else fn+'='+fv for fn, fv in functions if fv != False))
+
+
+########################################################################
+#   Class Morpheme:                                                    #
+#   so small, it could just as well be a namedtuple                    #
+########################################################################
+class Morpheme:
+    '''Morpheme class'''
+
+    def __init__(self, mt, p, s, a):
+        self.mt = mt
+        self.p = p
+        self.s = s
+        self.a = a
 
 
 ########################################################################
