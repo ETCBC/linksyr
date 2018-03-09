@@ -231,55 +231,55 @@ class SedraIII:
 
     # ROOTS.TXT
     ROOTS_ATTR = ((             # Attributes: 16-bit intiger as follows
-        'SEYAME FLAG', 1, (     # 0  SEYAME FLAG:
-            'NO SEYAME',        #     0 NO SEYAME
-            'SEYAME'            #     1 SEYAME
+        'seyame', 1, (     # 0  SEYAME FLAG:
+            0,        #     0 NO SEYAME
+            1            #     1 SEYAME
         )), (
-        'ROOT TYPE', 2, (       # 1-2 ROOT TYPE:
-            'NORMAL',           #     00 NORMAL
-            'PARETHESIED',      #     01 PARETHESIED
-            'BRACKETED',        #     10 BRACKETED
-            'HIGH FREQUENCY ROOT, e.g. propositons'
+        'root_type', 2, (       # 1-2 ROOT TYPE:
+            'normal',           #     00 NORMAL
+            'parethesied',      #     01 PARETHESIED
+            'bracketed',        #     10 BRACKETED
+            'high_frequency'
                                 #     11 HIGH FREQUENCY ROOT, e.g. propositons
         )), (
         '<RESERVED>', 13, None  # 3-15 <RESERVED>
     ))
     # LEXEMES.TXT
     LEXEMES_ATTR = ((           # Attributes: 16-bit intiger as follows
-        'SEYAME FLAG', 1, (     # 0 SEYAME FLAG:
-            'NO SEYAME',        #     0 NO SEYAME
-            'SEYAME'            #     1 SEYAME
+        'seyame', 1, (     # 0 SEYAME FLAG:
+            0,        #     0 NO SEYAME
+            1            #     1 SEYAME
         )), (
-        'WORD TYPE', 1, (       # 1 WORD TYPE:
-            'NORMAL',           #     0 NORMAL
-            'PARENTHESISED'     #     1 PARENTHESISED
+        'word_type', 1, (       # 1 WORD TYPE:
+            'normal',           #     0 NORMAL
+            'parenthesised'     #     1 PARENTHESISED
         )), (
-        'GRAMMATICAL CATEGORY', 4, (
+        'grammatical_category', 4, (
                                 # 2-5 GRAMMATICAL CATEGORY:
-            'VERB',             #     0000 VERB
-            'PARTICIPLE ADJECTIVE',
+            'verb',             #     0000 VERB
+            'participle_adjective',
                                 #     0001 PARTICIPLE ADJECTIVE
-            'DENOMINATIVE',     #     0010 DENOMINATIVE
-            'SUBSTANTIVE',      #     0011 SUBSTANTIVE
-            'NOUN',             #     0100 NOUN
-            'PRONOUN',          #     0101 PRONOUN
-            'PROPER_NOUN',      #     0110 PROPER_NOUN
-            'NUMERAL',          #     0111 NUMERAL
-            'ADJECTIVE',        #     1000 ADJECTIVE
-            'PARTICLE',         #     1001 PARTICLE
-            'IDIOM',            #     1010 IDIOM
-            'ADVERB (ending with AiYT)',
+            'denominative',     #     0010 DENOMINATIVE
+            'substantive',      #     0011 SUBSTANTIVE
+            'noun',             #     0100 NOUN
+            'pronoun',          #     0101 PRONOUN
+            'proper_noun',      #     0110 PROPER_NOUN
+            'numeral',          #     0111 NUMERAL
+            'adjective',        #     1000 ADJECTIVE
+            'particle',         #     1001 PARTICLE
+            'idiom',            #     1010 IDIOM
+            'adverb_AiYT',
                                 #     1011 ADVERB (ending with AiYT)
-            'ADJECTIVE OF PLACE',
+            'adjective_of_place',
                                 #     1100 ADJECTIVE OF PLACE
-            'ADVERB'            #     1101 ADVERB
+            'adverb'            #     1101 ADVERB
         )), (
-        'REST', 10, None        ##              /add -HV
+        'rest', 10, None        ##              /add -HV
         )
     )
     LEXEMES_FEAT = ((           # Morphological Type: 32-bit intiger as follows
-        'First SUFFIX', 4, (    # 0-3 First SUFFIX:
-            '<NONE>',           #     0000 <NONE>
+        'first_suffix', 4, (    # 0-3 First SUFFIX:
+            'n/a',           #     0000 <NONE>
             'ToA',              #     0001 ToA
             'YoA',              #     0010 YoA
             'NoA',              #     0011 NoA
@@ -293,238 +293,238 @@ class SedraIII:
             'QoNoA',            #     1011 QoNoA
             'i;N'               #     1100 i;N
         )), (
-        'SECOND SUFFIX', 2, (   # 4-5 SECOND SUFFIX:
-            '<NONE>',           #     00 <NONE>
+        'second_suffix', 2, (   # 4-5 SECOND SUFFIX:
+            'n/a',           #     00 <NONE>
             'oYoA',             #     01 oYoA
             'iYToA'             #     10 iYToA
         )), (
-        'THIRD SUFFIX', 2, (    # 6-7 THIRD SUFFIX:
-            '<NONE>',           #     00 <NONE>
+        'third_suffix', 2, (    # 6-7 THIRD SUFFIX:
+            'n/a',           #     00 <NONE>
             'uOToA',            #     01 uOToA
             'oAiYT'             #     10 oAiYT
         )), (
-        'PREFIX', 2, (          # 8-9 PREFIX:
-            '<NONE>',           #     00 <NONE>
+        'prefix', 2, (          # 8-9 PREFIX:
+            'n/a',           #     00 <NONE>
             'M',                #     01 M
             'T',                #     10 T
             '?????????',        ##              /add -HV
         )), (
-        'FIRST VOWEL', 3, (     # 10-12 FIRST VOWEL:
-            '<NONE>',           #     000 <NONE>
+        'first_vowel', 3, (     # 10-12 FIRST VOWEL:
+            'n/a',           #     000 <NONE>
             'a',                #     001 a
             'o',                #     010 o
             'e',                #     011 e
             'i',                #     100 i
             'u'                 #     101 u
         )), (
-        'SECOND VOWEL', 3, (    # 13-15 SECOND VOWEL: as above
-            '<NONE>',           ##    000 <NONE>
+        'second_vowel', 3, (    # 13-15 SECOND VOWEL: as above
+            'n/a',           ##    000 <NONE>
             'a',                ##    001 a
             'o',                ##    010 o
             'e',                ##    011 e
             'i',                ##    100 i
             'u'                 ##    101 u
         )), (
-        'THIRD VOWEL', 3, (     # 16-18 THIRD VOWEL: as above
-            '<NONE>',           ##    000 <NONE>
+        'third_vowel', 3, (     # 16-18 THIRD VOWEL: as above
+            'n/a',           ##    000 <NONE>
             'a',                ##    001 a
             'o',                ##    010 o
             'e',                ##    011 e
             'i',                ##    100 i
             'u'                 ##    101 u
         )), (
-        'FOURTH VOWEL', 3, (    # 19-21 FOURTH VOWEL: as above
-            '<NONE>',           ##    000 <NONE>
+        'fourth_vowel', 3, (    # 19-21 FOURTH VOWEL: as above
+            'n/a',           ##    000 <NONE>
             'a',                ##    001 a
             'o',                ##    010 o
             'e',                ##    011 e
             'i',                ##    100 i
             'u'                 ##    101 u
         )), (
-        'NUM_VOWELS', 3, None   # 22-24 Total no of vowels in lexeme: 0-7
+        'num_vowels', 3, None   # 22-24 Total no of vowels in lexeme: 0-7
         ), (
-        'RADICAL TYPE', 3, (    # 25-27 RADICAL TYPE:
-            '<NONE>',           #     000 <NONE>
-            'BI',               #     001 BI
-            'TRI',              #     010 TRI
-            'FOUR_RADICAL',     #     011 FOUR_RADICAL
-            'FIVE_RADICAL',     #     100 FIVE_RADICAL
-            'SIX_RADICAL',      #     101 SIX_RADICAL
-            'COMPOUND'          #     110 COMPOUND
+        'radical_type', 3, (    # 25-27 RADICAL TYPE:
+            'n/a',           #     000 <NONE>
+            'bi',               #     001 BI
+            'tri',              #     010 TRI
+            'four_radical',     #     011 FOUR_RADICAL
+            'five_radical',     #     100 FIVE_RADICAL
+            'six_radical',      #     101 SIX_RADICAL
+            'compound'          #     110 COMPOUND
         )), (
-        'FORM', 4, (            # 28-31 FORM:
-            '<NONE>',           #     0000 <NONE>
-            'PEAL',             #     0001 PEAL
-            'ETHPEAL',          #     0010 ETHPEAL
-            'PAEL',             #     0011 PAEL
-            'ETHPAEL',          #     0100 ETHPAEL
-            'APHEL',            #     0101 APHEL
-            'ETTAPHAL',         #     0110 ETTAPHAL
-            'SHAPHEL',          #     0111 SHAPHEL
-            'ESHTAPHAL',        #     1000 ESHTAPHAL
-            'SAPHEL',           #     1001 SAPHEL
-            'ESTAPHAL',         #     1010 ESTAPHAL
-            'P',                #     1011 P
-            'ETHP',             #     1100 ETHP
-            'PALPEL',           #     1101 PALPEL
-            'ETHPALPAL',        #     1110 ETHPALPAL
+        'verbal_conjugation', 4, (            # 28-31 FORM:
+            'n/a',           #     0000 <NONE>
+            'peal',             #     0001 PEAL
+            'ethpeal',          #     0010 ETHPEAL
+            'pael',             #     0011 PAEL
+            'ethpael',          #     0100 ETHPAEL
+            'aphel',            #     0101 APHEL
+            'ettaphal',         #     0110 ETTAPHAL
+            'shaphel',          #     0111 SHAPHEL
+            'eshtaphal',        #     1000 ESHTAPHAL
+            'saphel',           #     1001 SAPHEL
+            'estaphal',         #     1010 ESTAPHAL
+            'p',                #     1011 P
+            'ethp',             #     1100 ETHP
+            'palpel',           #     1101 PALPEL
+            'ethpalpal',        #     1110 ETHPALPAL
             '?????????',        ##              /add -HV
         ))
     )
     # WORDS.TXT
     WORDS_ATTR = ((             # Attributes: 16-bit intiger as follows
-        'SEYAME FLAG', 1, (     # 0 SEYAME FLAG:
-            'NO SEYAME',        #     0 NO SEYAME
-            'SEYAME'            #     1 SEYAME
+        'seyame', 1, (     # 0 SEYAME FLAG:
+            0,        #     0 NO SEYAME
+            1            #     1 SEYAME
         )), (
         'ignore', 4, None       # 1-4 ignore
         ), (
-        'ENCLITIC FLAG', 1, (   # 5 ENCLITIC FLAG:
-            'NOT ENCLITIC',     #     0 NOT ENCLITIC
-            'ENCLITIC'          #     1 ENCLITIC
+        'enclitic', 1, (   # 5 ENCLITIC FLAG:
+            0,     #     0 NOT ENCLITIC
+            1          #     1 ENCLITIC
         )), (
-        'LEXEME FLAG', 1, (     # 6 LEXEME FLAG:
-            'NO',               #     0 NO
-            'YES, i.e. = word represents lexeme'
+        'isLexeme', 1, (     # 6 LEXEME FLAG:
+            0,               #     0 NO
+            1
                                 #     1 YES, i.e. = word represents lexeme
         )), (
-        'REST', 9, None         ##              /add -HV
+        'rest', 9, None         ##              /add -HV
         )
     )
     WORDS_FEAT = ((             # Morphological Features: 32-bit intiger as follows
         '<RESERVED>', 2, None   # 0-1 <RESERVED>
         ), (
-        'SUFFIX GENDER', 2, (   # 2-3 SUFFIX GENDER:
-            'COMMON or <NONE>', #     00 COMMON or <NONE>
-            'MASCULINE',        #     01 MASCULINE
-            'SUFFEMININE'       #     10 SUFFEMININE
+        'suffix_gender', 2, (   # 2-3 SUFFIX GENDER:
+            'c/n/a', #     00 COMMON or <NONE>
+            'm',        #     01 MASCULINE
+            'f'       #     10 SUFFEMININE
         )), (
-        'SUFFIX PERSON', 2, (   # 4-5 SUFFIX PERSON:
-            '<NONE>',           #     00 <NONE>
-            'THIRD',            #     01 THIRD
-            'SECOND',           #     10 SECOND
-            'FIRST'             #     11 FIRST
+        'suffix_person', 2, (   # 4-5 SUFFIX PERSON:
+            'n/a',           #     00 <NONE>
+            '3',            #     01 THIRD
+            '2',           #     10 SECOND
+            '1'             #     11 FIRST
         )), (
-        'SUFFIX NUMBER', 1, (   # 6 SUFFIX NUMBER:
-            'SINGULAR or <NONE>',
+        'suffix_number', 1, (   # 6 SUFFIX NUMBER:
+            's/n/a',
                                 #     0 SINGULAR or <NONE>
-            'PLURAL'            #     1 PLURAL
+            'p'            #     1 PLURAL
         )), (
-        'SUFFIX/CONTRACTION', 2, (
+        'suffix_contraction', 2, (
                                 # 7-8 SUFFIX/CONTRACTION:
-            '<NONE>',           #     00 <NONE>
-            'SUFFIX',           #     01 SUFFIX
-            'CONTRACTION'       #     10 CONTRACTION
+            'n/a',           #     00 <NONE>
+            'suffix',           #     01 SUFFIX
+            'contraction'       #     10 CONTRACTION
         )), (
-        'PREFIX CODE', 6, None  # 9-14 PREFIX CODE: 0-63
+        'prefix_code', 6, None  # 9-14 PREFIX CODE: 0-63
         ), (
-        'GENDER', 2, (          # 15-16 GENDER:
-            '<NONE>',           #     00 <NONE>
-            'COMMON',           #     01 COMMON
-            'MASCULINE',        #     10 MASCULINE
-            'FEMININE'          #     11 FEMININE
+        'gender', 2, (          # 15-16 GENDER:
+            'n/a',           #     00 <NONE>
+            'c',           #     01 COMMON
+            'm',        #     10 MASCULINE
+            'f'          #     11 FEMININE
         )), (
-        'PERSON', 2, (          # 17-18 PERSON:
-            '<NONE>',           #     00 <NONE>
-            'THIRD',            #     01 THIRD
-            'SECOND',           #     10 SECOND
-            'FIRST'             #     11 FIRST
+        'person', 2, (          # 17-18 PERSON:
+            'n/a',           #     00 <NONE>
+            '3',            #     01 THIRD
+            '2',           #     10 SECOND
+            '1'             #     11 FIRST
         )), (
-        'NUMBER', 2, (          # 19-20 NUMBER:
-            '<NONE>',           #     00 <NONE>
-            'SINGULAR',         #     01 SINGULAR
-            'PLURAL'            #     10 PLURAL
+        'number', 2, (          # 19-20 NUMBER:
+            'n/a',           #     00 <NONE>
+            's',         #     01 SINGULAR
+            'p'            #     10 PLURAL
         )), (
-        'STATE', 2, (           # 21-22 STATE:
-            '<NONE>',           #     00 <NONE>
-            'ABSOLUTE',         #     01 ABSOLUTE
-            'CONSTRUCT',        #     10 CONSTRUCT
-            'EMPHATIC'          #     11 EMPHATIC
+        'state', 2, (           # 21-22 STATE:
+            'n/a',           #     00 <NONE>
+            'absolute',         #     01 ABSOLUTE
+            'construct',        #     10 CONSTRUCT
+            'emphatic'          #     11 EMPHATIC
         )), (
-        'TENSE', 3, (           # 23-25 TENSE:
-            '<NONE>',           #     000 <NONE>
-            'PERFECT',          #     001 PERFECT
-            'IMPERFECT',        #     010 IMPERFECT
-            'IMPERATIVE',       #     011 IMPERATIVE
-            'INFINITIVE',       #     100 INFINITIVE
-            'ACTIVE_PARTICIPLE',#     101 ACTIVE_PARTICIPLE
-            'PASSIVE_PARTICIPLE',
+        'aspect', 3, (           # 23-25 TENSE:
+            'n/a',           #     000 <NONE>
+            'perfect',          #     001 PERFECT
+            'imperfect',        #     010 IMPERFECT
+            'imperative',       #     011 IMPERATIVE
+            'infinitive',       #     100 INFINITIVE
+            'active_participle',#     101 ACTIVE_PARTICIPLE
+            'passive_participle',
                                 #     110 PASSIVE_PARTICIPLE
-            'PARTICIPLES'       #     111 PARTICIPLES
+            'participles'       #     111 PARTICIPLES
         )), (
-        'FORM', 6, (            # 26-31 FORM:
-            '<NONE>',           #     000000 <NONE>
-            'PEAL',             #     000001 PEAL
-            'ETHPEAL',          #     000010 ETHPEAL
-            'PAEL',             #     000011 PAEL
-            'ETHPAEL',          #     000100 ETHPAEL
-            'APHEL',            #     000101 APHEL
-            'ETTAPHAL',         #     000110 ETTAPHAL
-            'SHAPHEL',          #     000111 SHAPHEL
-            'ESHTAPHAL',        #     001000 ESHTAPHAL
-            'SAPHEL',           #     001001 SAPHEL
-            'ESTAPHAL',         #     001010 ESTAPHAL
-            'PAUEL',            #     001011 PAUEL
-            'ETHPAUAL',         #     001100 ETHPAUAL
-            'PAIEL',            #     001101 PAIEL
-            'ETHPAIAL',         #     001110 ETHPAIAL
-            'PALPAL',           #     001111 PALPAL
-            'ETHPALPAL',        #     010000 ETHPALPAL
-            'PALPEL',           #     010001 PALPEL
-            'ETHPALPAL',        #     010010 ETHPALPAL
-            'PAMEL',            #     010011 PAMEL
-            'ETHPAMAL',         #     010100 ETHPAMAL
-            'PAREL',            #     010101 PAREL
-            'ETHPARAL',         #     010110 ETHPARAL
-            'PALI',             #     010111 PALI
-            'ETHPALI',          #     011000 ETHPALI
-            'PAHLI',            #     011001 PAHLI
-            'ETHPAHLI',         #     011010 ETHPAHLI
-            'TAPHEL',           #     011011 TAPHEL
-            'ETHAPHAL'          #     011100 ETHAPHAL
+        'verbal_conjugation', 6, (            # 26-31 FORM:
+            'n/a',           #     000000 <NONE>
+            'peal',             #     000001 PEAL
+            'ethpeal',          #     000010 ETHPEAL
+            'pael',             #     000011 PAEL
+            'ethpael',          #     000100 ETHPAEL
+            'aphel',            #     000101 APHEL
+            'ettaphal',         #     000110 ETTAPHAL
+            'shaphel',          #     000111 SHAPHEL
+            'eshtaphal',        #     001000 ESHTAPHAL
+            'saphel',           #     001001 SAPHEL
+            'estaphal',         #     001010 ESTAPHAL
+            'pauel',            #     001011 PAUEL
+            'ethpaual',         #     001100 ETHPAUAL
+            'paiel',            #     001101 PAIEL
+            'ethpaial',         #     001110 ETHPAIAL
+            'palpal',           #     001111 PALPAL
+            'ethpalpal',        #     010000 ETHPALPAL
+            'palpel',           #     010001 PALPEL
+            'ethpalpal',        #     010010 ETHPALPAL
+            'pamel',            #     010011 PAMEL
+            'ethpamal',         #     010100 ETHPAMAL
+            'parel',            #     010101 PAREL
+            'ethparal',         #     010110 ETHPARAL
+            'pali',             #     010111 PALI
+            'ethpali',          #     011000 ETHPALI
+            'pahli',            #     011001 PAHLI
+            'ethpahli',         #     011010 ETHPAHLI
+            'taphel',           #     011011 TAPHEL
+            'ethaphal'          #     011100 ETHAPHAL
         ))
     )
     # ENGLISH.TXT
     ENGLISH_ATTR = ((           # Attributes: 15-bit intiger as follows:
         '<RESERVED>', 1, None   # 0 <RESERVED>
         ), (
-        'COMMENT POSITION', 1, (# 1 COMMENT POSITION:
-            'COMMENT BEFORE MEANING',
+        'comment_position', 1, (# 1 COMMENT POSITION:
+            'before_meaning',
                                 #     0 COMMENT BEFORE MEANING
-            'COMMENT AFTER MEANING'
+            'after_meaning'
                                 #     1 COMMENT AFTER MEANING
         )), (
-        'COMMENT FONT', 1, (    # 2 COMMENT FONT:
-            'NORMAL',           #     0 NORMAL
-            'ITALIC'            #     1 ITALIC
+        'comment_font', 1, (    # 2 COMMENT FONT:
+            'normal',           #     0 NORMAL
+            'italic'            #     1 ITALIC
         )), (
-        'STRING BEFORE FONT', 1, (
+        'string_before_font', 1, (
                                 # 3 STRING BEFORE FONT: as above
-            'NORMAL',           ##    0 NORMAL
-            'ITALIC'            ##    1 ITALIC
+            'normal',           ##    0 NORMAL
+            'italic'            ##    1 ITALIC
         )), (
-        'STRING AFTER FONT', 1, (
+        'string_after_font', 1, (
                                 # 4 STRING AFTER FONT: as above
-            'NORMAL',           ##    0 NORMAL
-            'ITALIC'            ##    1 ITALIC
+            'normal',           ##    0 NORMAL
+            'italic'            ##    1 ITALIC
         )), (
-        'VERB TYPE', 2, (       # 5-6 VERB TYPE:
-            '<NONE>',           #     00 <NONE>
-            'TRANSITIVE',       #     01 TRANSITIVE
-            'INTRANSITIVE'      #     10 INTRANSITIVE
+        'verb_type', 2, (       # 5-6 VERB TYPE:
+            'n/a',           #     00 <NONE>
+            'transitive',       #     01 TRANSITIVE
+            'intransitive'      #     10 INTRANSITIVE
         )), (
-        'NUMBER', 2, (          # 7-8 NUMBER: as above
-            '<NONE>',           ##    00 <NONE>
-            'SINGULAR',         ##    01 SINGULAR
-            'PLURAL'            ##    10 PLURAL
+        'number', 2, (          # 7-8 NUMBER: as above
+            'n/a',           ##    00 <NONE>
+            's',         ##    01 SINGULAR
+            'p'            ##    10 PLURAL
         )), (
-        'GENDER', 2, (          # 9-10 GENDER: as above
-            '<NONE>',           ##    00 <NONE>
-            'COMMON',           ##    01 COMMON
-            'MASCULINE',        ##    10 MASCULINE
-            'FEMININE'          ##    11 FEMININE
+        'gender', 2, (          # 9-10 GENDER: as above
+            'n/a',           ##    00 <NONE>
+            'c',           ##    01 COMMON
+            'm',        ##    10 MASCULINE
+            'f'          ##    11 FEMININE
         )), (
-        'FORM', 5, None         # 11-15 FORM: as above
+        'form', 5, None         # 11-15 FORM: as above
                                 ## TODO: what forms are these?
                                 ## Below the attested values:
                                 ## (5 bits; the sixth bit is always 0)
@@ -546,22 +546,22 @@ class SedraIII:
     )
     # ETIMOLGY.TXT
     ETYMOLOGY_ATTR = ((         # Attributes: 16-bit intigier as follows:
-        'LANGUAGE', 4, (        # 0-3 LANGUAGE:
-            'SYRIAC',           #     0000  SYRIAC
-            'AKKADIAN',         #     0001  AKKADIAN
-            'ARAMAIC',          #     0010  ARAMAIC
-            'ARABIC',           #     0011  ARABIC
-            'ARMENIAN',         #     0100  ARMENIAN
-            'GREEK',            #     0101  GREEK
-            'HEBREW',           #     0110  HEBREW
-            'LATIN',            #     0111  LATIN
-            'PERSIAN',          #     1000  PERSIAN
-            'SANSKRIT'          #     1001  SANSKRIT
+        'language', 4, (        # 0-3 LANGUAGE:
+            'syriac',           #     0000  SYRIAC
+            'akkadian',         #     0001  AKKADIAN
+            'aramaic',          #     0010  ARAMAIC
+            'arabic',           #     0011  ARABIC
+            'armenian',         #     0100  ARMENIAN
+            'greek',            #     0101  GREEK
+            'hebrew',           #     0110  HEBREW
+            'latin',            #     0111  LATIN
+            'persian',          #     1000  PERSIAN
+            'sanskrit'          #     1001  SANSKRIT
         )), (
-        'TYPE', 1, (            # 4 TYPE:
-            'NORMAL',           #     0 NORMAL
-            'PARENTHESIED'      #     1 PARENTHESIED
+        'type', 1, (            # 4 TYPE:
+            'normal',           #     0 NORMAL
+            'parenthesied'      #     1 PARENTHESIED
         )), (
-        'REST', 11, None        ##              /add -HV
+        'rest', 11, None        ##              /add -HV
         )
     )
