@@ -1,4 +1,5 @@
 import sys
+import os
 import collections
 
 # import modified version in this directory
@@ -9,6 +10,10 @@ import constants  # noqa: F401
 sys.path.append('../parsing')
 
 import sedra  # noqa: E402
+
+REPO = '~/github/etcbc/linksyr'
+DEST = 'SEDRA'
+CSV_BASE = os.path.expanduser(f'{REPO}/data/csv/{DEST}')
 
 db = sedra.SedraIII()
 '''
@@ -36,7 +41,6 @@ print(db.etymology[10].__dict__)
 dataTypes = collections.OrderedDict(
     words=dict(
         nodeType='word',
-        toNode=True,
         linkType=('lexemes', 'lex_addr'),
         hasFeats=True,
         main=[
@@ -49,15 +53,13 @@ dataTypes = collections.OrderedDict(
     ),
     lexemes=dict(
         nodeType='lexeme',
-        toNode=True,
         linkType=('roots', 'root_addr'),
         hasFeats=True,
         main=[('lexeme', 'lex_str')],
         skipFeats=set(),
     ),
     english=dict(
-        nodeType='lexeme',
-        toNode=False,
+        nodeType='english',
         linkType=('lexemes', 'lex_addr'),
         hasFeats=False,
         main=[
@@ -77,8 +79,7 @@ dataTypes = collections.OrderedDict(
         },
     ),
     etymology=dict(
-        nodeType='lexeme',
-        toNode=False,
+        nodeType='etymology',
         linkType=('lexemes', 'lex_addr'),
         hasFeats=False,
         main=[],
@@ -86,7 +87,6 @@ dataTypes = collections.OrderedDict(
     ),
     roots=dict(
         nodeType='root',
-        toNode=True,
         linkType=None,
         hasFeats=False,
         main=[('root', 'rt_str')],
@@ -97,65 +97,54 @@ dataTypes = collections.OrderedDict(
 )
 
 
-def makeTf():
-    nodeFeatures = collections.defaultdict(dict)
-    oSlots = collections.defaultdict(set)
+def makeCsv():
+    os.makedirs(CSV_BASE, exist_ok=True)
 
     for (d, (dataType, dataConfig)) in enumerate(dataTypes.items()):
         nodeType = dataConfig['nodeType']
-        toNode = dataConfig['toNode']
         linkType = dataConfig['linkType']
         hasFeats = dataConfig['hasFeats']
         skipFeats = dataConfig['skipFeats']
         mainFeatures = dataConfig['main']
         data = getattr(db, dataType)
         print(f'{dataType:<10}: items 0 .. {len(data) -1:>5}')
-        for (i, item) in enumerate(data):
-            sys.stderr.write(f'{"":<12} item      {i:>5}\r')
-            if linkType:
-                (linkDataType, linkField) = linkType
-                linkNodeType = dataTypes[linkDataType]['nodeType']
-                link = getattr(item, linkField)
-                num = link[1] if link else None
+        fields = ['id']
+        with open(f'{CSV_BASE}/{nodeType}.csv', 'w') as fh:
+            for (i, item) in enumerate(data):
+                sys.stderr.write(f'{"":<12} item      {i:>5}\r')
+                values = [i]
+                if linkType:
+                    (linkDataType, linkField) = linkType
+                    linkNodeType = dataTypes[linkDataType]['nodeType']
+                    if i == 0:
+                        fields.append(f'{linkNodeType}Id')
+                    link = getattr(item, linkField)
+                    num = link[1] if link else ''
+                    values.append(num)
 
-            if d == 0:
-                curNode = ('word', i + 1)
-                if num is not None:
-                    oSlots[(linkNodeType, num + 1)].add(i + 1)
-            else:
-                if toNode:
-                    curNode = (nodeType, i + 1)
-                    if linkType:
-                        if num is not None:
-                            oSlots[(linkNodeType, num + 1)] |= oSlots[curNode]
-                else:
-                    if linkType:
-                        if num is not None:
-                            curNode = (linkNodeType, num + 1)
-
-            for (k, f) in mainFeatures:
-                if k not in skipFeats:
-                    nodeFeatures[k][curNode] = getattr(item, f)
-            for (k, v) in item.attributes._asdict().items():
-                if k not in skipFeats:
-                    nodeFeatures[k][curNode] = v
-            if hasFeats:
-                for (k, v) in item.features._asdict().items():
+                for (k, f) in mainFeatures:
                     if k not in skipFeats:
-                        nodeFeatures[k][curNode] = v
+                        if i == 0:
+                            fields.append(k)
+                        values.append(getattr(item, f))
+                for (k, v) in item.attributes._asdict().items():
+                    if k not in skipFeats:
+                        if i == 0:
+                            fields.append(k)
+                        values.append(v)
+                if hasFeats:
+                    for (k, v) in item.features._asdict().items():
+                        if k not in skipFeats:
+                            if i == 0:
+                                fields.append(k)
+                            values.append(v)
+                if i == 0:
+                    fieldsFmt = ('{}\t' * (len(fields) - 1)) + '{}\n'
+                    fh.write(fieldsFmt.format(*fields))
+                fh.write(fieldsFmt.format(*values))
         print(f'{"":<12} item      {i:>5}')
 
-    # print(nodeFeatures)
     return
-    for feat in sorted(nodeFeatures):
-        print(f'{feat}')
-        for (ntp, n) in sorted(nodeFeatures[feat]):
-            print(f'\t{ntp}{n} => {nodeFeatures[feat][(ntp, n)]}')
-
-    print('\n')
-    print('oslots')
-    for (ntp, n) in sorted(oSlots):
-        print(f'\t{ntp}{n} => {oSlots[(ntp, n)]}')
 
 
-makeTf()
+makeCsv()
