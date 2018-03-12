@@ -2,14 +2,13 @@
 @dataset=syrnt
 @datasetName=Syriac New Testament
 @description=chapter number
-@email1=?
-@email2=dirk.roorda@dans.knaw.nl
-@encoders=? (transcription),? (annotation)and Dirk Roorda (TF)
+@email1=dirk.roorda@dans.knaw.nl
+@encoders=Ancient Biblical Manuscript Center  (transcription),George A. Kiraz and James W. Bennett (database)and Dirk Roorda (TF)
 @source=SEDRA
-@sourceUrl=?
+@sourceUrl=https://sedra.bethmardutho.org/about/contributors
 @valueType=int
 @writtenBy=Text-Fabric
-@dateWritten=2018-03-08T10:10:19Z
+@dateWritten=2018-03-12T07:17:25Z
 
 109668	1
 2

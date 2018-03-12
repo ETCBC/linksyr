@@ -2,17 +2,16 @@
 @dataset=syrnt
 @datasetName=Syriac New Testament
 @description=?
-@email1=?
-@email2=dirk.roorda@dans.knaw.nl
-@encoders=? (transcription),? (annotation)and Dirk Roorda (TF)
+@email1=dirk.roorda@dans.knaw.nl
+@encoders=Ancient Biblical Manuscript Center  (transcription),George A. Kiraz and James W. Bennett (database)and Dirk Roorda (TF)
 @language=English
 @languageCode=en
 @languageEnglish=English
 @source=SEDRA
-@sourceUrl=?
+@sourceUrl=https://sedra.bethmardutho.org/about/contributors
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2018-03-08T10:10:19Z
+@dateWritten=2018-03-12T07:17:25Z
 
 109641	Matthew
 Mark

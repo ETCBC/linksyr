@@ -31,12 +31,11 @@ commonMetaData = collections.OrderedDict(
     dataset=ORIGIN,
     datasetName='Syriac New Testament',
     source='SEDRA',
-    sourceUrl='?',
-    encoders=('? (transcription),'
-              '? (annotation)'
+    sourceUrl='https://sedra.bethmardutho.org/about/contributors',
+    encoders=('Ancient Biblical Manuscript Center  (transcription),'
+              'George A. Kiraz and James W. Bennett (database)'
               'and Dirk Roorda (TF)'),
-    email1=('?'),
-    email2='dirk.roorda@dans.knaw.nl',
+    email1='dirk.roorda@dans.knaw.nl',
 )
 specificMetaData = collections.OrderedDict(
     book='book name',

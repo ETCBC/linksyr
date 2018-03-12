@@ -1,9 +1,8 @@
 @config
 @dataset=syrnt
 @datasetName=Syriac New Testament
-@email1=?
-@email2=dirk.roorda@dans.knaw.nl
-@encoders=? (transcription),? (annotation)and Dirk Roorda (TF)
+@email1=dirk.roorda@dans.knaw.nl
+@encoders=Ancient Biblical Manuscript Center  (transcription),George A. Kiraz and James W. Bennett (database)and Dirk Roorda (TF)
 @fmt:lex-orig-full={lexeme} 
 @fmt:lex-trans-full={lexeme_ascii} 
 @fmt:text-orig-full={word} 
@@ -11,7 +10,7 @@
 @sectionFeatures=book,chapter,verse
 @sectionTypes=book,chapter,verse
 @source=SEDRA
-@sourceUrl=?
+@sourceUrl=https://sedra.bethmardutho.org/about/contributors
 @writtenBy=Text-Fabric
-@dateWritten=2018-03-08T10:10:27Z
+@dateWritten=2018-03-12T07:17:31Z
 

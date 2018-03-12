@@ -1,6 +1,7 @@
 import sys
 import os
 import collections
+from shutil import rmtree
 
 # import modified version in this directory
 # not the one next to sedra.py !
@@ -12,7 +13,7 @@ sys.path.append('../parsing')
 import sedra  # noqa: E402
 
 REPO = '~/github/etcbc/linksyr'
-DEST = 'SEDRA'
+DEST = 'sedra'
 CSV_BASE = os.path.expanduser(f'{REPO}/data/csv/{DEST}')
 
 db = sedra.SedraIII()
@@ -40,7 +41,6 @@ print(db.etymology[10].__dict__)
 
 dataTypes = collections.OrderedDict(
     words=dict(
-        nodeType='word',
         linkType=('lexemes', 'lex_addr'),
         hasFeats=True,
         main=[
@@ -52,14 +52,12 @@ dataTypes = collections.OrderedDict(
         },
     ),
     lexemes=dict(
-        nodeType='lexeme',
         linkType=('roots', 'root_addr'),
         hasFeats=True,
         main=[('lexeme', 'lex_str')],
         skipFeats=set(),
     ),
     english=dict(
-        nodeType='english',
         linkType=('lexemes', 'lex_addr'),
         hasFeats=False,
         main=[
@@ -79,14 +77,12 @@ dataTypes = collections.OrderedDict(
         },
     ),
     etymology=dict(
-        nodeType='etymology',
         linkType=('lexemes', 'lex_addr'),
         hasFeats=False,
         main=[],
         skipFeats=set(),
     ),
     roots=dict(
-        nodeType='root',
         linkType=None,
         hasFeats=False,
         main=[('root', 'rt_str')],
@@ -98,26 +94,33 @@ dataTypes = collections.OrderedDict(
 
 
 def makeCsv():
-    os.makedirs(CSV_BASE, exist_ok=True)
+    if os.path.exists(CSV_BASE):
+        rmtree(CSV_BASE)
+    os.makedirs(CSV_BASE)
 
-    for (d, (dataType, dataConfig)) in enumerate(dataTypes.items()):
-        nodeType = dataConfig['nodeType']
-        linkType = dataConfig['linkType']
-        hasFeats = dataConfig['hasFeats']
-        skipFeats = dataConfig['skipFeats']
-        mainFeatures = dataConfig['main']
-        data = getattr(db, dataType)
-        print(f'{dataType:<10}: items 0 .. {len(data) -1:>5}')
-        fields = ['id']
-        with open(f'{CSV_BASE}/{nodeType}.csv', 'w') as fh:
+    tables = {}
+    fields = {}
+
+    def collect():
+        for (d, (dataType, dataConfig)) in enumerate(dataTypes.items()):
+            tables[dataType] = []
+            lines = tables[dataType]
+            fields[dataType] = []
+            theseFields = fields[dataType]
+
+            linkType = dataConfig['linkType']
+            hasFeats = dataConfig['hasFeats']
+            skipFeats = dataConfig['skipFeats']
+            mainFeatures = dataConfig['main']
+            data = getattr(db, dataType)
+            print(f'{dataType:<10}: items 0 .. {len(data) -1:>5}')
             for (i, item) in enumerate(data):
                 sys.stderr.write(f'{"":<12} item      {i:>5}\r')
-                values = [i]
+                values = []
                 if linkType:
                     (linkDataType, linkField) = linkType
-                    linkNodeType = dataTypes[linkDataType]['nodeType']
                     if i == 0:
-                        fields.append(f'{linkNodeType}Id')
+                        theseFields.append(f'{linkDataType}Id')
                     link = getattr(item, linkField)
                     num = link[1] if link else ''
                     values.append(num)
@@ -125,26 +128,87 @@ def makeCsv():
                 for (k, f) in mainFeatures:
                     if k not in skipFeats:
                         if i == 0:
-                            fields.append(k)
+                            theseFields.append(k)
                         values.append(getattr(item, f))
                 for (k, v) in item.attributes._asdict().items():
                     if k not in skipFeats:
                         if i == 0:
-                            fields.append(k)
+                            theseFields.append(k)
                         values.append(v)
                 if hasFeats:
                     for (k, v) in item.features._asdict().items():
                         if k not in skipFeats:
                             if i == 0:
-                                fields.append(k)
+                                theseFields.append(k)
                             values.append(v)
-                if i == 0:
-                    fieldsFmt = ('{}\t' * (len(fields) - 1)) + '{}\n'
-                    fh.write(fieldsFmt.format(*fields))
-                fh.write(fieldsFmt.format(*values))
-        print(f'{"":<12} item      {i:>5}')
+                lines.append(values)
+            print(f'{"":<12} item      {i:>5}')
 
-    return
+    def combineForth():
+        for dataType in ('roots',):
+            fieldMap = dict(
+                root='root',
+                seyame='root_seyame',
+                root_type='root_type',
+            )
+            fields['lexemes'].pop(0)
+            fields['lexemes'].extend(
+                (f'{fieldMap[f]}' for f in fields[dataType])
+            )
+            noValues = ('', ) * (len(fields[dataType]))
+            for (li, values) in enumerate(tables['lexemes']):
+                ri = values.pop(0)
+                values.extend(
+                    noValues
+                    if ri == '' else tables[dataType][int(ri) - 1]
+                )
+            del tables[dataType]
+            del fields[dataType]
+        print(f'combination step 1: {" ".join(tables.keys())}')
+
+    def combineBack():
+        for dataType in ('etymology',):
+            fields['lexemes'].extend(
+                (f'{dataType[0:3]}_{f}' for f in fields[dataType][1:])
+            )
+            lookup = {}
+            for (di, values) in enumerate(tables[dataType]):
+                lexId = values[0]
+                if lexId != '':
+                    li = int(lexId) - 1
+                    if li in lookup:
+                        print(
+                            f'WARNING: multiple {dataType}s add features to'
+                            f' {li}: {di} overrides {lookup[li]}'
+                        )
+                    lookup[li] = di
+            noValues = ('', ) * (len(fields[dataType]) - 1)
+            for (li, values) in enumerate(tables['lexemes']):
+                di = lookup.get(li, None)
+                values.extend(
+                    noValues
+                    if di is None else tables[dataType][lookup[li]][1:]
+                )
+            del tables[dataType]
+            del fields[dataType]
+        print(f'combination step 2: {" ".join(tables.keys())}')
+
+    def write():
+        for dataType in tables:
+            theseFields = fields[dataType]
+            print(dataType, theseFields)
+            with open(f'{CSV_BASE}/{dataType}.csv', 'w') as fh:
+                fieldsFmt = ('{}\t' * (len(theseFields) - 1)) + '{}\n'
+                lines = tables[dataType]
+                fh.write(fieldsFmt.format(*theseFields))
+                for values in lines:
+                    fh.write(fieldsFmt.format(*values))
+            print(f'written {dataType}.csv')
+
+    collect()
+    combineForth()
+    combineBack()
+    write()
 
 
 makeCsv()
