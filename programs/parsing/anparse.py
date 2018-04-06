@@ -169,3 +169,24 @@ def dump_anfile(title, *args, **kw):
     for verse, surface, analysis, words in parse_anfile(*args, **kw):
         for word in words:
             yield(word.dmp_str(title, verse))
+
+def tf_anfile(title, *args, **kw):
+    for verse, surface, analysis, words in parse_anfile(*args, **kw):
+        for i,word in enumerate(words):
+            # yield(word.dmp_str(title, verse))
+            c,v = verse.split(',')
+            f='\t'.join(('='.join((k,v)) if type(v) is str else k+'=NA' for k,v in word.functions if type(v) is not bool))
+            m='\t'.join(('='.join((m.mt.ident, m.p)) for m in word.morphemes))
+            yield('\t'.join((
+                title,
+                c,
+                v,
+                word.word,
+                word.meta_form,
+                word.paradigmatic_form,
+                word.surface_form,
+                # word.lexeme,
+                f'trailer={" " if i == len(words)-1 else ""}',
+                m,
+                f,
+            )))
