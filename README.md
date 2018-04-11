@@ -1,5 +1,8 @@
+![logo](images/linksyr.png)
+
 # linksyr
-Project results of the CLARIAH research pilot LinkSyr
+Work-in-progress and results of the CLARIAH research pilot
+[LinkSyr](https://www.clariah.nl/projecten/research-pilots/linksyr/linksyr).
 
 ## Licensing
 
