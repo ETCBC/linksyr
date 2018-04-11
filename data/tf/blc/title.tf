@@ -3,11 +3,11 @@
 @datasetName=Book of the Laws of the Countries
 @description=book name
 @email1=hannes@vlaardingerbroek.nl
-@encoders=Dirk BakkerHannes Vlaardingerbroek (TF)
+@encoders=Dirk Bakker (transcription, database), Hannes Vlaardingerbroek (TF)
 @source=ETCBC
 @sourceUrl=
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2018-04-06T14:54:28Z
+@dateWritten=2018-04-11T11:25:53Z
 
 8066	BLC
