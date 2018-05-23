@@ -2,15 +2,13 @@
 @dataset=BLC
 @datasetName=Book of the Laws of the Countries
 @email1=hannes@vlaardingerbroek.nl
-@encoders=Dirk BakkerHannes Vlaardingerbroek (TF)
-@fmt:lex-orig-full={lexeme} 
-@fmt:lex-trans-full={lexeme_ascii} 
+@encoders=Dirk Bakker (transcription, database), Hannes Vlaardingerbroek (TF)
 @fmt:text-orig-full={word} 
-@fmt:text-trans-full={word_ascii} 
-@sectionFeatures=book,chapter,verse
+@fmt:text-trans-full={word_etcbc} 
+@sectionFeatures=title,number,number
 @sectionTypes=book,chapter,verse
 @source=ETCBC
 @sourceUrl=
 @writtenBy=Text-Fabric
-@dateWritten=2018-04-06T14:54:28Z
+@dateWritten=2018-04-11T11:36:28Z
 
