@@ -4,8 +4,7 @@
 Work-in-progress and results of the CLARIAH research pilot
 [LinkSyr](https://www.clariah.nl/projecten/research-pilots/linksyr/linksyr).
 
-[![DOI](https://zenodo.org/badge/120422030.svg)](https://zenodo.org/badge/latestdoi/120422030)
-[![etcbc](programs/images/etcbc.png)](http://www.etcbc.nl)
+[![DOI](https://zenodo.org/badge/120422030.svg)](https://doi.org/10.5281/zenodo.3378550)
 
 ## Licensing
 
