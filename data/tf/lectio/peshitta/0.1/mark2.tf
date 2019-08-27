@@ -5,7 +5,7 @@
 @name=lectionary data for the Peshitta (NT)
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2019-01-16T23:18:53Z
+@dateWritten=2019-01-17T14:05:34Z
 
 428577	5374:ܬܪ̈ܝܢ
 428591	1764:ܘܠܟܠܗ̇ 2nd

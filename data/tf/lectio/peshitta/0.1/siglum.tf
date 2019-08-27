@@ -5,7 +5,7 @@
 @name=lectionary data for the Peshitta (NT)
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2019-01-16T23:18:53Z
+@dateWritten=2019-01-17T14:05:34Z
 
 428562	10l1\n11l1\n11l3\n11l4\n11l4-I\n11l4-II\n11l5\n11l5-I\n11l5-II\n13/11l5\n13l1\n13l10\n13l10-I\n13l10-II\n13l11\n13l11-I\n13l11-II\n13l12\n13l12-I\n13l12-II\n13l13\n13l13-I\n13l13-II\n13l2\n13l6\n13l7\n13l8\n13l8-I\n13l8-II\n13l9\n13l9-I\n13l9-II\n14l1\n15/9l5\n15l1\n15l2\n15l4\n15l5\n16l1\n16l2\n16l4\n16l5\n7h5\n9l1\n9l4\n9l5\n9l5-I\n9l5-II
 10l1\n11l1\n11l3\n11l4\n11l4-I\n11l4-II\n11l5\n11l5-I\n11l5-II\n13/11l5\n13l1\n13l10\n13l10-I\n13l10-II\n13l11\n13l11-I\n13l11-II\n13l12\n13l12-I\n13l12-II\n13l13\n13l13-I\n13l13-II\n13l2\n13l6\n13l7\n13l8\n13l8-I\n13l8-II\n13l9\n13l9-I\n13l9-II\n14l1\n15/9l5\n15l1\n15l2\n15l4\n15l5\n16l1\n16l2\n16l4\n16l5\n9l1\n9l4\n9l5\n9l5-I\n9l5-II

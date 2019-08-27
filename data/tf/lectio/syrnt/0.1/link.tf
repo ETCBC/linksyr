@@ -5,7 +5,7 @@
 @name=lectionary data for the Peshitta (NT)
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2019-01-16T23:18:53Z
+@dateWritten=2019-01-17T14:05:34Z
 
 114602	https://gallica.bnf.fr/ark:/12148/btv1b10527102b/f498.item
 115848	https://gallica.bnf.fr/ark:/12148/btv1b10527102b/f499.item

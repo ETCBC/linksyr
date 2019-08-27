@@ -4,6 +4,9 @@
 Work-in-progress and results of the CLARIAH research pilot
 [LinkSyr](https://www.clariah.nl/projecten/research-pilots/linksyr/linksyr).
 
+[![DOI](https://zenodo.org/badge/120422030.svg)](https://zenodo.org/badge/latestdoi/120422030)
+[![etcbc](programs/images/etcbc.png)](http://www.etcbc.nl)
+
 ## Licensing
 
 All software in this repo is licensed under the Unlicense licence, which means: it is public domain.
