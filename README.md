@@ -2,7 +2,6 @@
 
 # linksyr
 [![SWH](https://archive.softwareheritage.org/badge/origin/https://github.com/ETCBC/linksyr/)](https://archive.softwareheritage.org/browse/origin/https://github.com/ETCBC/linksyr/)
-[![sha](sha.png) Software Heritage Archive](https://archive.softwareheritage.org/browse/origin/https://github.com/ETCBC/linksyr/)
 
 [![DOI](https://zenodo.org/badge/120422030.svg)](https://doi.org/10.5281/zenodo.3378550)
 [![etcbc](images/etcbc.png)](http://www.etcbc.nl)
